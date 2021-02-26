@@ -1,11 +1,6 @@
 import discord 
 from discord.ext import commands
-import os
 import random
-import asyncio
-import datetime
-import wikipedia
-import requests
 
 client = commands.Bot(command_prefix= "k!") 
 client.remove_command("help")
