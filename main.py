@@ -20,6 +20,7 @@ async def help(ctx):
     embed = discord.Embed(title="Help", color = 0x0F93E2)
     embed.add_field(name= "k!help", value="Gives you the help message.", inline=False)
     embed.add_field(name= "k!character", value="gives a picture of the character you gave.", inline=False)
+    embed.add_field(name= "k!covid", value="gives covid stats.", inline=False)
     await ctx.send(embed=embed)
 
 
