@@ -22,60 +22,63 @@ async def help(ctx):
 @client.command()
 async def ertugrul(ctx):
 
-    random_image =  random.choice(images) 
-    await ctx.send(file = discord.File(random_image))
-    
     images = [
         "pics\\Ertugrul\\ertugrul 1.jpg","Pics\\Ertugrul\\ertugrul 2.jpg","Pics\\Ertugrul\\ertugrul 3.jpg",
         "pics\\Ertugrul\\ertugrul 4.jpg","Pics\\Ertugrul\\ertugrul 5.jpg","Pics\\Ertugrul\\ertugrul 6.jpg"
         ]
 
+    random_image =  random.choice(images) 
+    await ctx.send(file = discord.File(random_image))
+    
+
 @client.command()
 async def osman(ctx):
 
-    random_image =  random.choice(osma) 
-
-    await ctx.send(file = discord.File(random_image))
-    
     osma = [
         "pics\\Osman\\osman 1.jpg","pics\\Osman\\osman 2.jpg","pics\\Osman\\osman 3.jpg",
         "pics\\Osman\\osman 4.jpg","pics\\Osman\\osman 5.jpg","pics\\Osman\\osman 6.jpg" 
     ]
 
+    random_image =  random.choice(osma) 
+
+    await ctx.send(file = discord.File(random_image))
+    
 
 @client.command()
 async def ibn_arabi(ctx):
 
-    random_image =  random.choice(ibn) 
-
-    await ctx.send(file = discord.File(random_image))
-    
     ibn = [
         "pics\\IbnArabi\\Ibn 1.jpg","pics\\IbnArabi\\Ibn 2.jpg","pics\\IbnArabi\\Ibn 3.jpg",
         "pics\\IbnArabi\\Ibn 4.jpg","Pics\\IbnArabi\\Ibn 5.jpg","pics\\IbnArabi\\Ibn 6.jpg"
     ]
 
-@client.command()
-async def bala(ctx):
-
-    random_image =  random.choice(balah) 
+    random_image =  random.choice(ibn) 
 
     await ctx.send(file = discord.File(random_image))
+    
+
+@client.command()
+async def bala(ctx):
 
     balah = [
         "pics\\Bala\\Bala 1.jpg", "pics\\Bala\\Bala 2.jpg","pics\\Bala\\Bala 3.jpg",
         "pics\\Bala\\Bala 4.jpg","pics\\Bala\\Bala 5.jpg"
     ]
 
+    random_image =  random.choice(balah) 
+
+    await ctx.send(file = discord.File(random_image))
+
 @client.command()
 async def bamsi(ctx):
+
+    ba = [
+        "pics\\Bamsi\\Bamsi 1.jpg","pics\\Bamsi\\Bamsi 2.jpg","pics\\Bamsi\\Bamsi 3.jpg",
+        "pics\\Bamsi\\Bamsi 4.jpg","pics\\Bamsi\\Bamsi 5.jpg","pics\\Bamsi\\Bamsi 6.jpg"
+    ]
 
     random_image =  random.choice(ba) 
 
     await ctx.send(file = discord.File(random_image))
-    ba = [
-        "pics\\Bamsi\\Bamsi 1.jpg","pics\\Bamsi\\Bamsi 2.jpg","pics\\Bamsi\\Bamsi 3.jpg",
-        "pics\\Bamsi\\Bamsi 4.jpg","pics\\Bamsi\\Bamsi 5.jpg","pics\\Bamsi\\Bamsi 6.jpg"
-]
 
 client.run("ODE0NTMwMjA4NDA1MTI3MjM4.YDfMXg.UoOZu9ON4edDYT_rp-fHyWjXqi4") 
