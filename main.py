@@ -81,4 +81,15 @@ async def bamsi(ctx):
 
     await ctx.send(file = discord.File(random_image))
 
+
+@client.command()
+async def aslihan(ctx):
+
+    asli = ["pics\\Aslihan\\Aslihan 1.jpg"]
+
+    random_image =  random.choice(asli) 
+
+    await ctx.send(file = discord.File(random_image))    
+
+
 client.run("ODE0NTMwMjA4NDA1MTI3MjM4.YDfMXg.UoOZu9ON4edDYT_rp-fHyWjXqi4") 
