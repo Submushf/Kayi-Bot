@@ -1,0 +1,73 @@
+import discord 
+from discord.ext import commands
+import os
+import random
+import asyncio
+import datetime
+import wikipedia
+
+client = commands.Bot(command_prefix= "k!") 
+#client.remove_command("help")
+
+@client.event
+async def on_ready():
+    print(f"-----------\nOnline\n----------") 
+
+
+@client.command()
+async def ertugrul(ctx):
+
+    random_image =  random.choice(images) 
+
+    await ctx.send(file = discord.File(random_image))
+images = [
+    "Pics\\Ertugrul\\ertugrul 1.jpg","Pics\\Ertugrul\\ertugrul 2.jpg","Pics\\Ertugrul\\ertugrul 3.jpg",
+    "Pics\\Ertugrul\\ertugrul 4.jpg","Pics\\Ertugrul\\ertugrul 5.jpg","Pics\\Ertugrul\\ertugrul 6.jpg"
+    ]
+
+@client.command()
+async def osman(ctx):
+
+    random_image =  random.choice(osma) 
+
+    await ctx.send(file = discord.File(random_image))
+osma = [
+    "Pics\\Osman\\osman 1.jpg","Pics\\Osman\\osman 2.jpg","Pics\\Osman\\osman 3.jpg",
+    "Pics\\Osman\\osman 4.jpg","Pics\\Osman\\osman 5.jpg","Pics\\Osman\\osman 6.jpg" 
+]
+
+
+@client.command()
+async def ibn_arabi(ctx):
+
+    random_image =  random.choice(ibn) 
+
+    await ctx.send(file = discord.File(random_image))
+ibn = [
+    "Pics\\IbnArabi\\Ibn 1.jpg","Pics\\IbnArabi\\Ibn 2.jpg","Pics\\IbnArabi\\Ibn 3.jpg",
+    "Pics\\IbnArabi\\Ibn 4.jpg","Pics\\IbnArabi\\Ibn 5.jpg","Pics\\IbnArabi\\Ibn 6.jpg"
+]
+
+@client.command()
+async def bala(ctx):
+
+    random_image =  random.choice(bal) 
+
+    await ctx.send(file = discord.File(random_image))
+bal = [
+    "Pics\\bala\\Bala 1.jpg", "Pics\\bala\\Bala 2.jpg","Pics\\bala\\Bala 3.jpg",
+    "Pics\\bala\\Bala 4.jpg","Pics\\bala\\Bala 5.jpg"
+]
+
+@client.command()
+async def bamsi(ctx):
+
+    random_image =  random.choice(bam) 
+
+    await ctx.send(file = discord.File(random_image))
+bam = [
+    "Pics\\Bamsi\\Bamsi 1.jpg","Pics\\Bamsi\\Bamsi 2.jpg","Pics\\Bamsi\\Bamsi 3.jpg",
+    "Pics\\Bamsi\\Bamsi 4.jpg","Pics\\Bamsi\\Bamsi 5.jpg","Pics\\Bamsi\\Bamsi 6.jpg"
+]
+
+client.run("ODE0NTMwMjA4NDA1MTI3MjM4.YDfMXg.BeG50nM2jIY1Kj9rTHoiBnJ7M7o") 
