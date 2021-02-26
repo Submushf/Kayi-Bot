@@ -27,7 +27,7 @@ async def ertugrul(ctx):
 
     random_image =  random.choice(images) 
     embed = discord.Embed(title= "Ertugrul")
-    embed.set_image(url = f"{discord.File(random_image)}")
+    embed.set_image(url = discord.File(random_image)) 
     await ctx.send(embed=embed)
     #await ctx.send(file = discord.File(random_image))
 images = [
