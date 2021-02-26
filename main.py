@@ -7,7 +7,7 @@ import datetime
 import wikipedia
 
 client = commands.Bot(command_prefix= "k!") 
-#client.remove_command("help")
+client.remove_command("help")
 
 @client.event
 async def on_ready():
