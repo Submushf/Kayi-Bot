@@ -77,4 +77,12 @@ bam = [
     "Pics\\Bamsi\\Bamsi 4.jpg","Pics\\Bamsi\\Bamsi 5.jpg","Pics\\Bamsi\\Bamsi 6.jpg"
 ]
 
+@client.command(aliases = ['A']) 
+async def Aslihan(ctx):
+
+    random_image =  random.choice(asl) 
+
+    await ctx.send(file = discord.File(random_image))
+asl = ["Pics\\Aslihan\\Aslihan 1.jpg"] 
+
 client.run("ODE0NTMwMjA4NDA1MTI3MjM4.YDfMXg.BeG50nM2jIY1Kj9rTHoiBnJ7M7o") 
