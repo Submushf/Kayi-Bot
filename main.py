@@ -26,10 +26,7 @@ async def help(ctx):
 async def ertugrul(ctx):
 
     random_image =  random.choice(images) 
-    embed = discord.Embed(title= "Ertugrul")
-    embed.set_image(url = discord.File(random_image)) 
-    await ctx.send(embed=embed)
-    #await ctx.send(file = discord.File(random_image))
+    await ctx.send(file = discord.File(random_image))
 images = [
     "Pics\\Ertugrul\\ertugrul 1.jpg","Pics\\Ertugrul\\ertugrul 2.jpg","Pics\\Ertugrul\\ertugrul 3.jpg",
     "Pics\\Ertugrul\\ertugrul 4.jpg","Pics\\Ertugrul\\ertugrul 5.jpg","Pics\\Ertugrul\\ertugrul 6.jpg"
