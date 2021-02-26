@@ -16,8 +16,8 @@ async def on_ready():
 
 @client.command()
 async def help(ctx):
-    embed = discord.Embed(color = 0x0F93E2)
-    embed.add_field(name= "k!character", value="gives a picture of the character you gave.")
+    embed = discord.Embed(title="Help", color = 0x0F93E2)
+    embed.add_field(name= "k!character", value="gives a picture of the character you gave.", inline=True)
     await ctx.send(embed=embed)
 
 
