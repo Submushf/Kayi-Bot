@@ -86,7 +86,7 @@ async def Aslihan(ctx):
     await ctx.send(file = discord.File(random_image))
 asl = ["Pics\\Aslihan\\Aslihan 1.jpg"] 
 
-@commands.command(description="Shows the covid stats")
+@client.command(description="Shows the covid stats")
 async def covid(ctx, *, countryName = None):
     try:
         if countryName is None:
