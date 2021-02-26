@@ -54,10 +54,10 @@ ibn = [
 @client.command()
 async def bala(ctx):
 
-    random_image =  random.choice(bal) 
+    random_image =  random.choice(balah) 
 
     await ctx.send(file = discord.File(random_image))
-bal = [
+balah = [
     "Pics\\bala\\Bala 1.jpg", "Pics\\bala\\Bala 2.jpg","Pics\\bala\\Bala 3.jpg",
     "Pics\\bala\\Bala 4.jpg","Pics\\bala\\Bala 5.jpg"
 ]
