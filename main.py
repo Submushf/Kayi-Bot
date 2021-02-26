@@ -15,6 +15,13 @@ async def on_ready():
 
 
 @client.command()
+async def help(ctx):
+    embed = discord.Embed(color = 0x0F93E2)
+    embed.add_field(name= "k!character", value="gives a picture of the character you gave.")
+    await ctx.send(embed=embed)
+
+
+@client.command()
 async def ertugrul(ctx):
 
     random_image =  random.choice(images) 
