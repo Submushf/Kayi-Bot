@@ -17,8 +17,8 @@ async def on_ready():
 @client.command()
 async def help(ctx):
     embed = discord.Embed(title="Help", color = 0x0F93E2)
-    embed.add_field(name= "k!help", value="Gives you the help message.", inline=True)
-    embed.add_field(name= "k!character", value="gives a picture of the character you gave.", inline=True)
+    embed.add_field(name= "k!help", value="Gives you the help message.", inline=False)
+    embed.add_field(name= "k!character", value="gives a picture of the character you gave.", inline=False)
     await ctx.send(embed=embed)
 
 
@@ -26,8 +26,10 @@ async def help(ctx):
 async def ertugrul(ctx):
 
     random_image =  random.choice(images) 
-
-    await ctx.send(file = discord.File(random_image))
+    embed = discord.Embed(title= "Ertugrul")
+    embed.set_image(url = f"{discord.File(random_image)}")
+    await ctx.send(embed=embed)
+    #await ctx.send(file = discord.File(random_image))
 images = [
     "Pics\\Ertugrul\\ertugrul 1.jpg","Pics\\Ertugrul\\ertugrul 2.jpg","Pics\\Ertugrul\\ertugrul 3.jpg",
     "Pics\\Ertugrul\\ertugrul 4.jpg","Pics\\Ertugrul\\ertugrul 5.jpg","Pics\\Ertugrul\\ertugrul 6.jpg"
