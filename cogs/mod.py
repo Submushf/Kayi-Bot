@@ -45,14 +45,19 @@ class Moderation(commands.Cog):
                 await ctx.send(embed=embed)
                 return
 
-    @commands.command(aliases=['ui'], description = "Shows User's Info ")
-    @commands.has_permissions(kick_members=True)
-    async def info(self, ctx, member : discord.Member):
-        embed = discord.Embed(title = member.name , description = f'User: {member.mention}' , color = 0x07C9F5)
-        embed.add_field(name= 'ID', value= member.id, inline = True)
-        embed.set_thumbnail(url= member.avatar_url)
-        embed.set_footer(icon_url= ctx.author.avatar_url , text = f"Requested by {ctx.author.name}" )
+    @commands.command(aliases=['whois', 'ui'])
+    async def info(self, ctx, member : discord.Member=None):
+        if not member:
+            member = ctx.author
+        created_at = member.created_at.strftime("%b %d, %Y,  %H:%m UTC")
+        joined_at = member.joined_at.strftime("%b %d, %Y,  %H:%m UTC")
+        embed=discord.Embed(title=f"{member.name}#{member.discriminator}'s Info", color=member.color)
+        embed.add_field(name="User ID", value=f"{member.id}", inline=False)
+        embed.add_field(name="Account Created At", value=f"{created_at}", inline=True)
+        embed.add_field(name="Joined Server At", value=f"{joined_at}", inline=True)
+        embed.set_thumbnail(url=f"{member.avatar_url}")
         await ctx.send(embed=embed)
+
 
 def setup(client):
     client.add_cog(Moderation(client))
