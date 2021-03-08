@@ -8,20 +8,6 @@ class Moderation(commands.Cog):
     def __init__(self, client):
         self.client=client 
 
-    @commands.error
-    async def kick_error(self,ctx, error):
-        if isinstance(error, commands.MissingRequiredArgument):
-            await ctx.send("> <:error:798368255991087125> `Please specify someone to kick.`")
-        if isinstance(error, commands.MissingPermissions):
-            await ctx.send("> <:error:798368255991087125> `You are missing required permissions: Kick Members`")
-
-    @commands.error
-    async def ban_error(self,ctx, error):
-        if isinstance(error, commands.MissingRequiredArgument):
-            await ctx.send("> <:error:798368255991087125> `Please specify someone to ban.`")
-        if isinstance(error, commands.MissingPermissions):
-            await ctx.send("> <:error:798368255991087125> `You are missing required permissions: Ban Members`")
-
     @commands.command(aliases=['c'], description = "clear's messages")
     @commands.has_permissions(manage_messages = True)
     async def clear(self, ctx, amount=2):
