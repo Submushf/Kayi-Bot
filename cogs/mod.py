@@ -45,7 +45,7 @@ class Moderation(commands.Cog):
                 await ctx.send(embed=embed)
                 return
 
-    @commands.command(aliases=['whois', 'ui'])
+    @commands.command(aliases=['whois', 'ui'], description = "Shows User's Info ")
     async def info(self, ctx, member : discord.Member=None):
         if not member:
             member = ctx.author
