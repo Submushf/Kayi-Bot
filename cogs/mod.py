@@ -8,14 +8,14 @@ class Moderation(commands.Cog):
     def __init__(self, client):
         self.client=client 
 
-    @kick.error
+    @commands.error
     async def kick_error(self,ctx, error):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.send("> <:error:798368255991087125> `Please specify someone to kick.`")
         if isinstance(error, commands.MissingPermissions):
             await ctx.send("> <:error:798368255991087125> `You are missing required permissions: Kick Members`")
 
-    @ban.error
+    @commands.error
     async def ban_error(self,ctx, error):
         if isinstance(error, commands.MissingRequiredArgument):
             await ctx.send("> <:error:798368255991087125> `Please specify someone to ban.`")
