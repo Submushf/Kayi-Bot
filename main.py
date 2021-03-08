@@ -21,21 +21,21 @@ async def on_member_join(member):
 @client.event
 async def on_command_error(ctx, error):
   if isinstance(error, commands.CommandNotFound):
-    await ctx.send("<:error:798368255991087125> `Command not found!.`")
+    await ctx.send("<\:error:798368255991087125> `Unknown command. Try c.help for a list of commands`")
 
 @client.event
 async def kick_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("> <:error:798368255991087125> `Please specify someone to kick.`")
+        await ctx.send("> <\:error:798368255991087125> `Please specify someone to kick.`")
     if isinstance(error, commands.MissingPermissions):
-        await ctx.send("> <:error:798368255991087125> `You are missing required permissions: Kick Members`")
+        await ctx.send("> <\:error:798368255991087125> `You are missing required permissions: Kick Members`")
 
 @client.event
 async def ban_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("> <:error:798368255991087125> `Please specify someone to ban.`")
+        await ctx.send("> <\:error:798368255991087125> `Please specify someone to ban.`")
     if isinstance(error, commands.MissingPermissions):
-        await ctx.send("> <:error:798368255991087125> `You are missing required permissions: Ban Members`")
+        await ctx.send("> <\:error:798368255991087125> `You are missing required permissions: Ban Members`")
 
 #-----------------------------------------------------------------------------------------------------
 
