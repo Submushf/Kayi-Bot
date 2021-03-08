@@ -38,9 +38,7 @@ async def osman(ctx):
         "pics\\Osman\\osman 1.jpg","pics\\Osman\\osman 2.jpg","pics\\Osman\\osman 3.jpg",
         "pics\\Osman\\osman 4.jpg","pics\\Osman\\osman 5.jpg","pics\\Osman\\osman 6.jpg" 
     ]
-
     random_image =  random.choice(osma) 
-
     await ctx.send(file = discord.File(random_image))
     
 
@@ -51,9 +49,7 @@ async def ibn_arabi(ctx):
         "pics\\IbnArabi\\Ibn 1.jpg","pics\\IbnArabi\\Ibn 2.jpg","pics\\IbnArabi\\Ibn 3.jpg",
         "pics\\IbnArabi\\Ibn 4.jpg","Pics\\IbnArabi\\Ibn 5.jpg","pics\\IbnArabi\\Ibn 6.jpg"
     ]
-
     random_image =  random.choice(ibn) 
-
     await ctx.send(file = discord.File(random_image))
     
 
