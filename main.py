@@ -24,7 +24,7 @@ async def on_command_error(ctx, error):
     await ctx.send("<<:sb_red:809289039717859338>809289039717859338> `Command not found!.`")
 
 @client.event
-async def kick_error(self,ctx, error):
+async def kick_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("> <:error:798368255991087125> `Please specify someone to kick.`")
     if isinstance(error, commands.MissingPermissions):
