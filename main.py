@@ -21,7 +21,7 @@ async def on_member_join(member):
 @client.event
 async def on_command_error(ctx, error):
   if isinstance(error, commands.CommandNotFound):
-    await ctx.send("> <\:error:798368255991087125> `Unknown command. Try c.help for a list of commands`")
+    await ctx.send("> \<798368255991087125> `Unknown command. Try c.help for a list of commands`")
 
 @client.event
 async def kick_error(ctx, error):
