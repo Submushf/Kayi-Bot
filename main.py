@@ -22,21 +22,6 @@ async def on_member_join(member):
 async def on_command_error(ctx, error):
   if isinstance(error, commands.CommandNotFound):
     await ctx.send("> <:error:798368255991087125> `Unknown command. Try k!help for a list of commands`")
-
-@client.event
-async def kick_error(ctx, error):
-    if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("> <:error:798368255991087125> `Please specify someone to kick.`")
-    if isinstance(error, commands.MissingPermissions):
-        await ctx.send("> <:error:798368255991087125> `You are missing required permissions: Kick Members`")
-
-@client.event
-async def ban_error(ctx, error):
-    if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("> <:error:798368255991087125> `Please specify someone to ban.`")
-    if isinstance(error, commands.MissingPermissions):
-        await ctx.send("> <:error:798368255991087125> `You are missing required permissions: Ban Members`")
-
 #-----------------------------------------------------------------------------------------------------
 
 @client.command()
