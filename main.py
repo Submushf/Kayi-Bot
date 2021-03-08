@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import random
 import datetime
+import os
 
 client = commands.Bot(command_prefix= "k!") 
 client.remove_command("help")
