@@ -23,14 +23,14 @@ async def on_command_error(ctx, error):
   if isinstance(error, commands.CommandNotFound):
     await ctx.send("<<:sb_red:809289039717859338>809289039717859338> `Command not found!.`")
 
-@ban.error
+@client.error
 async def ban_error(ctx, error):
   if isinstance(error, commands.MissingRequiredArgument):
     await ctx.send("> <:error:798368255991087125> `Please specify someone to ban.`")
   if isinstance(error, commands.MissingPermissions):
     await ctx.send("> <:error:798368255991087125> `You are missing required permissions: Ban Members`")
 
-@kick.error
+@client.error
 async def kick_error(ctx, error):
   if isinstance(error, commands.MissingRequiredArgument):
     await ctx.send("> <:error:798368255991087125> `Please specify someone to kick.`")
