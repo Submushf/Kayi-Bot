@@ -21,7 +21,7 @@ async def on_member_join(member):
 @client.event
 async def on_command_error(ctx, error):
   if isinstance(error, commands.CommandNotFound):
-    await ctx.send("<<:sb_red:809289039717859338>809289039717859338> `Command not found!.`")
+    await ctx.send("<:error:798368255991087125> `Command not found!.`")
 
 @client.event
 async def kick_error(ctx, error):
