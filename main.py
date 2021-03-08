@@ -88,4 +88,4 @@ async def aslihan(ctx):
     await ctx.send(file = discord.File(random_image))    
 
 
-client.run("ODE0NTMwMjA4NDA1MTI3MjM4.YDfMXg.UoOZu9ON4edDYT_rp-fHyWjXqi4") 
+client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 
