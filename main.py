@@ -4,7 +4,7 @@ import random
 import datetime
 import os
 
-client = commands.Bot(command_prefix= "k!") 
+client = commands.Bot(command_prefix= "k!", intents = discord.Intents.all()) 
 client.remove_command("help")
 
 @client.event
