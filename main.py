@@ -11,6 +11,11 @@ client.remove_command("help")
 async def on_ready():
     print(f"-----------\nOnline\n----------") 
 
+@client.event
+async def on_member_join(member):
+    channel = client.get_channel(816417695423004683)
+    await channel.send(f"🥳 Hey {member.mention}, Welcome To the server. Hope you Enjoy your stay.")
+
 @client.command()
 async def load(ctx, extension):
     client.load_extension(f"cogs.{extension}") 
