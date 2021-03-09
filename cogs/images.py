@@ -17,7 +17,7 @@ class images(commands.Cog):
 
         await ctx.send(file = discord.File(asli_image)) 
 
-    @commands.command(aliases= ['b'], description = "sends image of bala")
+    @commands.command(aliases= ['ba'], description = "sends image of bala")
     async def bala(self,ctx):
 
         bal = ["pics\\Bala 1.jpg", "pics\\Bala 2.jpg", "pics\\Bala 3.jpg", "pics\\Bala 4.jpg", "pics\\Bala 5.jpg", "pics\\Bala 6.jpg"]
