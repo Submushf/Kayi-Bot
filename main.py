@@ -39,5 +39,8 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}') 
 
+@client.command()
+async def who_do_you_obey(ctx):
+    ctx.send("i obey the sultan and sultana of the server i am in ✌")
 
 client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 
