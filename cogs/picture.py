@@ -29,7 +29,36 @@ class picture(commands.Cog):
 
         await ctx.send(ertug)
 
+    @commands.command(description = "gives a picture of ibn_arabi.") 
+    async def ibn_arabi(self,ctx):
+        ibn =  random.choice(arabi)
+
+        await ctx.send(ibn)
+
+    @commands.command(description = "gives a picture of bala.") 
+    async def bala(self,ctx):
+        bal =  random.choice(bala)
+
+        await ctx.send(bal)
+
 #----------------------------------------------------------------------------------------------------------------------------
+
+bala = [
+    "https://cdn.discordapp.com/attachments/819129568824000523/819129601754005515/9f8cacd7-e10c-40ce-ad4f-4697cc2ad5a3.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/819147594570792960/b2a1b8485d9b43e34b3ccd9a28300f2e.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/819147594554277898/0749c9865973db3014cdd0a7dfee482d.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/819147597485834240/crop.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/819147598836269076/e3b8ee559f3780622332c44ea53caf9f.jpg"
+]
+
+arabi = [
+    "https://cdn.discordapp.com/attachments/819129798210617384/819129855446745117/Ibn_2.jpg",
+    "https://cdn.discordapp.com/attachments/819129798210617384/819129857060372480/Ibn_1.jpg",
+    "https://cdn.discordapp.com/attachments/819129798210617384/819129858230583296/Ibn_3.jpg",
+    "https://cdn.discordapp.com/attachments/819129798210617384/819129860911661076/Ibn_4.jpg",
+    "https://cdn.discordapp.com/attachments/819129798210617384/819129866225451008/Ibn_6.jpg",
+    "https://cdn.discordapp.com/attachments/819129798210617384/819129863168065550/Ibn_5.png"
+]
 
 osm = [
     "https://cdn.discordapp.com/attachments/819129626601193494/819129734386155530/osman_1.jpg",
