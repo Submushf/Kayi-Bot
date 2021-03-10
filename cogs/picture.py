@@ -10,52 +10,75 @@ class other(commands.Cog):
 
 #----------------------------------------------------------------------------------------------------------------
 
-    @commands.command(description = "gives a picture of osman.") 
+    @commands.command(description = "gives a info of osman.") 
     async def osman(self,ctx):
         osma =  random.choice(osm)
 
-        await ctx.send(osma)
+        embed = discord.Embed(color= 0x0F6BE2)
+        embed.add_field(name="Osman", value=f"Osman I was the founder of the Ottoman empire.")
+        embed.set_image(url=osma)
+
+        await ctx.send(embed=embed)
 
 
-    @commands.command(description = "gives a picture of bamsi.") 
+    @commands.command(description = "gives a info of bamsi.") 
     async def bamsi(self,ctx):
         bam =  random.choice(bams)
 
-        await ctx.send(bam)
+        embed = discord.Embed(color= 0x0F6BE2)
+        embed.add_field(name="bamsi", value=f"`bamsi` is a close ally of ertugrul and fought in his side until he died.")
+        embed.set_image(url=bam)
 
-    @commands.command(description = "gives a picture of ertugrul.") 
+        await ctx.send(embed=embed)
+
+    @commands.command(description = "gives a info of ertugrul.") 
     async def ertugrul(self,ctx):
         ertug =  random.choice(ertugrul)
 
-        await ctx.send(ertug)
+        embed = discord.Embed(color= 0x0F6BE2)
+        embed.add_field(name="Ertugrul", value=f"`Ertuğrul Gazi` was the father of Osman I who would ultimately found of the Ottoman empire.")
+        embed.set_image(url=ertug)
 
-    @commands.command(description = "gives a picture of ibn_arabi.") 
+        await ctx.send(embed=embed)
+
+    @commands.command(description = "gives info of ibn_arabi.") 
     async def ibn_arabi(self,ctx):
         ibn =  random.choice(arabi)
 
-        await ctx.send(ibn)
+        embed = discord.Embed(color= 0x0F6BE2)
+        embed.add_field(name="Ibn Arabi", value=f"`Ibn Arabi` was Andalusian Muslim scholar, mystic, poet, and philosopher, extremely influential within Islamic thought.")
+        embed.set_image(url=ibn)
 
-    @commands.command(description = "gives a picture of bala.") 
+        await ctx.send(embed=embed)
+
+    @commands.command(description = "gives a info of bala.") 
     async def bala(self,ctx):
         bal =  random.choice(bala)
 
-        await ctx.send(bal)
+        embed = discord.Embed(color= 0x0F6BE2)
+        embed.add_field(name="Bala", value=f"`Bala Hatun` was the first wife of Ottoman Sultan Osman I. She was the daughter of the famous Sheikh Edebali.")
+        embed.set_image(url=bal)
 
-    @commands.command(description = "gives a picture of turgut.") 
+        await ctx.send(embed=embed)
+
+    @commands.command(description = "gives a info of turgut.") 
     async def turgut(self,ctx):
         tur =  random.choice(turgut)
         
         embed = discord.Embed(color = 0x0F6BE2)
-        
-        embed.add_field(name="turgut", value="Turgut was the closest ally of ertugrul and also lived for 125 years!!")
+        embed.add_field(name="Turgut", value=f"`Turgut Alp` was one of the warriors and alps who fought for Ertuğrul, a Turkic leader and bey, and Ertuğrul's son Osman I, the founder of the Ottoman Empire.")
         embed.set_image(url=tur)
+
         await ctx.send(embed=embed) 
 
-    @commands.command(description = "gives a picture of selcan.") 
+    @commands.command(description = "gives a info of selcan.") 
     async def selcan(self,ctx):
         sel =  random.choice(selcan)
 
-        await ctx.send(sel)
+        embed = discord.Embed(color=0x0F6BE2)
+        embed.add_field(name="Selcan", value="Selcan Hatun is the wife of Gündoğdu, elder sister of Gökçe, who she loves dearly, and the mother of Süleyman Alp.")
+        embed.set_image(url= sel) 
+        await ctx.send(embed = embed )
 
 #----------------------------------------------------------------------------------------------------------------------------
 
