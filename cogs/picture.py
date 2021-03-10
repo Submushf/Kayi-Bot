@@ -14,20 +14,20 @@ class picture(commands.Cog):
     async def osman(self,ctx):
         osma =  random.choice(osm)
 
-        await ctx.send({osma})
+        await ctx.send(osma)
 
 
     @commands.command(description = "gives a picture of bamsi.") 
     async def bamsi(self,ctx):
         bam =  random.choice(bams)
 
-        await ctx.send({bam})
+        await ctx.send(bam)
 
     @commands.command(description = "gives a picture of ertugrul.") 
     async def ertugrul(self,ctx):
         ertug =  random.choice(ertugrul)
 
-        await ctx.send({ertug})
+        await ctx.send(ertug)
 
 #----------------------------------------------------------------------------------------------------------------------------
 
