@@ -17,8 +17,7 @@ class Fun(commands.Cog):
                      "Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"]
     
         #await ctx.send(f'> 🎱 {random.choice(responses)}') 
-        embed = discord.Embed(color= 0x0F6BE2)
-        embed.add_field(name="🎱 8ball", value=f"🎱 {random.choice(responses)}")
+        embed = discord.Embed(title= f"🎱 {random.choice(responses)}", color= 0x0F6BE2)
         await ctx.send(embed=embed) 
 
 def setup(bot):
