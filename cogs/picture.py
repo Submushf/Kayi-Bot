@@ -3,7 +3,7 @@ from aiohttp import ClientSession
 from discord.ext import commands
 import random
 
-class picture(commands.Cog):
+class other(commands.Cog):
 
     def __init__(self, client):
         self.client = client 
@@ -44,8 +44,12 @@ class picture(commands.Cog):
     @commands.command(description = "gives a picture of turgut.") 
     async def turgut(self,ctx):
         tur =  random.choice(turgut)
-
-        await ctx.send(tur)
+        
+        embed = discord.Embed(color = 0x0F6BE2)
+        
+        embed.add_field(name="turgut", value="Turgut was the closest ally of ertugrul and also lived for 125 years!!")
+        embed.set_image(url=tur)
+        await ctx.send(embed=embed) 
 
     @commands.command(description = "gives a picture of selcan.") 
     async def selcan(self,ctx):
@@ -113,4 +117,4 @@ bams = [
 ]
 
 def setup(client):
-    client.add_cog(picture(client))
+    client.add_cog(other(client))

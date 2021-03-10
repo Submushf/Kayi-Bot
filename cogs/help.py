@@ -15,7 +15,7 @@ class Help(commands.Cog):
     )
     async def help(self, ctx, cog='1'):
         helpembed= discord.Embed(
-            title= "Help" , color = 0x07C9F5 
+            title= "Help" , color = 0x0F6BE2 
         )
         helpembed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
 
