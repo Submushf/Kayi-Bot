@@ -41,6 +41,6 @@ for filename in os.listdir('./cogs'):
 
 @client.command()
 async def who_do_you_obey(ctx):
-    ctx.send("i obey the sultan and sultana of the server i am in ✌")
+    await ctx.send("i obey the sultan and sultana of the server i am in ✌")
 
 client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 
