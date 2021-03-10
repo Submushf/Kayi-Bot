@@ -6,7 +6,7 @@ import datetime
 import time
 import asyncio
 
-class Fun:
+class Fun(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.stopwatches = {}
