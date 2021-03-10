@@ -74,7 +74,25 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of selcan.") 
+    async def gokce(self,ctx):
+        gok =  random.choice(gokce)
+
+        embed = discord.Embed(title="Gokce",color=0x0F6BE2)
+        embed.set_image(url= gok) 
+ 
+        await ctx.send(embed = embed )
+
 #----------------------------------------------------------------------------------------------------------------------------
+
+gokce = [
+    "https://cdn.discordapp.com/attachments/819252353533476874/819252882150260756/16153955040622449359161425221861.jpg",
+    "https://cdn.discordapp.com/attachments/819252353533476874/819252979924074506/16153955277391838715757751485008.jpg",
+    "https://cdn.discordapp.com/attachments/819252353533476874/819253255090602014/16153955938108981379842808234937.jpg",
+    "https://cdn.discordapp.com/attachments/819252353533476874/819253342274060338/16153956144973990924685431261087.jpg",
+    "https://cdn.discordapp.com/attachments/819252353533476874/819253445626298398/1615395639094121034665654456255.jpg",
+    "https://cdn.discordapp.com/attachments/819252353533476874/819254272113508373/16153958249763873705884494429958.jpg"    
+]
 
 selcan = [
     "https://cdn.discordapp.com/attachments/819152142933032980/819152213359329280/images.jpg",
@@ -119,10 +137,16 @@ osm = [
 
 ertugrul = [
     "https://cdn.discordapp.com/attachments/819129208927420477/819129323646222356/download.jpg",
-    "https://cdn.discordapp.com/attachments/819129208927420477/819129327899770910/ertugrul_2.jpg",
     "https://cdn.discordapp.com/attachments/819129208927420477/819129329816567839/ertugrul_4.jpg",
     "https://cdn.discordapp.com/attachments/819129208927420477/819129330407964692/ertugrul_3.jpg",
-    "https://cdn.discordapp.com/attachments/819129208927420477/819129331003424838/ertugrul_5.jpg"
+    "https://cdn.discordapp.com/attachments/819129208927420477/819129331003424838/ertugrul_5.jpg",
+    "https://cdn.discordapp.com/attachments/819129208927420477/819254966408577094/16153960017696995941126443763922.jpg",
+    "https://cdn.discordapp.com/attachments/819129208927420477/819255069484384286/1615396026249388074095680904670.jpg",
+    "https://cdn.discordapp.com/attachments/819129208927420477/819255127407460402/16153960401184365970502870309663.jpg",
+    "https://cdn.discordapp.com/attachments/819129208927420477/819255069484384286/1615396026249388074095680904670.jpg",
+    "https://cdn.discordapp.com/attachments/819129208927420477/819255234344779786/16153960655846886504479589455133.jpg",
+    "https://cdn.discordapp.com/attachments/819129208927420477/819255359646203924/16153960953953446652837487059915.jpg",
+    "https://cdn.discordapp.com/attachments/819129208927420477/819255292579676190/16153960796056172704452842558216.jpg"
 ]
 
 bams = [
