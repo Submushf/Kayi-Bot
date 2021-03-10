@@ -41,7 +41,35 @@ class picture(commands.Cog):
 
         await ctx.send(bal)
 
+    @commands.command(description = "gives a picture of turgut.") 
+    async def turgut(self,ctx):
+        tur =  random.choice(turgut)
+
+        await ctx.send(tur)
+
+    @commands.command(description = "gives a picture of selcan.") 
+    async def selcan(self,ctx):
+        sel =  random.choice(selcan)
+
+        await ctx.send(sel)
+
 #----------------------------------------------------------------------------------------------------------------------------
+
+selcan = [
+    "https://cdn.discordapp.com/attachments/819152142933032980/819152213359329280/images.jpg",
+    "https://cdn.discordapp.com/attachments/819152142933032980/819152210553339914/images_1.jpg",
+    "https://cdn.discordapp.com/attachments/819152142933032980/819152209110761492/f96b139ebadbcb1b9247c7fc05d32c83.jpg",
+    "https://cdn.discordapp.com/attachments/819152142933032980/819152208217112576/download.jpg"
+]
+
+turgut = [
+    "https://cdn.discordapp.com/attachments/819149935097151498/819149985626193930/images_1.jpg",
+    "https://cdn.discordapp.com/attachments/819149935097151498/819149986482356274/images_2.jpg",
+    "https://cdn.discordapp.com/attachments/819149935097151498/819149988398891028/images_3.jpg",
+    "https://cdn.discordapp.com/attachments/819149935097151498/819149989694930944/images_4.jpg",
+    "https://cdn.discordapp.com/attachments/819149935097151498/819149990625542154/images.jpg",
+    "https://cdn.discordapp.com/attachments/819149935097151498/819149993105424384/turgut.jpg"
+]
 
 bala = [
     "https://cdn.discordapp.com/attachments/819129568824000523/819129601754005515/9f8cacd7-e10c-40ce-ad4f-4697cc2ad5a3.jpg",
