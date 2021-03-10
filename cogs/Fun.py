@@ -15,7 +15,7 @@ class Fun(commands.Cog):
                      "Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again",
                      "Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very doubtful"]
 
-    @commands.command(name="8ball", aliases=["8ball"], description="Just A 8ball game")
+    @commands.command(name="8ball", aliases=["8b"], description="Just A 8ball game")
     async def _8ball(self, *question):
         """Ask 8 ball a question
 
