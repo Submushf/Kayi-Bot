@@ -9,7 +9,7 @@ class Fun(commands.Cog):
         self.bot = bot
 
     @commands.command(aliases=['8ball'])
-    async def _8ball(self,ctx, *,question,member : discord.Member):
+    async def _8ball(self,ctx, *,member):
 
         responses = ["As I see it, yes", "It is certain", "Most likely", "Outlook good",
                      "Signs point to yes", "Without a doubt", "Yes", "Yes – definitely", "You may rely on it", "Reply hazy, try again",
