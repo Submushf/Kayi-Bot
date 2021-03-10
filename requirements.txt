@@ -1,2 +1,2 @@
 discord
-selenium
+youtube-dl
