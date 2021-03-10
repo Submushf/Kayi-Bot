@@ -25,8 +25,8 @@ async def on_member_join(member):
 async def on_command_error(ctx, error):
   if isinstance(error, commands.CommandNotFound):
     await ctx.send("> <:error:798368255991087125> `Unknown command. Try k!help for a list of commands`")
-#-----------------------------------------------------------------------------------------------------
 
+#------------------------------------------------------------------------------------------------------
 @client.command()
 async def load(ctx, extension):
     client.load_extension(f"cogs.{extension}") 
@@ -39,6 +39,5 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}') 
 
-#------------------------------------------------------------------------------------------------------
 
 client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 
