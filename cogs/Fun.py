@@ -25,10 +25,10 @@ class Fun(commands.Cog):
 
         embed = discord.Embed(
             title = "Youtube", 
-            description= f"<:youtube:819620176181854238> Subscribe to ['sana edits'](https://www.youtube.com/channel/UCMxWaxacyOX_3IgD6tHRazw)",
+            description= f"**<:youtube:819620176181854238> Subscribe to [Sana Edits](https://www.youtube.com/channel/UCMxWaxacyOX_3IgD6tHRazw)**",
             color= 0xE21E0F
             )
-        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/819625687828529192/819625719973675018/Capture.PNG")
+        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/819625687828529192/819626565427527810/youtube.png")
         await ctx.send(embed=embed)
         
         #await ctx.send(f"<:youtube:819620176181854238> Subscribe to https://www.youtube.com/channel/UCMxWaxacyOX_3IgD6tHRazw")
