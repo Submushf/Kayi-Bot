@@ -41,7 +41,7 @@ async def on_command_error(ctx, error):
 
 @client.command()
 async def server(ctx):
-    embed = discord.Embed(title=f"<:myspace:819614963260981269> I am in {len(client.guilds)} servers", color=0x0F6BE2)
+    embed = discord.Embed(title="Server Count", description= f"<:myspace:819614963260981269>  I am in {len(client.guilds)} servers", color=0x0F6BE2)
     await ctx.send(embed=embed) 
 
 #------------------------------------------------------------------------------------------------------
