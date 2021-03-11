@@ -44,7 +44,7 @@ class Help(commands.Cog):
     @commands.command(name = 'pic', description = "The pic command!")
     async def pic(self, ctx):
         embed= discord.Embed(title= "Picture" , color = 0x0F6BE2)
-        embed.add_field(name="Ertugrul", value= "gives a pic of ertugrul.", inline= False)
+        embed.add_field(name="ertugrul", value= "gives a pic of ertugrul.", inline= False)
         embed.add_field(name="osman", value= "gives a pic of osman.", inline= False)
         embed.add_field(name="bamsi", value= "gives a pic of bamsi.", inline= False)
         embed.add_field(name="turgut", value= "gives a pic of turgut.", inline= False)
