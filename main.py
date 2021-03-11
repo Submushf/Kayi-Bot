@@ -15,7 +15,7 @@ async def on_ready():
 async def ch_pr():
     await client.wait_until_ready()
 
-    statuses = ["watching k!help"]  
+    statuses = ["k!help"]  
 
     while not client.is_closed():
 
