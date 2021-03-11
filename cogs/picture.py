@@ -83,7 +83,41 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of halime.") 
+    async def halime(self,ctx):
+        hal =  random.choice(halime)
+
+        embed = discord.Embed(title="Halime",color=0x0F6BE2)
+        embed.set_image(url= hal) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of tugtekin.") 
+    async def tugtekin(self,ctx):
+        tug =  random.choice(tugtekin)
+
+        embed = discord.Embed(title="Tugtekin",color=0x0F6BE2)
+        embed.set_image(url= tug) 
+ 
+        await ctx.send(embed = embed )
+
 #----------------------------------------------------------------------------------------------------------------------------
+
+halime = [
+    "https://cdn.discordapp.com/attachments/819317076664647690/819317373122904085/16154108805956631388302549369933.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819317570141552640/16154109277503067580164355590835.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819317614974337034/16154109383941549875372167466132.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819317669177327616/16154109515467180385882622499172.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819317749129805824/16154109705278729844922723264733.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819317820831432734/16154109876055200101142801813022.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819317960119812136/16154110197881612134819845014289.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819318727757529088/1615411203780128106032590144899.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819319762165301258/16154114504804837270365256936488.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819319963482325002/16154114983093038421073182876084.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819320262201704538/1615411569742340672366162863799.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819320428917030943/16154116093121596264671653419483.jpg",
+    "https://cdn.discordapp.com/attachments/819317076664647690/819320742704316436/16154116728265587322147732366159.jpg"
+]
 
 gokce = [
     "https://cdn.discordapp.com/attachments/819252353533476874/819252882150260756/16153955040622449359161425221861.jpg",
@@ -107,6 +141,14 @@ selcan = [
     "https://cdn.discordapp.com/attachments/819152142933032980/819360652954828830/16154211995452113788625978495958.jpg",
     "https://cdn.discordapp.com/attachments/819152142933032980/819360704263880724/16154212111767046919541790522605.jpg",
     "https://cdn.discordapp.com/attachments/819152142933032980/819360865429094420/16154212499948794456397260649089.jpg"
+]
+
+tugtekin = [
+    "https://cdn.discordapp.com/attachments/819376297124954132/819376546782904320/16154249883005725278502705500234.jpg",
+    "https://cdn.discordapp.com/attachments/819376297124954132/819376597806088212/1615425001300781439539825013455.jpg",
+    "https://cdn.discordapp.com/attachments/819376297124954132/819376644463788052/1615425012379453529703151924900.jpg",
+    "https://cdn.discordapp.com/attachments/819376297124954132/819376727457267732/16154250319792382752861690317134.jpg",
+    "https://cdn.discordapp.com/attachments/819376297124954132/819376811287773214/16154250514623715644690425987849.jpg"
 ]
 
 turgut = [
