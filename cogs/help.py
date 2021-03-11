@@ -19,6 +19,7 @@ class Help(commands.Cog):
         embed.add_field(name="📷 Pic", value="Shows the list of character's from the series.", inline= True)
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
+        await ctx.send(embed=embed)
 
 
 def setup(client):
