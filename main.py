@@ -55,6 +55,6 @@ async def who_do_you_obey(ctx):
 
 @client.command()
 async def servers(ctx):
-    await ctx.send(f"> I am in {len(client.guilds)} servers") 
+    await ctx.send(f"> <:myspace:819614963260981269> I am in {len(client.guilds)} servers") 
 
 client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 
