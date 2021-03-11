@@ -10,50 +10,16 @@ class Help(commands.Cog):
         self.client = client
 
 
-    @commands.command(
-        name = 'help', aliases = ['h'], description = "The help command!"
-    )
-    async def help(self, ctx, cog='1'):
-        helpembed= discord.Embed(
-            title= "Help" , color = 0x0F6BE2 
-        )
-        helpembed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
+    @commands.command(name = 'help', description = "The help command!")
+    async def help(self, ctx):
+        embed= discord.Embed(title= "Help" , color = 0x0F6BE2)
+        embed.add_field(name="⚙ Help", value="The help command", inline= True)
+        embed.add_field(name="🔨 Moderation", value="The moderation commands", inline= True)
+        embed.add_field(name="🥳 Fun", value="Shows all the fun", inline= True)
+        embed.add_field(name="📷 Pic", value="Shows the list of character's from the series.", inline= True)
+        embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
+        embed.set_footer(text="Prefix- k!")
 
-        cogs = [c for c in self.client.cogs.keys()]
-
-        totalpages = math.ceil(len(cogs) / 4)
-
-        cog = int(cog) 
-        if cog > totalpages or cog < 1 :
-            await ctx.send(f"invalid page number: `{cog}`, please pick from {totalpages}.")
-            return
-
-
-
-        neededcogs = []
-        for i in range(4):
-            x = (i) + (int(cog) -1) * 4
-            try:
-                neededcogs.append(cogs[x]) 
-            except IndexError:
-                pass
-
-
-        for cog in neededcogs:
-            commandList = ""
-            for command in self.client.get_cog(cog).walk_commands():
-                if command.hidden:
-                    continue
-                elif command.parent != None:
-                    continue
-
-                commandList += f"``{command.name}``- {command.description} \n" 
-            #commandList += "\n"
-
-            helpembed.add_field(name=cog, value= commandList, inline= False) 
-            helpembed.set_footer(text=f"Prefix - k!") 
-
-        await ctx.send(embed = helpembed) 
 
 def setup(client):
     client.add_cog(Help(client))
