@@ -53,4 +53,8 @@ for filename in os.listdir('./cogs'):
 async def who_do_you_obey(ctx):
     await ctx.send("i obey the sultan and sultana of the server i am in ✌")
 
+@client.command()
+async def servers(ctx):
+    await ctx.send(f"{len(client.guilds)}") 
+
 client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 
