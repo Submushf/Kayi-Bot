@@ -58,8 +58,9 @@ class Moderation(commands.Cog):
         await ctx.send(embed=embed)
 
     @commands.command()
-    async def servers(self,ctx):
-        await ctx.send(f"<:myspace:819614963260981269> I am in {len(client.guilds)} servers") 
+    async def server(self,ctx):
+        embed = discord.Embed(title=f"<:myspace:819614963260981269> I am in {len(client.guilds)} servers", color=0x0F6BE2)
+        await ctx.send(embed=embed) 
 
 def setup(client):
     client.add_cog(Moderation(client))
