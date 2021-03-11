@@ -110,6 +110,15 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of aslihan.") 
+    async def aslihan(self,ctx):
+        bay =  random.choice(bayhoca)
+
+        embed = discord.Embed(title="bayhoca",color=0x0F6BE2)
+        embed.set_image(url= bay) 
+ 
+        await ctx.send(embed = embed )
+
 #----------------------------------------------------------------------------------------------------------------------------
 
 aslihan = [
@@ -156,6 +165,13 @@ selcan = [
     "https://cdn.discordapp.com/attachments/819152142933032980/819360652954828830/16154211995452113788625978495958.jpg",
     "https://cdn.discordapp.com/attachments/819152142933032980/819360704263880724/16154212111767046919541790522605.jpg",
     "https://cdn.discordapp.com/attachments/819152142933032980/819360865429094420/16154212499948794456397260649089.jpg"
+]
+
+bayhoca = [
+    "https://cdn.discordapp.com/attachments/819588314456915978/819588620428116019/download_1.jpg",
+    "https://cdn.discordapp.com/attachments/819588314456915978/819588621333823488/download.jpg",
+    "https://cdn.discordapp.com/attachments/819588314456915978/819588622763556904/images_1.jpg",
+    "https://cdn.discordapp.com/attachments/819588314456915978/819588623980560384/images.jpg"
 ]
 
 tugtekin = [
