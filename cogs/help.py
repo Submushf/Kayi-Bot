@@ -21,7 +21,7 @@ class Help(commands.Cog):
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
 
-    @commands.command(name = 'moderation', description = "The moderation command!")
+    @commands.command(name = 'mod', description = "The moderation command!")
     async def mod(self, ctx):
         embed= discord.Embed(title= "Moderation" , color = 0x0F6BE2)
         embed.add_field(name="clear", value="clear's messages", inline= False)
@@ -33,7 +33,7 @@ class Help(commands.Cog):
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
 
-    @commands.command(name = 'Fun', description = "The Fun command!")
+    @commands.command(name = 'fun', description = "The Fun command!")
     async def fun(self, ctx):
         embed= discord.Embed(title= "Fun" , color = 0x0F6BE2)
         embed.add_field(name="8ball", value="just a 8ball game", inline= False)       
