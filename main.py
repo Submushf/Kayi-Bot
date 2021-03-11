@@ -38,6 +38,12 @@ async def on_command_error(ctx, error):
   if isinstance(error, commands.CommandNotFound):
     await ctx.send("> <:error:798368255991087125> `Unknown command. Try k!help for a list of commands`")
 
+
+@client.command()
+async def server(ctx):
+    embed = discord.Embed(title=f"<:myspace:819614963260981269> I am in {len(client.guilds)} servers", color=0x0F6BE2)
+    await ctx.send(embed=embed) 
+
 #------------------------------------------------------------------------------------------------------
 @client.command()
 async def load(ctx, extension):
@@ -54,6 +60,5 @@ for filename in os.listdir('./cogs'):
 @client.command()
 async def who_do_you_obey(ctx):
     await ctx.send("i obey the sultan and sultana of the server i am in ✌")
-
 
 client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 
