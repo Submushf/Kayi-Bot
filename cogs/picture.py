@@ -111,7 +111,7 @@ class other(commands.Cog):
         await ctx.send(embed = embed )
 
     @commands.command(description = "gives a pic of aslihan.") 
-    async def aslihan(self,ctx):
+    async def bayhoca(self,ctx):
         bay =  random.choice(bayhoca)
 
         embed = discord.Embed(title="bayhoca",color=0x0F6BE2)
