@@ -101,7 +101,22 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of aslihan.") 
+    async def aslihan(self,ctx):
+        asl =  random.choice(aslihan)
+
+        embed = discord.Embed(title="Aslihan",color=0x0F6BE2)
+        embed.set_image(url= asl) 
+ 
+        await ctx.send(embed = embed )
+
 #----------------------------------------------------------------------------------------------------------------------------
+
+aslihan = [
+    "https://cdn.discordapp.com/attachments/819576549623857183/819576635782987786/download.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/819576637150593034/images_1.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/819576640040337468/images.jpg"
+]
 
 halime = [
     "https://cdn.discordapp.com/attachments/819317076664647690/819317373122904085/16154108805956631388302549369933.jpg",
