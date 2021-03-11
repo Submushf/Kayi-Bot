@@ -15,7 +15,7 @@ async def on_ready():
 async def ch_pr():
     await client.wait_until_ready()
 
-    statuses = ["For help do k!help" ]  
+    statuses = ["watching k!help"]  
 
     while not client.is_closed():
 
@@ -23,6 +23,8 @@ async def ch_pr():
         await client.change_presence(activity=discord.Game(name=status)) 
 
         await asyncio.sleep(120) 
+
+client.loop.create_task(ch_pr())
 
 @client.event
 async def on_member_join(member):
@@ -53,8 +55,5 @@ for filename in os.listdir('./cogs'):
 async def who_do_you_obey(ctx):
     await ctx.send("i obey the sultan and sultana of the server i am in ✌")
 
-@client.command()
-async def servers(ctx):
-    await ctx.send(f"> <:myspace:819614963260981269> I am in {len(client.guilds)} servers") 
 
 client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 

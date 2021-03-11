@@ -20,5 +20,9 @@ class Fun(commands.Cog):
         embed = discord.Embed(title= f"🎱 {random.choice(responses)}", color= 0x0F6BE2)
         await ctx.send(embed=embed) 
 
+    @commands.command(aliases=['yt','Youtube'], description= "youtube channel")
+    async def youtube(self, ctx):
+        await ctx.send(f"<:youtube:819620176181854238> Subscribe to https://www.youtube.com/channel/UCMxWaxacyOX_3IgD6tHRazw")
+
 def setup(bot):
     bot.add_cog(Fun(bot))

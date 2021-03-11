@@ -29,6 +29,7 @@ class Help(commands.Cog):
         embed.add_field(name="ban", value="cban members", inline= False)
         embed.add_field(name="unban", value="unban members", inline= False)
         embed.add_field(name="info", value="shows user info", inline= False)
+        embed.add_field(name="servers", value="shows the amount of servers the bot is in", inline= False)        
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
@@ -36,7 +37,8 @@ class Help(commands.Cog):
     @commands.command(name = 'fun', description = "The Fun command!")
     async def fun(self, ctx):
         embed= discord.Embed(title= "Fun" , color = 0x0F6BE2)
-        embed.add_field(name="8ball", value="just a 8ball game", inline= False)       
+        embed.add_field(name="8ball", value="just a 8ball game", inline= False)
+        embed.add_field(name="youtube", value="Youtube channel", inline= False)       
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
