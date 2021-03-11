@@ -3,8 +3,6 @@ from discord.ext import commands
 import random
 import datetime
 import os
-from discord.voice_client import VoiceClient
-import youtube_dl
 import asyncio
 
 client = commands.Bot(command_prefix= "k!", intents = discord.Intents.all()) 
@@ -13,6 +11,18 @@ client.remove_command("help")
 @client.event
 async def on_ready():
     print(f"-----------\nOnline\n----------") 
+
+async def ch_pr():
+    await client.wait_until_ready()
+
+    statuses = ["For help do k!help" ]  
+
+    while not client.is_closed():
+
+        status = random.choice(statuses) 
+        await client.change_presence(activity=discord.Game(name=status)) 
+
+        await asyncio.sleep(120) 
 
 @client.event
 async def on_member_join(member):
