@@ -58,7 +58,13 @@ for filename in os.listdir('./cogs'):
         client.load_extension(f'cogs.{filename[:-3]}') 
 
 @client.command()
-async def who_do_you_obey(ctx):
-    await ctx.send("i obey the sultan and sultana of the server i am in ✌")
+async def top(ctx):
+    embed = discord.Embed(
+        title = "<:kayi:819796457942155285> Top Servers", 
+        description= "**Ertugrul Ghazi Community [click here](https://discord.gg/V6MKJQ5zVC)**\n **IYI Community [click here](https://discord.gg/3aRqRUqp8b)**\n **Kayi Edits [click here](https://discord.gg/shqH8NH84f)**", 
+        color=0x0F6BE2
+        )
+    await ctx.send(embed=embed)
+
 
 client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 

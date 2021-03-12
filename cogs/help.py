@@ -38,7 +38,8 @@ class Help(commands.Cog):
     async def fun(self, ctx):
         embed= discord.Embed(title= "Fun" , color = 0x0F6BE2)
         embed.add_field(name="8ball", value="just a 8ball game", inline= False)
-        embed.add_field(name="youtube", value="Youtube channel", inline= False)       
+        embed.add_field(name="youtube", value="Youtube channel", inline= False) 
+        embed.add_field(name="top", value="shows the top ertugrul server", inline= False)
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
