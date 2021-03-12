@@ -41,7 +41,7 @@ async def on_member_join(member):
 #@client.event
 #async def on_command_error(ctx, error):
 #  if isinstance(error, commands.CommandNotFound):
-#    await ctx.send("<:error:798368255991087125> `Unknown command. Try k!help for a list of commands`")
+#    await ctx.send("<:error:819978871037624352> `Unknown command. Try k!help for a list of commands`")
 
 @client.event
 async def on_command_error(ctx, error):  
@@ -53,7 +53,7 @@ async def on_command_error(ctx, error):
         await ctx.send("<:red:819856148043137045> `Missing Required Argument`")
 
     elif isinstance(error, commands.CommandNotFound):
-        await ctx.send("<:error:798368255991087125> `Unknown command. Try k!help for a list of commands`")
+        await ctx.send("<:error:819978871037624352> `Unknown command. Try k!help for a list of commands`")
 
 #------------------------------------------------------------------------------------------------------
 @client.command()
