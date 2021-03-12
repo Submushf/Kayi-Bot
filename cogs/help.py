@@ -16,7 +16,7 @@ class Help(commands.Cog):
         embed.add_field(name="⚙ help", value=f"`The help command`", inline= False)
         embed.add_field(name="🔨 mod", value=f"`The moderation commands`", inline= False)
         embed.add_field(name="🥳 Fun", value=f"`Shows all the fun`", inline= False)
-        embed.add_field(name="📷 Pic", value=f"`Shows the list of character's from the series.`", inline= False) 
+        embed.add_field(name="📷 Pic", value=f"`Shows the list of character's.`", inline= False) 
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
