@@ -61,7 +61,7 @@ for filename in os.listdir('./cogs'):
 async def top(ctx):
     embed = discord.Embed(
         title = "<:kayi:819796457942155285> Top Servers", 
-        description= "**Ertugrul Ghazi Community [click here](https://discord.gg/V6MKJQ5zVC)**\n **IYI Community [click here](https://discord.gg/3aRqRUqp8b)**\n **Kayi Edits [click here](https://discord.gg/shqH8NH84f)**", 
+        description= "**Kayi Edits [click here](https://discord.gg/shqH8NH84f)**\n **Ertugrul Community [click here](https://discord.gg/V6MKJQ5zVC)**\n **IYI Community [click here](https://discord.gg/3aRqRUqp8b)**", 
         color=0x0F6BE2
         )
     await ctx.send(embed=embed)
