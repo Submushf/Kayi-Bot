@@ -22,7 +22,8 @@ class Moderation(commands.Cog):
         await ctx.send(embed=embed)
 
     @commands.command(aliases=['b'], description = "Ban members")
-    @commands.has_permissions(ban_members = True)
+    #@commands.has_permissions(ban_members = True)
+    @commands.has_role("Sultana")
     async def ban(self, ctx, member : discord.Member):
         await member.ban()
         embed = discord.Embed(color= 0x0F6BE2)
