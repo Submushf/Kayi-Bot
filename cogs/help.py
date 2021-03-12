@@ -12,7 +12,7 @@ class Help(commands.Cog):
 
     @commands.command(name = 'help', description = "The help command!")
     async def help(self, ctx):
-        embed= discord.Embed(title= "Help" , color = 0x0F6BE2)
+        embed= discord.Embed(title= "Help" , description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)" , color = 0x0F6BE2)
         embed.add_field(name="⚙ help", value="The help command", inline= False)
         embed.add_field(name="🔨 mod", value="The moderation commands", inline= False)
         embed.add_field(name="🥳 Fun", value="Shows all the fun", inline= False)
