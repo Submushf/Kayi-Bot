@@ -26,23 +26,34 @@ async def ch_pr():
 
 client.loop.create_task(ch_pr())
 
+@client.command()
+async def server(ctx):
+    embed = discord.Embed(title="Server Count", description= f"<:myspace:819614963260981269>  I am in {len(client.guilds)} servers", color=0x0F6BE2)
+    await ctx.send(embed=embed) 
+
+#-----------------------------------------------------------------------------------------------------
+
 @client.event
 async def on_member_join(member):
     channel = client.get_channel(816417695423004683)
     await channel.send(f"🥳 Hey {member.mention}, Welcome To the server. Hope you Enjoy your stay.")
 
-#-----------------------------------------------------------------------------------------------------
+#@client.event
+#async def on_command_error(ctx, error):
+#  if isinstance(error, commands.CommandNotFound):
+#    await ctx.send("<:error:798368255991087125> `Unknown command. Try k!help for a list of commands`")
 
 @client.event
-async def on_command_error(ctx, error):
-  if isinstance(error, commands.CommandNotFound):
-    await ctx.send("<:error:798368255991087125> `Unknown command. Try k!help for a list of commands`")
+async def on_command_error(ctx, error):  
+    if isinstance(error, commands.MissingPermissions):
+        await ctx.send("😣 `You can't do that`")
+        await ctx.message.delete()
 
+    elif isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send("<:red:819856148043137045> `Missing Required Argument`")
 
-@client.command()
-async def server(ctx):
-    embed = discord.Embed(title="Server Count", description= f"<:myspace:819614963260981269>  I am in {len(client.guilds)} servers", color=0x0F6BE2)
-    await ctx.send(embed=embed) 
+    elif isinstance(error, commands.CommandNotFound):
+        await ctx.send("<:error:798368255991087125> `Unknown command. Try k!help for a list of commands`")
 
 #------------------------------------------------------------------------------------------------------
 @client.command()
