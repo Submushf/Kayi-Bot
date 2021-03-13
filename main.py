@@ -33,10 +33,10 @@ async def server(ctx):
 
 #-----------------------------------------------------------------------------------------------------
 
-@client.event
-async def on_member_join(member):
-    channel = client.get_channel(816417695423004683)
-    await channel.send(f"🥳 Hey {member.mention}, Welcome To the server. Hope you Enjoy your stay.")
+#@client.event
+#async def on_member_join(member):
+#    channel = client.get_channel(816417695423004683)
+#    await channel.send(f"🥳 Hey {member.mention}, Welcome To the server. Hope you Enjoy your stay.")
 
 #@client.event
 #async def on_command_error(ctx, error):
