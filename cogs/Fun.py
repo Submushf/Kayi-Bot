@@ -32,14 +32,14 @@ class Fun(commands.Cog):
         
     @commands.command(aliases=['s'],description="says what you say")
     async def say(self,ctx,*,message):
-        await ctx.send(message)
+        await ctx.send(f'{message} \n-'.format(message.author.name))
 
     @commands.command(aliases=['cp'],description="create a poll")
     async def poll(self,ctx,*,message):
         embed = discord.Embed(title = "Poll", description = f"{message}", color = 0x0F6BE2) 
         msg = await ctx.channel.send(embed = embed)
-        await msg.add_reaction('👍')
-        await msg.add_reaction('👎')
+        await msg.add_reaction('1️⃣')
+        await msg.add_reaction('2️⃣')
         await ctx.message.delete()
 
 def setup(bot):
