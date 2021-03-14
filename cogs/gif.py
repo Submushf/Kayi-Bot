@@ -11,16 +11,16 @@ class gif(commands.Cog):
     
     @commands.command(description = "gives a random GIf from the series") 
     async def gif(self,ctx):
-        ertug =  random.choice(ertugrul)
+        gi =  random.choice(gifs)
 
         embed = discord.Embed(title=f"<:kayi:819796457942155285> Gif",color= 0x0F6BE2)
-        embed.set_image(url=ertug)
+        embed.set_image(url=gi)
 
         await ctx.send(embed=embed)
 
 #------------------------------------------------------------------------------------------------------------
 
-ertugrul = [
+gifs = [
     "https://media.giphy.com/media/1hMdFstxM17s71s0yF/giphy.gif",
     "https://media.giphy.com/media/9P1E8mbjhcOH3nCxdW/giphy.gif",
     "https://media.giphy.com/media/hTCmma89XdaVJQkhDk/giphy.gif",
@@ -50,7 +50,8 @@ ertugrul = [
     "https://giphy.com/gifs/trt-network-9P1E8mbjhcOH3nCxdW",
     "https://giphy.com/gifs/trt-network-fight-battle-sword-XbJN1Pupcii3c2LCUT",
     "https://giphy.com/gifs/trt-network-fire-flame-bonfire-l28qr0dkMxmaIrmvr4",
-    "https://giphy.com/gifs/trt-network-hunger-dirilis-familydinner-ftGsJG0fXuJM9Xtq3A" 
+    "https://giphy.com/gifs/trt-network-hunger-dirilis-familydinner-ftGsJG0fXuJM9Xtq3A",
+    "https://cdn.discordapp.com/attachments/820496784781606932/820534873307086848/tumblr_30cd1dc10d62a582cd93a0dcf612e864_6944638c_400.gif" 
 ]
 
 
