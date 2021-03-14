@@ -137,7 +137,29 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of gondogdu.") 
+    async def gondogdu(self,ctx):
+        gon =  random.choice(gondog)
+
+        embed = discord.Embed(title=f"<:kayi:819796457942155285> gondogdu",color=0x0F6BE2)
+        embed.set_image(url= gon) 
+ 
+        await ctx.send(embed = embed )
+
 #----------------------------------------------------------------------------------------------------------------------------
+
+gondog = [
+    "https://cdn.discordapp.com/attachments/820499056483893298/820499323660926985/16156926802563060678998392793706.jpg",
+    "https://cdn.discordapp.com/attachments/820499056483893298/820499368272199720/16156926905688703318664208853175.jpg",
+    "https://cdn.discordapp.com/attachments/820499056483893298/820499409464459294/16156927006255710007520277169085.jpg",
+    "https://cdn.discordapp.com/attachments/820499056483893298/820499667745374260/1615692762335309079421613789389.jpg",
+    "https://cdn.discordapp.com/attachments/820499056483893298/820499964089204746/16156928181972590803948966724719.jpg",
+    "https://cdn.discordapp.com/attachments/820499056483893298/820500094662869032/1615692863782429481811928387362.jpg",
+    "https://cdn.discordapp.com/attachments/820499056483893298/820500201188884497/16156928888478787512302311042327.jpg",
+    "https://cdn.discordapp.com/attachments/820499056483893298/820500271167176714/1615692905490716512420827936784.jpg",
+    "https://cdn.discordapp.com/attachments/820499056483893298/820500536780128256/16156929678685183412621085081612.jpg",
+    ""
+]
 
 noyan = [
     "https://cdn.discordapp.com/attachments/820562940821897236/820563191456727040/16157079070726485459356669641652.jpg",
