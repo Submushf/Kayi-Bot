@@ -46,8 +46,10 @@ ertugrul = [
 halime = [
     "https://media.giphy.com/media/MDsmaNZL19ws9HHxa3/giphy.gif",
     "https://media.giphy.com/media/aLkrIWxa8zIIYmaznx/giphy.gif",
-    "https://media.giphy.com/media/IdJiQt6KOaI2Ild7fk/giphy.gif",
-    "https://media.giphy.com/media/hSvTeqd9VLac0NDB3x/giphy.gif"
+    "https://media.giphy.com/media/hSvTeqd9VLac0NDB3x/giphy.gif",
+    "https://tenor.com/brJme.gif",
+    "https://tenor.com/brJj5.gif",
+    "https://tenor.com/XyjT.gif"
 ]
 
 def setup(client):
