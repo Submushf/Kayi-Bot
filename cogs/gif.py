@@ -40,7 +40,6 @@ gifs = [
     "https://giphy.com/gifs/trt-network-trt-ertugrul-resurrection-StdfZEtECDCI38Ipc6",
     "https://cdn.discordapp.com/attachments/820521610250944542/820523960990040114/lPjEfc21fGy2eQoJOv.gif",
     "https://cdn.discordapp.com/attachments/820521610250944542/820524429196001300/Id1NYlbgCPtwRUe0tL.gif",
-    "https://giphy.com/gifs/trt-network-fight-scene-ready-to-N7ZvtDF3e94OHyHxqj",
     "https://giphy.com/gifs/trt-network-turkish-dirilis-resurrection-ertugrul-VgrKQZ3sQl8v0izEnC",
     "https://giphy.com/gifs/trt-network-ertugrul-dirilis-dirilisertugrul-kz0GUVisyRBp7KzW9B",
     "https://giphy.com/gifs/trt-network-fight-dead-acting-geEVZZ0UZOwxzS1nLP",
