@@ -25,13 +25,10 @@ ertugrul = [
     "https://giphy.com/gifs/trt-network-ertugrul-dirilis-3h1gQfJrUX8Q8p6R9K",
     "https://giphy.com/gifs/trt-network-resurrection-ertugrul-1hMdFstxM17s71s0yF",
     "https://giphy.com/gifs/trt-network-ertugrul-dirilis-B36VltfkyCSXzBr3em",
-    "https://giphy.com/gifs/trt-network-9P1E8mbjhcOH3nCxdW",
     "https://giphy.com/gifs/trt-network-turkish-trt-resurrection-ertugrul-UrUkgydpeX8wyIMPkC",
-    "https://giphy.com/gifs/trt-network-ertugrul-dirili-erturul-2jMtgySAUMChemf6aw",
+    "https://giphy.com/gifs/trt-network-ertugrul-dirilis-5UH3EgiI4zXhmfuoyI",
     "https://giphy.com/gifs/trt-network-brave-courage-ertugrul-836DnpjHWmrDNTVBbw",
-    "https://giphy.com/gifs/trt-network-turkish-trt-ertugrul-YPQLlzdqx3R7LnvflM",
-    "https://giphy.com/gifs/trt-network-trt-ertugrul-resurrection-JQYcyro5pHoViMmrnc",
-    "https://giphy.com/gifs/trt-network-bullseye-on-point-target-fXz4X9c9s1NNBPGLhB"
+    "https://giphy.com/gifs/trt-network-trt-ertugrul-resurrection-JQYcyro5pHoViMmrnc"
 ]
 
 
