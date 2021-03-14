@@ -8,20 +8,15 @@ from discord.ext import commands
 '''Translator cog - Love Archit & Lyric'''
 
 
-class Translate:
+class Translate(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    # Thanks to lyric for helping me in making this possible. You are not so bad afterall :] ~~jk~~
     @commands.command(pass_context=True)
     async def translate(self, ctx, to_language, *, msg):
-        """Translates words from one language to another. Do [p]help translate for more information.
-        Usage:
-        [p]translate <new language> <words> - Translate words from one language to another. Full language names must be used.
-        The original language will be assumed automatically.
-        """
+
         await ctx.message.delete()
-        if to_language == "rot13":  # little easter egg
+        if to_language == "rot13":  
             embed = discord.Embed(color=discord.Color.blue())
             embed.add_field(name="Original", value=msg, inline=False)
             embed.add_field(name="ROT13", value=codecs.encode(msg, "rot_13"), inline=False)
