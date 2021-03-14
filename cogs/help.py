@@ -17,6 +17,7 @@ class Help(commands.Cog):
         embed.add_field(name="🔨 mod", value=f"`The moderation commands`", inline= False)
         embed.add_field(name="🥳 fun", value=f"`Shows all the fun`", inline= False)
         embed.add_field(name="📷 pic", value=f"`Shows the list of character's.`", inline= False) 
+        embed.add_field(name="🎬 gif", value=f"`Shows the Gif of character's.`", inline= False) 
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
@@ -59,6 +60,14 @@ class Help(commands.Cog):
         embed.add_field(name="gokce", value= "`gives a pic of gokce.`", inline= False)
         embed.add_field(name="aslihan", value= "`gives a pic of aslihan.`", inline= False)
         embed.add_field(name="bayhoca", value= "`gives a pic of bayhoca.`", inline= False)
+        embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
+        embed.set_footer(text="Prefix- k!")
+        await ctx.send(embed=embed)
+
+    @commands.command(name = 'gif', description = "The gif command!")
+    async def gif(self, ctx):
+        embed= discord.Embed(title= "Picture" , color = 0x0F6BE2)
+        embed.add_field(name="ertugrul", value= "`gives a pic of ertugrul.`", inline= False)
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
