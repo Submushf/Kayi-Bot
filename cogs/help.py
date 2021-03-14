@@ -63,6 +63,8 @@ class Help(commands.Cog):
         embed.add_field(name="gokce", value= "`gives a pic of gokce.`", inline= False)
         embed.add_field(name="aslihan", value= "`gives a pic of aslihan.`", inline= False)
         embed.add_field(name="bayhoca", value= "`gives a pic of bayhoca.`", inline= False)
+        embed.add_field(name="dogan", value= "`gives a pic of dogan.`", inline= False)
+        embed.add_field(name="noyan", value= "`gives a pic of noyan.`", inline= False)
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)

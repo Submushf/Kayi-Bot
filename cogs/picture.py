@@ -119,12 +119,62 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of dogan.") 
+    async def dogan(self,ctx):
+        do =  random.choice(dogan)
+
+        embed = discord.Embed(title=f"<:kayi:819796457942155285> Dogan",color=0x0F6BE2)
+        embed.set_image(url= do) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of noyan.") 
+    async def noyan(self,ctx):
+        no =  random.choice(noyan)
+
+        embed = discord.Embed(title=f"noyan",color=0x000000)
+        embed.set_image(url= no) 
+ 
+        await ctx.send(embed = embed )
+
 #----------------------------------------------------------------------------------------------------------------------------
 
+noyan = [
+    "https://cdn.discordapp.com/attachments/820562940821897236/820563191456727040/16157079070726485459356669641652.jpg",
+    "https://cdn.discordapp.com/attachments/820562940821897236/820563297765425162/16157079330522819018708662079776.jpg",
+    "https://cdn.discordapp.com/attachments/820562940821897236/820563351201120296/16157079451492512879194695117329.jpg",
+    "https://cdn.discordapp.com/attachments/820562940821897236/820563548936863774/16157079919535274161949406551159.jpg",
+    "https://cdn.discordapp.com/attachments/820562940821897236/820563966367236106/16157080923137251517100967212886.jpg",
+    "https://cdn.discordapp.com/attachments/820562940821897236/820563926802235402/16157080719112085770880011016277.jpg",
+    "https://cdn.discordapp.com/attachments/820562940821897236/820564060520448000/16157081145566693191445485987392.jpg",
+    "https://cdn.discordapp.com/attachments/820562940821897236/820564110126481438/16157081264029091310944461113719.jpg"
+]
+
+dogan = [
+    "https://cdn.discordapp.com/attachments/820557480881946624/820557608934834196/16157065759475243564387637528921.jpg",
+    "https://cdn.discordapp.com/attachments/820557480881946624/820557662684315648/16157065888142387566695256265660.jpg",
+    "https://cdn.discordapp.com/attachments/820557480881946624/820557729382531082/16157066048242185352320455733387.jpg",
+    "https://cdn.discordapp.com/attachments/820557480881946624/820557864330199080/1615706637273314443126933481733.jpg",
+    "https://cdn.discordapp.com/attachments/820557480881946624/820557922291023902/16157066511423539668697537595749.jpg",
+    "https://cdn.discordapp.com/attachments/820557480881946624/820558252232015922/images_9_1.jpeg",
+    "https://cdn.discordapp.com/attachments/820557480881946624/820558953120399360/1615706885902236371904667642398.jpg",
+    "https://cdn.discordapp.com/attachments/820557480881946624/820559428448681994/16157069984773789923460368265743.jpg"
+]
+
 aslihan = [
-    "https://cdn.discordapp.com/attachments/819576549623857183/819576635782987786/download.jpg",
-    "https://cdn.discordapp.com/attachments/819576549623857183/819576637150593034/images_1.jpg",
-    "https://cdn.discordapp.com/attachments/819576549623857183/819576640040337468/images.jpg"
+    "https://cdn.discordapp.com/attachments/819576549623857183/820484931196157962/1615689246038174480679128649677.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820484998141706260/16156892644726201472122929848246.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485035920457788/16156892733291259739840158784325.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485183508971530/16156893089057113195217893009525.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485276509929492/16156893310468840813811438975426.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485340610428958/16156893464526472452421174794888.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485426313822238/16156893657861065997739541637535.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485483242455081/16156893792048999274897464650442.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485532487647238/16156893919373869307518958680380.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485671495008276/16156894249223039705692729381731.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485739392401428/16156894403295031135772650786174.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485827883827210/16156894624862309053423817077533.jpg",
+    "https://cdn.discordapp.com/attachments/819576549623857183/820485962060660776/16156894946705165125572301450343.jpg"
 ]
 
 halime = [
