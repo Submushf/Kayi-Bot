@@ -13,10 +13,10 @@ class gif(commands.Cog):
     async def gif(self,ctx):
         gi =  random.choice(gifs)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Gif",color= 0x0F6BE2)
-        embed.set_image(url=gi)
+#        embed = discord.Embed(title=f"<:kayi:819796457942155285> Gif",color= 0x0F6BE2)
+#        embed.set_image(url=gi)
 
-        await ctx.send(embed=embed)
+        await ctx.send(gi)
 
 #------------------------------------------------------------------------------------------------------------
 
