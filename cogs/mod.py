@@ -54,8 +54,7 @@ class Moderation(commands.Cog):
             return
 
         else:
-            embed2 = discord.Embed(title=f"{member}'s Avatar!", colour=0x0F6BE2, timestamp=ctx.message.created_at)
-            embed2.add_field(name="Animated?", value=member.is_avatar_animated())
+            embed2 = discord.Embed(title=f"{member}'s Avatar!", colour=0x0F6BE2)
             embed2.set_image(url=member.avatar_url)
             await ctx.send(embed=embed2)
 
