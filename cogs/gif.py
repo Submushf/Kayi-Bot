@@ -10,7 +10,7 @@ class gif(commands.Cog):
 
     
     @commands.command(description = "gives a GIf of ertugrul.") 
-    async def ertugrulgif(self,ctx):
+    async def ertugrulg(self,ctx):
         ertug =  random.choice(ertugrul)
 
         embed = discord.Embed(title=f"<:kayi:819796457942155285> Ertugrul Gif",color= 0x0F6BE2)
@@ -19,7 +19,7 @@ class gif(commands.Cog):
         await ctx.send(embed=embed)
 
     @commands.command(description = "gives a GIf of halime.") 
-    async def halimegif(self,ctx):
+    async def halimeg(self,ctx):
         hal =  random.choice(halime)
 
         embed = discord.Embed(title=f"<:kayi:819796457942155285> Halime Gif",color= 0x0F6BE2)
@@ -47,9 +47,7 @@ halime = [
     "https://media.giphy.com/media/MDsmaNZL19ws9HHxa3/giphy.gif",
     "https://media.giphy.com/media/aLkrIWxa8zIIYmaznx/giphy.gif",
     "https://media.giphy.com/media/hSvTeqd9VLac0NDB3x/giphy.gif",
-    "https://tenor.com/brJme.gif",
-    "https://tenor.com/brJj5.gif",
-    "https://tenor.com/XyjT.gif"
+    "https://tenor.com/brJme.gif"
 ]
 
 def setup(client):
