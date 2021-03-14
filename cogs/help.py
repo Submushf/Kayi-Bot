@@ -44,6 +44,7 @@ class Help(commands.Cog):
         embed.add_field(name="top", value=f"`shows the top ertugrul server`", inline= False)
         embed.add_field(name="say", value=f"`says what you say`", inline= False)
         embed.add_field(name="poll", value=f"`make a poll`", inline= False)
+        embed.add_field(name="translate", value=f"`translate language`", inline= False)
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
