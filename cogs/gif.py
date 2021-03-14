@@ -13,7 +13,7 @@ class gif(commands.Cog):
     async def Gertugrul(self,ctx):
         ertug =  random.choice(ertugrul)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Ertugrul GIF",color= 0x0F6BE2)
+        embed = discord.Embed(color= 0x0F6BE2)
         embed.set_image(url=ertug)
 
         await ctx.send(embed=embed)
