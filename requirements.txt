@@ -1,2 +1,2 @@
 discord
-BeautifulSoup
+BeautifulSoup4
