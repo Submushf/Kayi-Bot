@@ -45,6 +45,21 @@ class Moderation(commands.Cog):
                 await ctx.send(embed=embed)
                 return
 
+    @commands.command(aliases=['av'])
+    async def avatar(self, ctx, member : discord.Member = None):
+
+        if member is None:
+            embed = discord.Embed(title="This command is used like this: ```k!avatar [member]```", colour=0x0F6BE2, timestamp=ctx.message.created_at)
+            await ctx.send(embed=embed)
+            return
+
+        else:
+            embed2 = discord.Embed(title=f"{member}'s Avatar!", colour=0x0F6BE2, timestamp=ctx.message.created_at)
+            embed2.add_field(name="Animated?", value=member.is_avatar_animated())
+            embed2.set_image(url=member.avatar_url)
+            await ctx.send(embed=embed2)
+
+
     @commands.command(aliases=['whois', 'ui'], description = "Shows User's Info ")
     async def info(self, ctx, member : discord.Member=None):
         if not member:

@@ -30,6 +30,7 @@ class Help(commands.Cog):
         embed.add_field(name="ban", value=f"`ban members`", inline= False)
         embed.add_field(name="unban", value=f"`unban members`", inline= False)
         embed.add_field(name="info", value=f"`shows user info`", inline= False)
+        embed.add_field(name="avatar", value=f"`gives user avatar`", inline= False)
         embed.add_field(name="server", value=f"`shows the amount of servers the bot is in`", inline= False)        
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
