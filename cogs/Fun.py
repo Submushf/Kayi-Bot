@@ -30,7 +30,17 @@ class Fun(commands.Cog):
             )
         await ctx.send(embed=embed)
         
-        #await ctx.send(f"<:youtube:819620176181854238> Subscribe to https://www.youtube.com/channel/UCMxWaxacyOX_3IgD6tHRazw")
+    @commands.command(aliases=['s'],description="says what you say")
+    async def say(self,ctx,*,message):
+        await ctx.send(message)
+
+    @commands.command(aliases=['cp'],description="create a poll")
+    async def poll(self,ctx,*,message):
+        embed = discord.Embed(title = "Poll", description = f"{message}", color = 0x0F6BE2) 
+        msg = await ctx.channel.send(embed = embed)
+        await msg.add_reaction('👍')
+        await msg.add_reaction('👎')
+        await ctx.message.delete()
 
 def setup(bot):
     bot.add_cog(Fun(bot))
