@@ -13,22 +13,21 @@ class gif(commands.Cog):
     async def Gertugrul(self,ctx):
         ertug =  random.choice(ertugrul)
 
-        embed = discord.Embed(color= 0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:819796457942155285> Ertugrul Gif",color= 0x0F6BE2)
         embed.set_image(url=ertug)
 
         await ctx.send(embed=embed)
 
 
 ertugrul = [
-    "https://giphy.com/gifs/trt-network-hTCmma89XdaVJQkhDk",
-    "https://giphy.com/gifs/trt-network-fight-ertugrul-dirilis-1ziUCYGa3C4IlVJAg4",
-    "https://giphy.com/gifs/trt-network-ertugrul-dirilis-3h1gQfJrUX8Q8p6R9K",
-    "https://giphy.com/gifs/trt-network-resurrection-ertugrul-1hMdFstxM17s71s0yF",
-    "https://giphy.com/gifs/trt-network-ertugrul-dirilis-B36VltfkyCSXzBr3em",
-    "https://giphy.com/gifs/trt-network-turkish-trt-resurrection-ertugrul-UrUkgydpeX8wyIMPkC",
-    "https://giphy.com/gifs/trt-network-ertugrul-dirilis-5UH3EgiI4zXhmfuoyI",
-    "https://giphy.com/gifs/trt-network-brave-courage-ertugrul-836DnpjHWmrDNTVBbw",
-    "https://giphy.com/gifs/trt-network-trt-ertugrul-resurrection-JQYcyro5pHoViMmrnc"
+    "https://media.giphy.com/media/1hMdFstxM17s71s0yF/giphy.gif",
+    "https://media.giphy.com/media/9P1E8mbjhcOH3nCxdW/giphy.gif",
+    "https://media.giphy.com/media/hTCmma89XdaVJQkhDk/giphy.gif",
+    "https://media.giphy.com/media/1oDuNVG4bFSL8ich6l/giphy.gif",
+    "https://media.giphy.com/media/5YucO3kzRw7tReb5tL/giphy.gif",
+    "https://media.giphy.com/media/1ziUCYGa3C4IlVJAg4/giphy.gif",
+    "https://media.giphy.com/media/fXz4X9c9s1NNBPGLhB/giphy.gif",
+    "https://media.giphy.com/media/YPQLlzdqx3R7LnvflM/giphy.gif"
 ]
 
 
