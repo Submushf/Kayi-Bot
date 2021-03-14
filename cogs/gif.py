@@ -18,6 +18,16 @@ class gif(commands.Cog):
 
         await ctx.send(embed=embed)
 
+    @commands.command(description = "gives a GIf of halime.") 
+    async def halimegif(self,ctx):
+        hal =  random.choice(halime)
+
+        embed = discord.Embed(title=f"<:kayi:819796457942155285> Halime Gif",color= 0x0F6BE2)
+        embed.set_image(url=hal)
+
+        await ctx.send(embed=embed)
+
+#------------------------------------------------------------------------------------------------------------
 
 ertugrul = [
     "https://media.giphy.com/media/1hMdFstxM17s71s0yF/giphy.gif",
@@ -33,6 +43,12 @@ ertugrul = [
     "https://media.giphy.com/media/Me7TLPqe7zNu7srsBo/giphy.gif"
 ]
 
+halime = [
+    "https://media.giphy.com/media/MDsmaNZL19ws9HHxa3/giphy.gif",
+    "https://media.giphy.com/media/aLkrIWxa8zIIYmaznx/giphy.gif",
+    "https://media.giphy.com/media/IdJiQt6KOaI2Ild7fk/giphy.gif",
+    "https://media.giphy.com/media/hSvTeqd9VLac0NDB3x/giphy.gif"
+]
 
 def setup(client):
     client.add_cog(gif(client))
