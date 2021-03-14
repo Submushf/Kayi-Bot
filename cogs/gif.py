@@ -10,7 +10,7 @@ class gif(commands.Cog):
 
     
     @commands.command(description = "gives a GIf of ertugrul.") 
-    async def gertugrul(self,ctx):
+    async def ertugrulgif(self,ctx):
         ertug =  random.choice(ertugrul)
 
         embed = discord.Embed(title=f"<:kayi:819796457942155285> Ertugrul Gif",color= 0x0F6BE2)
