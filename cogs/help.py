@@ -68,7 +68,6 @@ class Help(commands.Cog):
     async def gif(self, ctx):
         embed= discord.Embed(title= "Picture" , color = 0x0F6BE2)
         embed.add_field(name="ertugrulg", value= "`gives a Gif of ertugrul.`", inline= False)
-        embed.add_field(name="halimeg", value= "`gives a Gif of halime.`", inline= False)
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
