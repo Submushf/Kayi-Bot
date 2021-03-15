@@ -32,7 +32,7 @@ class Fun(commands.Cog):
         
     @commands.command(aliases=['s'],description="says what you say")
     async def say(self,ctx,*,message):
-        await ctx.send(f'{message} \n\n-**{ctx.message.author}**')
+        await ctx.send(f'**{message}** \n\n-**{ctx.message.author}**')
 
     @commands.command(aliases=['cp'],description="create a poll")
     async def poll(self,ctx,*,message):
@@ -41,6 +41,7 @@ class Fun(commands.Cog):
         await msg.add_reaction('1️⃣')
         await msg.add_reaction('2️⃣')
         await ctx.message.delete()
+
 
 def setup(bot):
     bot.add_cog(Fun(bot))
