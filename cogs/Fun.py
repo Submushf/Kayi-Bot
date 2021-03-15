@@ -43,26 +43,5 @@ class Fun(commands.Cog):
         await msg.add_reaction('2️⃣')
         await ctx.message.delete()
 
-    @commands.command(
-        name="joke",
-        description="Send a dad joke!",
-        aliases=['j'] 
-    )
-    async def jokes(self, ctx):
-        url = "https://dad-jokes.p.rapidapi.com/random/jokes"
-
-        headers = {
-            'x-rapidapi-key': "81dd963d15mshf3e3a91dd6fe3cap1d971djsnbeb11a691831",
-            'x-rapidapi-host': "dad-jokes.p.rapidapi.com" 
-        }
-
-        async with ClientSession() as session:
-            async with session.get(url, headers=headers) as response:
-                r = await response.json()
-                r = r["body"][0]
-                embed= discord.Embed(color = 0x0F6BE2)
-                embed.add_field(name="Joke-",value=f"\n**{r['setup']}**\n||{r['punchline']}||", inline=True)
-                await ctx.send(embed=embed)
-
 def setup(bot):
     bot.add_cog(Fun(bot))
