@@ -5,7 +5,7 @@ import datetime
 import os
 import asyncio
 
-client = commands.Bot(command_prefix= "k!", intents = discord.Intents.all()) 
+client = commands.Bot(command_prefix= "k!", case_insensitive=True, intents = discord.Intents.all()) 
 client.remove_command("help")
 
 @client.event
@@ -32,16 +32,6 @@ async def server(ctx):
     await ctx.send(embed=embed) 
 
 #-----------------------------------------------------------------------------------------------------
-
-#@client.event
-#async def on_member_join(member):
-#    channel = client.get_channel(816417695423004683)
-#    await channel.send(f"🥳 Hey {member.mention}, Welcome To the server. Hope you Enjoy your stay.")
-
-#@client.event
-#async def on_command_error(ctx, error):
-#  if isinstance(error, commands.CommandNotFound):
-#    await ctx.send("<:error:819978871037624352> `Unknown command. Try k!help for a list of commands`")
 
 @client.event
 async def on_command_error(ctx, error):  
