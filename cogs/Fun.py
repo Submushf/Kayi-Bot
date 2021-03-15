@@ -20,7 +20,7 @@ class Fun(commands.Cog):
         embed = discord.Embed(title= f"🎱 {random.choice(responses)}", color= 0x0F6BE2)
         await ctx.send(embed=embed) 
 
-    @commands.command(aliases=['yt','Youtube'], description= "youtube channel")
+    @commands.command(description= "youtube channel")
     async def youtube(self, ctx):
 
         embed = discord.Embed(
