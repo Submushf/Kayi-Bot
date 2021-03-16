@@ -36,15 +36,15 @@ class Help(commands.Cog):
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)
 
-    @commands.command(name = 'Other', description = "The Fun command!")
-    async def fun(self, ctx):
+    @commands.command(name = 'Other', description = "The other command!")
+    async def Other(self, ctx):
         embed= discord.Embed(title= "Others" , color = 0x0F6BE2)
         embed.add_field(name="8ball", value=f"`just a 8ball game`", inline= False)
         embed.add_field(name="youtube", value=f"`Youtube channel`", inline= False) 
         embed.add_field(name="top", value=f"`shows the top ertugrul server`", inline= False)
         embed.add_field(name="say", value=f"`says what you say`", inline= False)
         embed.add_field(name="poll", value=f"`make a poll`", inline= False)
-        embed.add_field(name="kill", value=f"`just gives a dead gif`", inline= False)
+        embed.add_field(name="dead", value=f"`just gives a dead gif`", inline= False)
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed.set_footer(text="Prefix- k!")
         await ctx.send(embed=embed)

@@ -44,9 +44,9 @@ class Fun(commands.Cog):
         await ctx.message.delete()
 
     @commands.command(description="dun dead comand")
-    async def kill(self,ctx,  member : discord.Member = None):
+    async def dead(self,ctx,  member : discord.Member = None):
         giffy = random.choice(gifs)
-        await ctx.send(f"**RIP {member}**")
+        await ctx.send(f"**RIP** {member}")
         await ctx.send(giffy)
 
 gifs = ["https://tenor.com/view/casket-grave-meme-dancing-dance-gif-16902018"]
