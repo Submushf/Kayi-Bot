@@ -60,6 +60,7 @@ class Help(commands.Cog):
         embed.add_field(name="turgut", value= "`gives a pic of turgut.`", inline= False)
         embed.add_field(name="tugtekin", value= "`gives a pic of tugtekin.`", inline= False)
         embed.add_field(name="bala", value= "`gives a pic of bala.`", inline= False)
+        embed.add_field(name="hafsa", value= "`gives a pic of hafsa.`", inline= False)
         embed.add_field(name="selcan", value= "`gives a pic of selcan.`", inline= False)
         embed.add_field(name="ibn_arabi", value= "`gives a pic of Ibn arabi.`", inline= False)
         embed.add_field(name="gokce", value= "`gives a pic of gokce.`", inline= False)

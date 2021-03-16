@@ -146,7 +146,26 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of hafsa.") 
+    async def hafsa(self,ctx):
+        haf =  random.choice(hafsa)
+
+        embed = discord.Embed(title=f"<:kayi:819796457942155285> Hafsa",color=0x0F6BE2)
+        embed.set_image(url= haf) 
+ 
+        await ctx.send(embed = embed )
+
 #----------------------------------------------------------------------------------------------------------------------------
+
+hafsa = [
+    "https://cdn.discordapp.com/attachments/821468846577549333/821470755735732244/MV5BZjE5MzczMTItODkyZi00NGY3LWIwNGEtMWIxZWNmYWZiNzIwXkEyXkFqcGdeQXVyNDg4MjkzNDk._V1_.jpg",
+    "https://cdn.discordapp.com/attachments/821468846577549333/821471580659253288/2Q.png",
+    "https://cdn.discordapp.com/attachments/821468846577549333/821472529536254022/92bf07e8355f5bff248c0fb2c1f15704.png",
+    "https://cdn.discordapp.com/attachments/821468846577549333/821472530706595891/MV5BZGNkYzg1ZGYtMWE2My00MjI3LTgxNTMtZGUwMTA4N2FkMzIyXkEyXkFqcGdeQXVyNDg4MjkzNDk.png",
+    "https://cdn.discordapp.com/attachments/821468846577549333/821472533765029958/892bf67b5999b35f8f20eb402b90df89.png",
+    "https://cdn.discordapp.com/attachments/821468846577549333/821472530115199037/MV5BZmNiMDg3ZGUtMjQwOS00ZWY1LTk5MmQtNDQwOWQ5YzYwZWNiXkEyXkFqcGdeQXVyNDg4MjkzNDk.png",
+    "https://cdn.discordapp.com/attachments/821468846577549333/821472816838344704/37b7b35a0405a02e77435a85e856dcd3.png"
+]
 
 gondog = [
     "https://cdn.discordapp.com/attachments/820499056483893298/820499323660926985/16156926802563060678998392793706.jpg",
