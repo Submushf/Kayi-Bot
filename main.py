@@ -11,7 +11,7 @@ client.remove_command("help")
 @client.event
 async def on_ready():
     await client.change_presence(status = discord.Status.idle, activity= discord.Activity(
-        type= discord.ActivityType.listening, name= "TO k!help" 
+        type= discord.ActivityType.listening, name= "to k!help" 
     )) 
     print(f"-----------\nOnline\n----------") 
 
