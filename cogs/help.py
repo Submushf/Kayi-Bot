@@ -53,9 +53,11 @@ class Help(commands.Cog):
     async def pic(self, ctx):
         embed= discord.Embed(title= "Picture" , color = 0x0F6BE2)
         embed.add_field(name="ertugrul", value= "`gives a pic of ertugrul.`", inline= False)
+        embed.add_field(name="Efamily", value= "`Showes a pic of ertugrul's family.`", inline= False)
         embed.add_field(name="halime", value= "`gives a pic of halime.`", inline= False)
         embed.add_field(name="osman", value= "`gives a pic of osman.`", inline= False)
         embed.add_field(name="gondogdu", value= "`gives a pic of gondogdu.`", inline= False)
+        embed.add_field(name="Savci", value= "`gives a pic of Savci.`", inline= False)
         embed.add_field(name="bamsi", value= "`gives a pic of bamsi.`", inline= False)
         embed.add_field(name="turgut", value= "`gives a pic of turgut.`", inline= False)
         embed.add_field(name="tugtekin", value= "`gives a pic of tugtekin.`", inline= False)

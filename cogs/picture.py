@@ -155,7 +155,34 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of savci.") 
+    async def savci(self,ctx):
+        sav =  random.choice(savci)
+
+        embed = discord.Embed(title=f"<:ottoman:819796515798253579> Savci",color=0x0F6BE2)
+        embed.set_image(url= sav) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of Ertugrul's Family.") 
+    async def Efamily(self,ctx):
+
+        embed = discord.Embed(title=f"<:kayi:819796457942155285> Ertugrul's Family",color=0x0F6BE2)
+        embed.set_image(url= "https://cdn.discordapp.com/attachments/822161478017875989/822162166525591602/Ertugruls_family__Halime__ertugrul__savci__kundus_and_osman.jpg") 
+ 
+        await ctx.send(embed = embed )
+
 #----------------------------------------------------------------------------------------------------------------------------
+
+savci = [
+    "https://cdn.discordapp.com/attachments/822161478017875989/822162140843999242/91aded80-26e4-486f-b899-a2971179c9d7.jpg",
+    "https://cdn.discordapp.com/attachments/822161478017875989/822162153611067462/35bf1969-c483-4025-a3ec-1256d3063324.jpg",
+    "https://cdn.discordapp.com/attachments/822161478017875989/822162159953903706/Cute_savci_._Ertugruls_son.._Very_cute_boy_._Very_cute_boy_.png",
+    "https://cdn.discordapp.com/attachments/822161478017875989/822162173752901662/fd55a7e7-ffef-4313-adb9-ccbafc3d22bd.jpg",
+    "https://cdn.discordapp.com/attachments/822161478017875989/822162177842348052/Savc.jpg",
+    "https://cdn.discordapp.com/attachments/822161478017875989/822162179108634694/KurulusOsman38bolum.jpg",
+    "https://cdn.discordapp.com/attachments/822161478017875989/822162193071603732/d775274a-eea2-4762-b942-101e2509ec2b.jpg"
+]
 
 hafsa = [
     "https://cdn.discordapp.com/attachments/821468846577549333/821470755735732244/MV5BZjE5MzczMTItODkyZi00NGY3LWIwNGEtMWIxZWNmYWZiNzIwXkEyXkFqcGdeQXVyNDg4MjkzNDk._V1_.jpg",

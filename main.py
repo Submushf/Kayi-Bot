@@ -10,21 +10,24 @@ client.remove_command("help")
 
 @client.event
 async def on_ready():
+    await client.change_presence(status = discord.Status.idle, activity= discord.Activity(
+        type= discord.ActivityType.listening, name= "TO k!help" 
+    )) 
     print(f"-----------\nOnline\n----------") 
 
-async def ch_pr():
-    await client.wait_until_ready()
+#async def ch_pr():
+#    await client.wait_until_ready()
 
-    statuses = [f"in {len(client.guilds)} servers", "k!help"]  
+#    statuses = [f"in {len(client.guilds)} servers", "k!help"]  
 
-    while not client.is_closed():
+#    while not client.is_closed():
 
-        status = random.choice(statuses) 
-        await client.change_presence(activity=discord.Game(name=status)) 
+#        status = random.choice(statuses) 
+#        await client.change_presence(activity=discord.Game(name=status)) 
 
-        await asyncio.sleep(120) 
+#        await asyncio.sleep(120) 
 
-client.loop.create_task(ch_pr())
+#client.loop.create_task(ch_pr())
 
 @client.command()
 async def server(ctx):
