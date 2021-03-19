@@ -15,20 +15,6 @@ async def on_ready():
     )) 
     print(f"-----------\nOnline\n----------") 
 
-#async def ch_pr():
-#    await client.wait_until_ready()
-
-#    statuses = [f"in {len(client.guilds)} servers", "k!help"]  
-
-#    while not client.is_closed():
-
-#        status = random.choice(statuses) 
-#        await client.change_presence(activity=discord.Game(name=status)) 
-
-#        await asyncio.sleep(120) 
-
-#client.loop.create_task(ch_pr())
-
 @client.command()
 async def server(ctx):
     embed = discord.Embed(title="Server Count", description= f"<:myspace:819614963260981269>  I am in {len(client.guilds)} servers", color=0x0F6BE2)
