@@ -50,7 +50,8 @@ gifs = [
     "https://giphy.com/gifs/trt-network-fight-battle-sword-XbJN1Pupcii3c2LCUT",
     "https://giphy.com/gifs/trt-network-fire-flame-bonfire-l28qr0dkMxmaIrmvr4",
     "https://giphy.com/gifs/trt-network-hunger-dirilis-familydinner-ftGsJG0fXuJM9Xtq3A",
-    "https://cdn.discordapp.com/attachments/820496784781606932/820534873307086848/tumblr_30cd1dc10d62a582cd93a0dcf612e864_6944638c_400.gif" 
+    "https://cdn.discordapp.com/attachments/820496784781606932/820534873307086848/tumblr_30cd1dc10d62a582cd93a0dcf612e864_6944638c_400.gif",
+    "https://tenor.com/view/wakanda-forever-bala-osman-kurulus-osman-wakanda-gif-20747621" 
 ]
 
 
