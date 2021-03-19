@@ -48,17 +48,6 @@ async def on_command_error(ctx, error):
     elif isinstance(error, commands.CommandNotFound):
         await ctx.send("<:error:819978871037624352> `Unknown command. Try k!help for a list of commands`")
 
-
-@client.event
-async def on_message(ctx, message):
-    msg = message.content
-    with open('badWords.txt') as BadWords:
-        if msg in BadWords.read():
-            await message.delete()
-            await ctx.send("Dont use that word!")
-    await ctx.process_commands(message)
-
-
 #------------------------------------------------------------------------------------------------------
 @client.command()
 async def load(ctx, extension):
