@@ -48,19 +48,16 @@ async def on_command_error(ctx, error):
     elif isinstance(error, commands.CommandNotFound):
         await ctx.send("<:error:819978871037624352> `Unknown command. Try k!help for a list of commands`")
 
-with open('BadWords.txt', 'r') as f:
-    global badwords  # You want to be able to access this throughout the code
-    words = f.read()
-    badwords = words.split()
 
 @client.event
 async def on_message(ctx, message):
     msg = message.content
-    for word in badwords:
-        if word in msg:
+    with open('badWords.txt') as BadWords:
+        if msg in BadWords.read():
             await message.delete()
             await ctx.send("Dont use that word!")
-    await ctx.process_message(message)
+    await ctx.process_commands(message)
+
 
 #------------------------------------------------------------------------------------------------------
 @client.command()
