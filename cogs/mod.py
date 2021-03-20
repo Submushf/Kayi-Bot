@@ -50,7 +50,7 @@ class Moderation(commands.Cog):
         
         if member is None:
             member = ctx.author if not member else member
-            embed = discord.Embed(title = f"{member.name}'s avatar", color = member.color)
+            embed = discord.Embed(title = f"{member.name}'s avatar", color = 0x0F6BE2)
             embed.set_image(url=member.avatar_url)
             await ctx.send(embed=embed)
             return
