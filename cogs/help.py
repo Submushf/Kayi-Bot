@@ -11,7 +11,7 @@ class Help(commands.Cog):
         self.client = client
 
     @commands.command()
-    async def Page(self, ctx):
+    async def help(self, ctx):
         embed1 = discord.Embed(title= "Help" , description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)" , color = 0x0F6BE2)
         embed1.add_field(name="⚙ help", value=f"`The help command`", inline=False)
         embed1.add_field(name="🔨 mod", value=f"`The moderation commands`", inline= False)
