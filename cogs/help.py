@@ -11,17 +11,17 @@ class Help(commands.Cog):
         self.client = client
 
 
-    @commands.command(name = 'help', description = "The help command!")
-    async def help(self, ctx):
-        embed= discord.Embed(title= "Help" , description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)" , color = 0x0F6BE2)
-        embed.add_field(name="⚙ help", value=f"`The help command`", inline= False)
-        embed.add_field(name="🔨 mod", value=f"`The moderation commands`", inline= False)
-        embed.add_field(name="🥳 Other", value=f"`Shows all the other commands`", inline= False)
-        embed.add_field(name="📷 pic", value=f"`Shows the list of character's.`", inline= False) 
-        embed.add_field(name="🎬 gif", value=f"`gives a random GIf from the series.`", inline= False) 
-        embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
-        embed.set_footer(text="Prefix- k!")
-        await ctx.send(embed=embed)
+    #@commands.command(name = 'help', description = "The help command!")
+    #async def help(self, ctx):
+     #   embed= discord.Embed(title= "Help" , description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)" , color = 0x0F6BE2)
+      #  embed.add_field(name="⚙ help", value=f"`The help command`", inline= False)
+     #   embed.add_field(name="🔨 mod", value=f"`The moderation commands`", inline= False)
+      #  embed.add_field(name="🥳 Other", value=f"`Shows all the other commands`", inline= False)
+       # embed.add_field(name="📷 pic", value=f"`Shows the list of character's.`", inline= False) 
+        #embed.add_field(name="🎬 gif", value=f"`gives a random GIf from the series.`", inline= False) 
+        #embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
+        #embed.set_footer(text="Prefix- k!")
+        #await ctx.send(embed=embed)
 
     @commands.command(name = 'mod', description = "The moderation command!")
     async def mod(self, ctx):
@@ -78,15 +78,14 @@ class Help(commands.Cog):
 
     @commands.command()
     async def Page(self, ctx):
-        embed1 = discord.Embed(color=ctx.author.color).add_field(name="Example", value="Page 1")
+        embed1 = discord.Embed(color=ctx.author.color)
+        embed1.add_field(name="⚙ help", value=f"`The help command`", inline=False)
         embed2 = discord.Embed(color=ctx.author.color).add_field(name="Example", value="Page 2")
         embed3 = discord.Embed(color=ctx.author.color).add_field(name="Example", value="Page 3")
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
-        paginator.add_reaction('⏮️', "first")
-        paginator.add_reaction('⏪', "back")
-        paginator.add_reaction('🔐', "lock")
-        paginator.add_reaction('⏩', "next")
-        paginator.add_reaction('⏭️', "last")
+        paginator.add_reaction('◀', "back")
+        paginator.add_reaction('⏸', "lock")
+        paginator.add_reaction('▶', "next")
         embeds = [embed1, embed2, embed3]
         await paginator.run(embeds)
 
