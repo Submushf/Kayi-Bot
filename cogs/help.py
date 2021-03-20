@@ -12,13 +12,13 @@ class Help(commands.Cog):
 
     @commands.command()
     async def help(self, ctx):
-        embed1 = discord.Embed(
-            title= "Help" , 
-            description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)\n\n ``help :``-``The help command``\n ``mod :`` - ``The moderation commands``" ,
+        embedm = discord.Embed(
+            title= "Help Menu" , 
+            description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)\n\n `Prefix` :``-``k!``\n ``Page 1:`` - ``Shows All cetegory Commands``" ,
             color = 0x0F6BE2
             )
-        embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
-        embed1.set_footer(text="Page-1/4")
+        embedm.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
+        embedm.set_footer(text="Page-0/4")
        
         embed2 = discord.Embed(title= "Moderation",color=0x0F6BE2)
         embed2.add_field(name="clear", value=f"`clear's messages`", inline= False)
@@ -68,7 +68,7 @@ class Help(commands.Cog):
         paginator.add_reaction('◀', "back")
         paginator.add_reaction('⛔', "lock")
         paginator.add_reaction('▶', "next")
-        embeds = [embed1, embed2, embed3, embed4]
+        embeds = [embedm, embed1, embed2, embed3, embed4]
         await paginator.run(embeds)
 
 def setup(client):
