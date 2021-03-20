@@ -20,6 +20,15 @@ class Help(commands.Cog):
         embedm.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
         embedm.set_footer(text="Page-0/4")
        
+        embed1 = discord.Embed(title= "Help" , color = 0x0F6BE2)
+        embed1.add_field(name=f"help", value=f"`The help command`", inline=False)
+        embed1.add_field(name=f"mod", value=f"`The moderation commands`", inline= False)
+        embed1.add_field(name=f"Other", value=f"`Shows all the other commands`", inline= False)
+        embed1.add_field(name=f"pic", value=f"`Shows the list of character's.`", inline= False) 
+        embed1.add_field(name=f"gif", value=f"`gives a random GIf from the series.`", inline= False) 
+        embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
+        embed1.set_footer(text="Page-1/4")
+
         embed2 = discord.Embed(title= "Moderation",color=0x0F6BE2)
         embed2.add_field(name="clear", value=f"`clear's messages`", inline= False)
         embed2.add_field(name="kick", value=f"`kick members`", inline= False)
