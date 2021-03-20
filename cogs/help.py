@@ -13,11 +13,11 @@ class Help(commands.Cog):
     @commands.command()
     async def help(self, ctx):
         embed1 = discord.Embed(title= "Help" , description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)" , color = 0x0F6BE2)
-        embed1.add_field(name="⚙ help", value=f"`The help command`", inline=False)
-        embed1.add_field(name="🔨 mod", value=f"`The moderation commands`", inline= False)
-        embed1.add_field(name="🥳 Other", value=f"`Shows all the other commands`", inline= False)
-        embed1.add_field(name="📷 pic", value=f"`Shows the list of character's.`", inline= False) 
-        embed1.add_field(name="🎬 gif", value=f"`gives a random GIf from the series.`", inline= False) 
+        embed1.add_field(name=f"``help :``", value=f"The help command", inline=False)
+        embed1.add_field(name=f"``mod``", value=f"The moderation commands", inline= False)
+        embed1.add_field(name=f"``Other``", value=f"Shows all the other commands", inline= False)
+        embed1.add_field(name=f"``pic``", value=f"Shows the list of character's.", inline= False) 
+        embed1.add_field(name=f"``gif``", value=f"gives a random GIf from the series.", inline= False) 
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
         embed1.set_footer(text="Page-1")
        
@@ -67,7 +67,7 @@ class Help(commands.Cog):
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
         paginator.add_reaction('◀', "back")
-        paginator.add_reaction('⏸', "lock")
+        paginator.add_reaction('⛔', "lock")
         paginator.add_reaction('▶', "next")
         embeds = [embed1, embed2, embed3, embed4]
         await paginator.run(embeds)
