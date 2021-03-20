@@ -14,7 +14,7 @@ class Help(commands.Cog):
     async def help(self, ctx):
        
         embed1 = discord.Embed(title= "Help Menu", description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php) ", color = 0x0F6BE2)
-        embed1.add_field(name=f"`Help", value=f"`Shows This message`", inline=False)
+        embed1.add_field(name=f"`Help`", value=f"`Shows This message`", inline=False)
         embed1.add_field(name=f"`Page-2 :`", value=f"`Shows the moderation commands`", inline= False)
         embed1.add_field(name=f"`Page-3 :`", value=f"`Shows all the other commands`", inline= False)
         embed1.add_field(name=f"`Page-4 :`", value=f"`Shows the list of character's.`", inline= False) 
