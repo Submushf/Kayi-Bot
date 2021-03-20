@@ -14,7 +14,7 @@ class Help(commands.Cog):
     async def help(self, ctx):
         embedm = discord.Embed(
             title= "Help Menu" , 
-            description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)\n\n `Prefix` :``-``k!``\n ``Page 1:`` - ``Shows All cetegory Commands``" ,
+            description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)\n\n ``Prefix :``-``k!``\n ``Page 1:`` - ``Shows All cetegory Commands``" ,
             color = 0x0F6BE2
             )
         embedm.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
