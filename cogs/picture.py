@@ -164,14 +164,6 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
-    @commands.command(description = "gives a pic of Ertugrul's Family.") 
-    async def Efamily(self,ctx):
-
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Ertugrul's Family",color=0x0F6BE2)
-        embed.set_image(url= "https://cdn.discordapp.com/attachments/822161478017875989/822162166525591602/Ertugruls_family__Halime__ertugrul__savci__kundus_and_osman.jpg") 
- 
-        await ctx.send(embed = embed )
-
 #----------------------------------------------------------------------------------------------------------------------------
 
 savci = [
