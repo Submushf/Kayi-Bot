@@ -12,12 +12,11 @@ class Help(commands.Cog):
 
     @commands.command()
     async def help(self, ctx):
-        embed1 = discord.Embed(title= "Help" , description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)" , color = 0x0F6BE2)
-        embed1.add_field(name=f"``help :``", value=f"-``The help command``", inline=True)
-        embed1.add_field(name=f"``mod :``", value=f"-``The moderation commands``", inline= True)
-        embed1.add_field(name=f"``Other :``", value=f"-``Shows all the other commands``", inline= True)
-        embed1.add_field(name=f"``pic :``", value=f"-``Shows the list of character's.``", inline= True) 
-        embed1.add_field(name=f"``gif :``", value=f"-``gives a random GIf from the series.``", inline= True) 
+        embed1 = discord.Embed(
+            title= "Help" , 
+            description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)\n ``help :``-``The help command``" ,
+            color = 0x0F6BE2
+            )
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
         embed1.set_footer(text="Page-1/4")
        
