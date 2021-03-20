@@ -94,7 +94,6 @@ async def pages(ctx):
                 # removes reactions if the user tries to go forward on the last page or
                 # backwards on the first page
         except asyncio.TimeoutError:
-            await message.delete()
             break
             # ending the loop if user doesn't react after x seconds
 
