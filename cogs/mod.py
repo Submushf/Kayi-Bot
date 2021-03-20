@@ -47,9 +47,11 @@ class Moderation(commands.Cog):
 
     @commands.command(aliases=['av'])
     async def avatar(self, ctx, member : discord.Member = None):
+        
         if member is None:
-            embed = discord.Embed(title=f"{ctx.message.author}'s avatar", colour=0x0F6BE2)
-            embed.set_image(url=ctx.avatar_url)
+            member = ctx.author if not member else member
+            embed = discord.Embed(title = f"{member.name}'s avatar", color = member.color)
+            embed.set_image(url=member.avatar_url)
             await ctx.send(embed=embed)
             return
 
