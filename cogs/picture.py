@@ -38,7 +38,7 @@ class other(commands.Cog):
 
         await ctx.send(embed=embed)
 
-    @commands.command(description = "gives pic of ibn_arabi.") 
+    @commands.command(aliases=['ibn arabi'], description = "gives pic of ibn_arabi.") 
     async def ibn_arabi(self,ctx):
         ibn =  random.choice(arabi)
 
