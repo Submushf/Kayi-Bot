@@ -47,9 +47,9 @@ class Moderation(commands.Cog):
 
     @commands.command(aliases=['av'])
     async def avatar(self, ctx, member : discord.Member = None):
-
-        if member is None:
-            embed = discord.Embed(title="This command is used like this: ```k!avatar [member]```", colour=0x0F6BE2, timestamp=ctx.message.created_at)
+        if not member:
+            embed = discord.Embed(title=f"{ctx.message.author}'s avatar", colour=0x0F6BE2)
+            embed.set_image(url=ctx.avatar_url)
             await ctx.send(embed=embed)
             return
 
@@ -57,7 +57,6 @@ class Moderation(commands.Cog):
             embed2 = discord.Embed(title=f"{member}'s Avatar!", colour=0x0F6BE2)
             embed2.set_image(url=member.avatar_url)
             await ctx.send(embed=embed2)
-
 
     @commands.command(aliases=['whois', 'ui'], description = "Shows User's Info ")
     async def info(self, ctx, member : discord.Member=None):
