@@ -78,8 +78,14 @@ class Help(commands.Cog):
 
     @commands.command()
     async def Page(self, ctx):
-        embed1 = discord.Embed(color=ctx.author.color)
+        embed1 = discord.Embed(title= "Help" , description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php)" , color = 0x0F6BE2)
         embed1.add_field(name="⚙ help", value=f"`The help command`", inline=False)
+        embed1.add_field(name="🔨 mod", value=f"`The moderation commands`", inline= False)
+        embed1.add_field(name="🥳 Other", value=f"`Shows all the other commands`", inline= False)
+        embed1.add_field(name="📷 pic", value=f"`Shows the list of character's.`", inline= False) 
+        embed1.add_field(name="🎬 gif", value=f"`gives a random GIf from the series.`", inline= False) 
+        embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
+        embed1.set_footer(text="Page-1")
         embed2 = discord.Embed(color=ctx.author.color).add_field(name="Example", value="Page 2")
         embed3 = discord.Embed(color=ctx.author.color).add_field(name="Example", value="Page 3")
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
