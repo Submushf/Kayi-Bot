@@ -58,7 +58,7 @@ async def withdraw(self,ctx,amount = None):
 
     amount = int(amount)
     if amount>bal[1]:
-        await ctx.send("you dont have that much Drapes coin!")
+        await ctx.send("you dont have that much coin!")
         return
     if amount<0:
         await ctx.send("amount must be positive!")
@@ -67,7 +67,7 @@ async def withdraw(self,ctx,amount = None):
     await update_bank(ctx.author,amount)
     await update_bank(ctx.author,-1*amount, "bank")
 
-    await ctx.send(f"You withdrew {amount} Drapes coins!")
+    await ctx.send(f"You withdrew {amount} coins!")
 
 
 @commands.command()
@@ -82,7 +82,7 @@ async def deposit(self,ctx,amount = None):
 
     amount = int(amount)
     if amount>bal[0]:
-        await ctx.send("you dont have that much Drapes coin!")
+        await ctx.send("you dont have that much coin!")
         return
     if amount<0:
         await ctx.send("amount must be positive!")
@@ -91,7 +91,7 @@ async def deposit(self,ctx,amount = None):
     await update_bank(ctx.author,-1*amount)
     await update_bank(ctx.author,amount, "bank")
 
-    await ctx.send(f"You deposited {amount} drapes coins!") 
+    await ctx.send(f"You deposited {amount} coins!") 
 
 @commands.command()
 @commands.cooldown(1, 30, commands.BucketType.user)
@@ -107,7 +107,7 @@ async def send(self,ctx,member:discord.Member,amount = None):
 
     amount = int(amount)
     if amount>bal[1]:
-        await ctx.send("you dont have that much Drapes coin!")
+        await ctx.send("you dont have that much coin!")
         return
     if amount<0:
         await ctx.send("amount must be positive!")
@@ -116,7 +116,7 @@ async def send(self,ctx,member:discord.Member,amount = None):
     await update_bank(ctx.author,-1*amount, "bank")
     await update_bank(member,amount, "bank")
 
-    await ctx.send(f"You gave {amount} Drapes coins!")
+    await ctx.send(f"You gave {amount} coins!")
 
 @commands.command()
 async def rob(self,ctx,member:discord.Member):
@@ -134,7 +134,7 @@ async def rob(self,ctx,member:discord.Member):
     await update_bank(ctx.author,earnings)
     await update_bank(member,-1*earnings)
 
-    await ctx.send(f"You robbed and got {earnings} Drapes coins!") 
+    await ctx.send(f"You robbed and got {earnings} coins!") 
 
 
 async def open_account(user):
