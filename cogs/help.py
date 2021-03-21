@@ -40,7 +40,7 @@ class Help(commands.Cog):
         embed3.add_field(name="say", value=f"`says what you say`", inline= False)
         embed3.add_field(name="poll", value=f"`make a poll`", inline= False)
         embed3.add_field(name="dead", value=f"`just gives a dead gif`", inline= False)
-        embed3.add_field(name="random", value=f"`gives a random image`", inline= False)        
+        embed3.add_field(name="who", value=f"`a guess who game`", inline= False)        
         embed3.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed3.set_footer(text="Page-3/4")
 
