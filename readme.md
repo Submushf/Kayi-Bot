@@ -5,4 +5,4 @@
 3. example is given below 
 
 Demo Image:
-![](demo.png)  
+![](demo.PNG)  
