@@ -18,7 +18,6 @@ class Help(commands.Cog):
         embed1.add_field(name=f"Page-2", value=f"`Shows the moderation commands`", inline= False)
         embed1.add_field(name=f"Page-3", value=f"`Shows all the other commands`", inline= False)
         embed1.add_field(name=f"Page-4", value=f"`Shows the list of character's.`", inline= False)  
-        embed1.add_field(name=f"Page-5", value=f"`shows all the economy commands.`", inline= False)
         embed1.add_field(name=f"Gif", value=f"`gives a random GIf from the series.`", inline= False)
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
         embed1.set_footer(text="React to change page -- 1/4") 
@@ -68,11 +67,9 @@ class Help(commands.Cog):
 
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
-        paginator.add_reaction('⏮️', "first")
         paginator.add_reaction('◀', "back")
         paginator.add_reaction('⛔', "lock")
         paginator.add_reaction('▶', "next")
-        paginator.add_reaction('⏭️', "last")
         embeds = [embed1, embed2, embed3, embed4]
         await paginator.run(embeds)
 
