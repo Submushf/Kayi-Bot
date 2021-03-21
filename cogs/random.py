@@ -24,8 +24,7 @@ ran = [
     "https://cdn.discordapp.com/attachments/822698105966821396/822700358899728445/12.jpg",
     "https://cdn.discordapp.com/attachments/822698105966821396/822700363240964116/21.jpg",
     "https://cdn.discordapp.com/attachments/822698105966821396/822700371826049024/31.png",
-    "https://cdn.discordapp.com/attachments/822698105966821396/822700489678389268/Olivia_Black.jpg",
-    "https://cdn.discordapp.com/attachments/822698105966821396/822700532471693392/moonlight.jpg"
+    "https://cdn.discordapp.com/attachments/818374423685627907/823042586255294494/images_14.jpeg"
 ]
 
 
