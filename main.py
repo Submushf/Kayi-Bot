@@ -234,7 +234,7 @@ async def leaderboard(ctx,x = 1):
     index = 1
     for amt in total:
         id_ = leader_board[amt]
-        member = self.get_user(id_)
+        member = client.get_user(id_)
         name = member.name
         em.add_field(name = f"{index}. {name}" , value = f"{amt}",  inline = False)
         if index == x:
