@@ -9,7 +9,7 @@ class randoms(commands.Cog):
     def __init__(self, client):
         self.client = client 
 
-    @commands.command(aliases = ['person','Who'],description = "guess who game") 
+    @commands.command(aliases = ['person'],description = "guess who game") 
     async def Who(self,ctx):
         gi =  random.choice(ran)
 
