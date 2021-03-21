@@ -18,9 +18,10 @@ class Help(commands.Cog):
         embed1.add_field(name=f"Page-2", value=f"`Shows the moderation commands`", inline= False)
         embed1.add_field(name=f"Page-3", value=f"`Shows all the other commands`", inline= False)
         embed1.add_field(name=f"Page-4", value=f"`Shows the list of character's.`", inline= False)  
+        embed1.add_field(name=f"Page-5", value=f"`shows all the economy commands.`", inline= False)
         embed1.add_field(name=f"Gif", value=f"`gives a random GIf from the series.`", inline= False)
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
-        embed1.set_footer(text="react to change page--1/4") 
+        embed1.set_footer(text="react to change page--1/5") 
 
         embed2 = discord.Embed(title= "Moderation",color=0x0F6BE2)
         embed2.add_field(name="clear", value=f"`clear's messages`", inline= False)
@@ -31,7 +32,7 @@ class Help(commands.Cog):
         embed2.add_field(name="avatar", value=f"`gives user avatar`", inline= False)
         embed2.add_field(name="server", value=f"`shows the amount of servers the bot is in`", inline= False)        
         embed2.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
-        embed2.set_footer(text="Page-2/4")
+        embed2.set_footer(text="Page-2/5")
         
         embed3 = discord.Embed(title= "others" ,color=0x0F6BE2)
         embed3.add_field(name="8ball", value=f"`just a 8ball game`", inline= False)
@@ -42,7 +43,7 @@ class Help(commands.Cog):
         embed3.add_field(name="dead", value=f"`just gives a dead gif`", inline= False)
         embed3.add_field(name="random", value=f"`gives a random image`", inline= False)        
         embed3.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
-        embed3.set_footer(text="Page-3/4")
+        embed3.set_footer(text="Page-3/5")
 
         embed4= discord.Embed(title= "Picture" , color = 0x0F6BE2)
         embed4.add_field(name="ertugrul", value= "`gives a pic of ertugrul.`", inline= False)
@@ -63,13 +64,23 @@ class Help(commands.Cog):
         embed4.add_field(name="dogan", value= "`gives a pic of dogan.`", inline= False)
         embed4.add_field(name="noyan", value= "`gives a pic of noyan.`", inline= False)
         embed4.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
-        embed4.set_footer(text="Page-4/4")
+        embed4.set_footer(text="Page-4/5")
 
+        embede = discord.Embed(title = "Economy" , color = 0x0F6BE2 ) 
+        embede.add_field(name= "balance " , value= "-Check your account balance " , inline= True)
+        embede.add_field(name= "leaderboard " , value= "-shows the leader board " , inline= True)
+        embede.add_field(name= "work " , value= "-work for money " , inline= True)    
+        embede.add_field(name= "deposit " , value= "-deposit your money " , inline= True)  
+        embede.add_field(name= "rob " , value= "-Rob money from anyone in the server " , inline= True)  
+        embede.add_field(name= "send " , value= "-send money to anyone in the server " , inline= True) 
+        embede.add_field(name= "withdraw " , value= "-withdraw money " , inline= True)
+        embed4.set_footer(text="Page-5/5")
+        
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
         paginator.add_reaction('◀', "back")
         paginator.add_reaction('⛔', "lock")
         paginator.add_reaction('▶', "next")
-        embeds = [embed1, embed2, embed3, embed4]
+        embeds = [embed1, embed2, embed3, embed4, embede]
         await paginator.run(embeds)
 
 def setup(client):
