@@ -68,9 +68,11 @@ class Help(commands.Cog):
 
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
+        paginator.add_reaction('⏮️', "first")
         paginator.add_reaction('◀', "back")
         paginator.add_reaction('⛔', "lock")
         paginator.add_reaction('▶', "next")
+        paginator.add_reaction('⏭️', "last")
         embeds = [embed1, embed2, embed3, embed4]
         await paginator.run(embeds)
 
