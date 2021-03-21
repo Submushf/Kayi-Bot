@@ -337,7 +337,12 @@ bala = [
     "https://cdn.discordapp.com/attachments/819129568824000523/822155710120722472/979553d25f159cd193c6f85d3fe877f0.jpg",
     "https://cdn.discordapp.com/attachments/819129568824000523/822155710434508810/af003c209985713f4fc1d91d82b17f48.jpg",
     "https://cdn.discordapp.com/attachments/819129568824000523/822155710682366023/8ebf3b9d22ef9fba308f698337d79df3.jpg",
-    "https://cdn.discordapp.com/attachments/819129568824000523/822155710837293096/2a332d29b606a6dc5fb847e472fac909.jpg"
+    "https://cdn.discordapp.com/attachments/819129568824000523/822155710837293096/2a332d29b606a6dc5fb847e472fac909.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/822165124008771675/c30ada40fcb29d3033ee4e9055519abf.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/822165124223467610/3a370eaabaf8220b85498c5d54726e23.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/822165124482596924/3ec03ecf2c16c5c478f520078b01b28a.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/822165124705943552/a4408e75dcf959eb2a27ca4fd6200c08.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/823017464664555520/Screenshot_20210321-071642_1.jpg"
 ]
 
 arabi = [
