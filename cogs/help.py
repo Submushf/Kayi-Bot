@@ -14,13 +14,13 @@ class Help(commands.Cog):
     async def help(self, ctx):
        
         embed1 = discord.Embed(title= "Help Menu", description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php) ", color = 0x0F6BE2)
-        embed1.add_field(name=f"Help", value=f"`Shows This message`", inline=False)
+        embed1.add_field(name=f"Page-1", value=f"`Shows This message`", inline=False)
         embed1.add_field(name=f"Page-2", value=f"`Shows the moderation commands`", inline= False)
         embed1.add_field(name=f"Page-3", value=f"`Shows all the other commands`", inline= False)
         embed1.add_field(name=f"Page-4", value=f"`Shows the list of character's.`", inline= False)  
         embed1.add_field(name=f"Gif", value=f"`gives a random GIf from the series.`", inline= False)
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
-        embed1.set_footer(text="Page-1/4 | react to change page")
+        embed1.set_footer(text="react to change page--1/4") 
 
         embed2 = discord.Embed(title= "Moderation",color=0x0F6BE2)
         embed2.add_field(name="clear", value=f"`clear's messages`", inline= False)
