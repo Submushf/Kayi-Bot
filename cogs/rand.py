@@ -25,7 +25,10 @@ ran = [
     "https://cdn.discordapp.com/attachments/822698105966821396/823127693448183818/burcu_ozberk_askimmm.jpg",
     #---------------------------------boys-------------------------------------------------------
     "https://cdn.discordapp.com/attachments/822698105966821396/823127728193798164/chrishemsworth___Tumblr.jpg",
-    "https://cdn.discordapp.com/attachments/822698105966821396/823127730174164992/Robert_Downey_Jr__Photostream.jpg"
+    "https://cdn.discordapp.com/attachments/822698105966821396/823127730174164992/Robert_Downey_Jr__Photostream.jpg",
+    "https://cdn.discordapp.com/attachments/822698105966821396/823357757406445588/16163741715949171309586120113554.jpg",
+    "https://cdn.discordapp.com/attachments/822698105966821396/823358118725419058/16163742580345388427248952105711.jpg",
+    "https://cdn.discordapp.com/attachments/822698105966821396/823357494872506368/16163741208138319921527181123948.jpg"
 ]
 
 
