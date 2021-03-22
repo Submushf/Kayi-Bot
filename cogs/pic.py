@@ -343,7 +343,7 @@ bala = [
     "https://cdn.discordapp.com/attachments/819129568824000523/822165124482596924/3ec03ecf2c16c5c478f520078b01b28a.jpg",
     "https://cdn.discordapp.com/attachments/819129568824000523/822165124705943552/a4408e75dcf959eb2a27ca4fd6200c08.jpg",
     "https://cdn.discordapp.com/attachments/819129568824000523/823017464664555520/Screenshot_20210321-071642_1.jpg",
-    "https://cdn.discordapp.com/attachments/819129568824000523/823451646137729044/Ibn_1.jpg"
+    
 ]
 
 arabi = [
