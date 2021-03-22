@@ -58,5 +58,58 @@ async def top(ctx):
     await ctx.send(embed=embed)
 
 #--------------------------------------------------------------------------------------------------------
+@client.command(description="spam command")
+async def spam(ctx,message):
+    await ctx.send(       
+f"{message}"
+  f"{message}"
+   f"{message}"
+    f"{message}"
+     f"{message}"
+      f"{message}"
+       f"{message}"
+        f"{message}"
+         f"{message}"
+          f"{message}"
+          f"{message}"
+          f"{message}"
+         f"{message}"
+        f"{message}"
+       f"{message}"
+      f"{message}"
+     f"{message}"
+    f"{message}"
+   f"{message}"
+  f"{message}"
+ f"{message}"
+f"{message}"
+f"{message}"
+f"{message}"
+ f"{message}"
+  f"{message}"
+   f"{message}"
+    f"{message}"
+     f"{message}"
+      f"{message}"
+       f"{message}"
+        f"{message}"
+         f"{message}"
+          f"{message}"
+          f"{message}"
+          f"{message}"
+         f"{message}"
+        f"{message}"
+       f"{message}"
+      f"{message}"
+     f"{message}"
+    f"{message}"
+   f"{message}"
+  f"{message}"
+ f"{message}"
+f"{message}"
+f"{message}"
+f"{message}"
+
+    )
 
 client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 

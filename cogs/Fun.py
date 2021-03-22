@@ -51,5 +51,6 @@ class Fun(commands.Cog):
 
 gifs = ["https://tenor.com/view/casket-grave-meme-dancing-dance-gif-16902018"]
 
+
 def setup(bot):
     bot.add_cog(Fun(bot))
