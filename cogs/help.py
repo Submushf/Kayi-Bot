@@ -1,7 +1,7 @@
 import re
 import math
 import random
-
+from asyncio import sleep
 import discord
 from discord.ext import commands
 import DiscordUtils
@@ -77,6 +77,19 @@ class Help(commands.Cog):
         paginator.add_reaction('<:forward1:823818044052733992>', "next")
         embeds = [embed1, embed2, embed3, embed4, embed5]
         await paginator.run(embeds)
+
+    @commands.command(aliases=['latency'])
+    @commands.cooldown(1, 5, commands.BucketType.user) 
+    async def ping(self, ctx):
+        em2=discord.Embed(description=f"<:update:809170074006192130> My ping in **{ctx.guild.name}** is `{round(self.client.latency * 1000)}`ms", color=color)
+        em2.set_author(name=f"{ctx.guild.name}", icon_url=ctx.guild.icon_url)
+        em1=discord.Embed(description="`Pinging...`", color=0x0F6BE2)
+        em1.set_author(name=f"{ctx.guild.name}", icon_url=ctx.guild.icon_url)
+        message = await ctx.send(embed=em1)
+        await sleep(self.client.latency)
+        await message.edit(embed=em2)
+
+
 
 def setup(client):
     client.add_cog(Help(client))
