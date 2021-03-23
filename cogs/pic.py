@@ -343,6 +343,11 @@ bala = [
     "https://cdn.discordapp.com/attachments/819129568824000523/822165124482596924/3ec03ecf2c16c5c478f520078b01b28a.jpg",
     "https://cdn.discordapp.com/attachments/819129568824000523/822165124705943552/a4408e75dcf959eb2a27ca4fd6200c08.jpg",
     "https://cdn.discordapp.com/attachments/819129568824000523/823017464664555520/Screenshot_20210321-071642_1.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/823732138230022174/Screenshot_20210323-063042_1.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/823732138390192158/Screenshot_20210323-062826_1.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/823732138528473138/Screenshot_20210323-062507_1.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/823732138762567680/Screenshot_20210323-062220_1.jpg",
+    "https://cdn.discordapp.com/attachments/819129568824000523/823732138935189544/Screenshot_20210323-062103_1.jpg"
     
 ]
 
@@ -383,7 +388,11 @@ osm = [
     "https://cdn.discordapp.com/attachments/819129626601193494/819323001081167922/osman8.PNG",
     "https://cdn.discordapp.com/attachments/819129626601193494/822156681198174278/a2096c412e305f72cac7661fef864653.jpg",
     "https://cdn.discordapp.com/attachments/819129626601193494/822156682297212955/7f6e6e9da2aa883ccfddfb6d829c0c58.png",
-    "https://cdn.discordapp.com/attachments/819129626601193494/822156682658316328/bc3088b3670d92a90f6f5220707973ee.jpg"
+    "https://cdn.discordapp.com/attachments/819129626601193494/822156682658316328/bc3088b3670d92a90f6f5220707973ee.jpg",
+    "https://cdn.discordapp.com/attachments/819129626601193494/823732237563592704/Screenshot_20210323-060922_1.jpg",
+    "https://cdn.discordapp.com/attachments/819129626601193494/823732236871270420/Screenshot_20210323-062247_1.jpg",
+    "https://cdn.discordapp.com/attachments/819129626601193494/823732237052543001/Screenshot_20210323-062050_1.jpg",
+    "https://cdn.discordapp.com/attachments/819129626601193494/823732237227917322/Screenshot_20210323-061805_1.jpg"
 ]
 
 ertugrul = [
