@@ -18,22 +18,21 @@ class Help(commands.Cog):
             description = f'`Prefix :` - `k.`\n`Page 1 :` - `Menu`\n`Page 2 :` - `Moderation`\n`Page 3 :` - `Other`\n`Page 4 :` - `Ertugrul Ch`\n`Page 5 :` - `Osman Ch`' , 
             color = 0x0F6BE2
             )
+        embed1.add_field(name="Links", value="[Our Server](https://discord.gg/3aRqRUqp8b)", inline=False)
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
         embed1.set_footer(text="React to change page • 1/5") 
 
         embed2 = discord.Embed(
             title= "Moderation",
-            description = f'`clear :` - `clear messages`\n`kick  :` - `kick members`\n`ban   :` - `ban members`\n`unban :` - `unban members`\n`lock  :` - `lock channel`\n`unlock :` - `unlock channel`\n`info  :` - `show user info`\n`poll  :` - `make a poll`\n`avatar :` - `show user avatar`\n`server :` - `shows the number of server bot is in`' , 
+            description = f'`clear :` - `clear messages`\n`kick  :` - `kick members`\n`ban   :` - `ban members`\n`unban :` - `unban members`\n`lock  :` - `lock channel`\n`unlock:` - `unlock channel`\n`info  :` - `show user info`\n`poll  :` - `make a poll`\n`avatar:` - `show user avatar`' , 
             color=0x0F6BE2)       
         embed2.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed2.set_footer(text="Page • 2/5")
         
-        embed3 = discord.Embed(title= "others" ,color=0x0F6BE2)
-        embed3.add_field(name="8ball", value=f"`just a 8ball game`", inline= False)
-        embed3.add_field(name="say", value=f"`says what you say`", inline= False)
-        embed3.add_field(name="dead", value=f"`just gives a dead gif`", inline= False)
-        embed3.add_field(name="who", value=f"`a guess who game`", inline= False)
-        embed3.add_field(name="Gif", value=f"`gives a random GIf from the series.`", inline= False)        
+        embed3 = discord.Embed(
+            title= "others" ,
+            description = f'`8ball :` - `8ball game`\n`say  :` - `says what you say`\n`Dead   :` - `Dead gif`\n`who :` - `who game`\n`gif  :` - `sends a random gif`' ,
+            color=0x0F6BE2)
         embed3.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed3.set_footer(text="Page • 3/5")
 
