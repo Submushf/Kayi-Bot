@@ -29,10 +29,10 @@ async def on_command_error(ctx, error):
         await ctx.send("> <:deny:823812620577538059> You can't do that\n ```Missing Permission```")
 
     elif isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("> <:deny:823812620577538059> Missing Required Argument")
+        await ctx.send("> <:deny:823812620577538059> `Missing Required Argument`")
 
     elif isinstance(error, commands.CommandNotFound):
-        await ctx.send("> <:deny:823812620577538059> Unknown command. Try k!help for a list of commands")
+        await ctx.send("> <:deny:823812620577538059> `Unknown command. Try k!help for a list of commands`")
 
 #------------------------------------------------------------------------------------------------------
 @client.command()
@@ -46,15 +46,6 @@ async def unload(ctx, extension):
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}') 
-
-@client.command()
-async def top(ctx):
-    embed = discord.Embed(
-        title = "<:kayi:819796457942155285> Top Servers", 
-        description= "**Kayi Edits [click here](https://discord.gg/shqH8NH84f)**\n **Ertugrul Community [click here](https://discord.gg/V6MKJQ5zVC)**\n **IYI Community [click here](https://discord.gg/3aRqRUqp8b)**", 
-        color=0x0F6BE2
-        )
-    await ctx.send(embed=embed)
 
 #--------------------------------------------------------------------------------------------------------
 
