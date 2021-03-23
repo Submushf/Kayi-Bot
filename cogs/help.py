@@ -62,11 +62,9 @@ class Help(commands.Cog):
         embed5.set_footer(text="Page • 5/5")
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
-        paginator.add_reaction('⏮️', "first")
         paginator.add_reaction('<:back1:823818044249341962>', "back")
         paginator.add_reaction('⛔', "lock")
         paginator.add_reaction('<:forward1:823818044052733992>', "next")
-        paginator.add_reaction('⏭️', "last")
         embeds = [embed1, embed2, embed3, embed4, embed5]
         await paginator.run(embeds)
 
