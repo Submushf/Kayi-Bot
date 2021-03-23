@@ -49,32 +49,6 @@ class Fun(commands.Cog):
         await ctx.send(f"**RIP** {member}")
         await ctx.send(giffy)
 
-    @commands.command(aliases=['h'])
-    async def hack(self,ctx, member: discord.Member):
-
-        used_words = ['Nerd','Sucker','Noob','Sup','Yo','Wassup','Nab','Nub','fool','stupid','b1tch','fvck','idiot']
-        mails = ['@gmail.com','@hotmail.com','@yahoo.com']
-
-        hacking = await ctx.send(f"Hacking {member.name}.....")
-        await asyncio.sleep(1)
-        await hacking.edit(content='Finding info....')
-        await asyncio.sleep(1)
-        await hacking.edit(content=f"Discord email address: {member.name}{random.choice(mails)}")
-        await asyncio.sleep(1.5)
-        await hacking.edit(content=f"Password: x2yz{member.name}xxy65")
-        await asyncio.sleep(1)
-        await hacking.edit(content=f'Most used words: {random.choice(used_words)}')
-        await asyncio.sleep(1)
-        await hacking.edit(content='IP address: 127.0.0.1:50')
-        await asyncio.sleep(1)
-        await hacking.edit(content='Selling information to the government....')
-        await asyncio.sleep(2)
-        await hacking.edit(content=f'Reporting {member.name} to Discord for violating ToS')
-        await asyncio.sleep(2)
-        await hacking.edit(content='Hacking medical records.....')
-        await asyncio.sleep(1)
-        await hacking.edit(content=f"{ctx.author.mention} successfully hacked {member.mention}")
-        await ctx.send("The ultimate, real hacking has been done!")
 
 gifs = ["https://tenor.com/view/casket-grave-meme-dancing-dance-gif-16902018"]
 

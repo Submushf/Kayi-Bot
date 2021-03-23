@@ -3,11 +3,20 @@ from discord.ext import commands
 import random
 import datetime
 import os
+import praw
 import asyncio
 import json
 
 client = commands.Bot(command_prefix=('k!', 'k.'), case_insensitive=True, intents = discord.Intents.all()) 
 client.remove_command("help")
+
+
+reddit = praw.Reddit(client_id = "p0m92UTJwk6ccg",
+                     client_secret = "af1vaLhlP99UE5zEeHxTuPbtLyIZDw",
+                     username = "Devesh1211",
+                     password = "Devesh@123",
+                     user_agent = "pythonpraw")
+
 
 @client.event
 async def on_ready():
@@ -52,6 +61,33 @@ async def unload(ctx, extension):
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}') 
+
+
+@client.command()
+async def meme(ctx):
+    
+    if not hasattr(client, 'nextMeme'):
+        client.nextMeme = getMeme()
+
+    name, url = client.nextMeme
+    embed = discord.Embed(title = name)
+    embed.set_image(url=url)
+    await ctx.send(embed=embed)
+
+    client.nextMeme = getMeme()
+
+def getMeme():
+    all_subs = []
+    subreddit = reddit.subreddit("dankmemes")   
+    top = subreddit.top(limit=150)
+
+    for submission in top:
+        all_subs.append(submission)
+
+    random_sub = random.choice(all_subs)
+    name = random_sub.title
+    url = random_sub.url
+    return name, url
 
 #--------------------------------------------------------------------------------------------------------
 
