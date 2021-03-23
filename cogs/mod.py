@@ -18,7 +18,7 @@ class Moderation(commands.Cog):
     async def kick(self, ctx, member : discord.Member):
         await member.kick()
         embed = discord.Embed(color = 0x0F6BE2 )
-        embed.add_field(name="Kicked",value=f"👍 {member.mention} was kicked from the server.",inline=True)
+        embed.add_field(name="Kicked",value=f"<:tick:823812620632981574> {member.mention} was kicked from the server.",inline=True)
         await ctx.send(embed=embed)
 
     @commands.command(aliases=['b'], description = "Ban members")
@@ -27,7 +27,7 @@ class Moderation(commands.Cog):
     async def ban(self, ctx, member : discord.Member):
         await member.ban()
         embed = discord.Embed(color= 0x0F6BE2)
-        embed.add_field(name="Banned", value= f"🔨 {member.mention} was banned from the server.") 
+        embed.add_field(name="Banned", value= f"<:tick:823812620632981574> {member.mention} was banned from the server.") 
         await ctx.send(embed=embed)
 
     @commands.command(aliases=['ub'], description = "UnBan members")
@@ -41,7 +41,7 @@ class Moderation(commands.Cog):
             if (user.name, user.discriminator) == (member_name, member_discriminator):
                 await ctx.guild.unban(user)
                 embed = discord.Embed(color = 0x0F6BE2)
-                embed.add_field(name="Unbanned", value=f"📜 {user.mention} was unbanned.")
+                embed.add_field(name="Unbanned", value=f"<:tick:823812620632981574> {user.mention} was unbanned.")
                 await ctx.send(embed=embed)
                 return
 
@@ -72,6 +72,42 @@ class Moderation(commands.Cog):
         embed.add_field(name="Joined Server At", value=f"{joined_at}", inline=True)
         embed.set_thumbnail(url=f"{member.avatar_url}")
         await ctx.send(embed=embed)
+
+    @commands.command(aliases=['l', 'close'])
+    @commands.guild_only()
+    @commands.cooldown(1, 5, commands.BucketType.user) 
+    @commands.has_permissions(manage_channels=True)
+    async def lock(self, ctx, role : discord.Role=None, channel : discord.TextChannel=None):
+        if not channel:
+            channel = ctx.channel
+        role = role or ctx.guild.default_role
+        overwrite = channel.overwrites_for(role)
+        overwrite.send_messages = False
+        await channel.set_permissions(role, overwrite=overwrite)
+        await ctx.message.delete()
+        embed=discord.Embed(title='🔒 Channel Lock', description=f'Locked down **{channel}** for **{role}**', color=0x0F6BE2)
+        embed.set_footer(text=f'Used by {ctx.author}')
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=['u', 'ul', 'open'])
+    @commands.guild_only()
+    @commands.cooldown(1, 5, commands.BucketType.user) 
+    @commands.has_permissions(manage_channels=True)
+    async def unlock(self, ctx, role : discord.Role=None, channel : discord.TextChannel=None):
+        if not channel:
+            channel = ctx.channel
+        role = role or ctx.guild.default_role
+        overwrite = channel.overwrites_for(role)
+        if role is ctx.guild.default_role:
+            overwrite.send_messages = None
+        if role is not ctx.guild.default_role:
+            overwrite.send_messages = True
+        await channel.set_permissions(role, overwrite=overwrite)
+        await ctx.message.delete()
+        embed=discord.Embed(title='🔓 Channel Unlock', description=f'Unlocked **{channel}** for **{role}**', color=0x0F6BE2)
+        embed.set_footer(text=f'Used by {ctx.author}')
+        await ctx.send(embed=embed)
+
 
 def setup(client):
     client.add_cog(Moderation(client))
