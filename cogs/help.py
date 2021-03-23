@@ -18,7 +18,7 @@ class Help(commands.Cog):
             description = f'`Prefix :` - `k.`\n`Page 1 :` - `Menu`\n`Page 2 :` - `Moderation`\n`Page 3 :` - `Other`\n`Page 4 :` - `Ertugrul Ch`\n`Page 5 :` - `Osman Ch`' , 
             color = 0x0F6BE2
             )
-        embed1.add_field(name="Links", value="[Our Server](https://discord.gg/3aRqRUqp8b)", inline=False)
+        embed1.add_field(name="Links", value="[Our Server](https://discord.gg/Nu4Sxk5w5B)", inline=False)
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
         embed1.set_footer(text="React to change page • 1/5") 
 
@@ -62,9 +62,11 @@ class Help(commands.Cog):
         embed5.set_footer(text="Page • 5/5")
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
+        paginator.add_reaction('⏮️', "first")
         paginator.add_reaction('<:back1:823818044249341962>', "back")
         paginator.add_reaction('⛔', "lock")
         paginator.add_reaction('<:forward1:823818044052733992>', "next")
+        paginator.add_reaction('⏭️', "last")
         embeds = [embed1, embed2, embed3, embed4, embed5]
         await paginator.run(embeds)
 
