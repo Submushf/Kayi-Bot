@@ -17,7 +17,7 @@ class Help(commands.Cog):
         embed1.add_field(name="Page-1", value=f"`This message`", inline=False)
         embed1.add_field(name="Page-2", value=f"`the moderation commands`", inline= False)
         embed1.add_field(name="Page-3", value=f"`the other commands`", inline= False)
-        embed1.add_field(name="Page-4", value=f"Shows list of character's.`", inline= False)  
+        embed1.add_field(name="Page-4", value=f"`Shows list of character's.`", inline= False)  
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
         embed1.set_footer(text="React to change page ・1/4") 
 
