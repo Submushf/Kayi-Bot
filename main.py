@@ -78,8 +78,8 @@ async def meme(ctx):
 
 def getMeme():
     all_subs = []
-    subreddit = reddit.subreddit("dankmemes")   
-    top = subreddit.top(limit=150)
+    subreddit = reddit.subreddit("Ertugrulmemes")   
+    top = subreddit.top(limit=100)
 
     for submission in top:
         all_subs.append(submission)
