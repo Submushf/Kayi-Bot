@@ -13,14 +13,13 @@ class Help(commands.Cog):
     @commands.command()
     async def help(self, ctx):
        
-        embed1 = discord.Embed(title= "Help Menu", description="Wondering where you can watch all episode [click here](https://ardirilisertugrul.net/EnErtugrul/allepisode.php) ", color = 0x0F6BE2)
-        embed1.add_field(name=f"Page-1", value=f"`Shows This message`", inline=False)
-        embed1.add_field(name=f"Page-2", value=f"`Shows the moderation commands`", inline= False)
-        embed1.add_field(name=f"Page-3", value=f"`Shows all the other commands`", inline= False)
-        embed1.add_field(name=f"Page-4", value=f"`Shows the list of character's.`", inline= False)  
-        embed1.add_field(name=f"Gif", value=f"`gives a random GIf from the series.`", inline= False)
+        embed1 = discord.Embed(title= "Help Menu", color = 0x0F6BE2)
+        embed1.add_field(name="Page-1", value=f"`This message`", inline=False)
+        embed1.add_field(name="Page-2", value=f"`the moderation commands`", inline= False)
+        embed1.add_field(name="Page-3", value=f"`the other commands`", inline= False)
+        embed1.add_field(name="Page-4", value=f"Shows list of character's.`", inline= False)  
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
-        embed1.set_footer(text="React to change page -- 1/4") 
+        embed1.set_footer(text="React to change page ・1/4") 
 
         embed2 = discord.Embed(title= "Moderation",color=0x0F6BE2)
         embed2.add_field(name="clear", value=f"`clear's messages`", inline= False)
@@ -28,6 +27,7 @@ class Help(commands.Cog):
         embed2.add_field(name="ban", value=f"`ban members`", inline= False)
         embed2.add_field(name="unban", value=f"`unban members`", inline= False)
         embed2.add_field(name="info", value=f"`shows user info`", inline= False)
+        embed2.add_field(name="poll", value=f"`make a poll`", inline= False)
         embed2.add_field(name="avatar", value=f"`gives user avatar`", inline= False)
         embed2.add_field(name="server", value=f"`shows the amount of servers the bot is in`", inline= False)        
         embed2.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
@@ -35,12 +35,10 @@ class Help(commands.Cog):
         
         embed3 = discord.Embed(title= "others" ,color=0x0F6BE2)
         embed3.add_field(name="8ball", value=f"`just a 8ball game`", inline= False)
-        embed3.add_field(name="youtube", value=f"`Youtube channel`", inline= False) 
-        embed3.add_field(name="top", value=f"`shows the top ertugrul server`", inline= False)
         embed3.add_field(name="say", value=f"`says what you say`", inline= False)
-        embed3.add_field(name="poll", value=f"`make a poll`", inline= False)
         embed3.add_field(name="dead", value=f"`just gives a dead gif`", inline= False)
-        embed3.add_field(name="who", value=f"`a guess who game`", inline= False)        
+        embed3.add_field(name="who", value=f"`a guess who game`", inline= False)
+        embed3.add_field(name="Gif", value=f"`gives a random GIf from the series.`", inline= False)        
         embed3.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed3.set_footer(text="Page-3/4")
 
@@ -67,9 +65,9 @@ class Help(commands.Cog):
 
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
-        paginator.add_reaction('◀', "back")
+        paginator.add_reaction('<:back1:823818044249341962>', "back")
         paginator.add_reaction('⛔', "lock")
-        paginator.add_reaction('▶', "next")
+        paginator.add_reaction('<:forward1:823818044052733992>', "next")
         embeds = [embed1, embed2, embed3, embed4]
         await paginator.run(embeds)
 
