@@ -33,7 +33,7 @@ class Help(commands.Cog):
         embed2.add_field(name="info", value=f"`shows user info`", inline= False)
         embed2.add_field(name="poll", value=f"`make a poll`", inline= False)
         embed2.add_field(name="avatar", value=f"`gives user avatar`", inline= False)
-        embed2.add_field(name="server", value=f"`shows the amount of servers the bot is in`", inline= False)        
+        embed2.add_field(name="server", value=f"`num of servers the bot is in`", inline= False)        
         embed2.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed2.set_footer(text="Page-2/5")
         
@@ -75,7 +75,7 @@ class Help(commands.Cog):
         paginator.add_reaction('<:back1:823818044249341962>', "back")
         paginator.add_reaction('⛔', "lock")
         paginator.add_reaction('<:forward1:823818044052733992>', "next")
-        embeds = [embed1, embed2, embed3, embed4]
+        embeds = [embed1, embed2, embed3, embed4, embed5]
         await paginator.run(embeds)
 
 def setup(client):
