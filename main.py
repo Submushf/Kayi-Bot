@@ -25,8 +25,8 @@ async def server(ctx):
 @client.listen()
 async def on_message(message):
     if message.content in {"<@818372499431489556>", "<@!818372499431489556>"}:
-        embed = discord.Embed(name="<a:783393435242463324:823922568326414337> Hey there ",color = 0x0F6BE2)
-        embed.set_footer(text="My Default Prefix is `k.` & `k!`.")
+        embed = discord.Embed(color = 0x0F6BE2)
+        embed.add_field(name = "<a:783393435242463324:823922568326414337> Hey there" ,value="My Default Prefix is `k.` & `k!`.")
         await message.channel.send(embed = embed)
 
 @client.event
