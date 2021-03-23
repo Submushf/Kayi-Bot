@@ -15,8 +15,6 @@ class Help(commands.Cog):
        
         embed1 = discord.Embed(
             title= "Help Menu", 
-            description = "`Page-1`-`This message'"
-            "`Page-2`-`the moderation commands`",
             color = 0x0F6BE2
             )
         embed1.add_field(name="Page-1", value=f"`This message`", inline=False)
@@ -25,7 +23,7 @@ class Help(commands.Cog):
         embed1.add_field(name="Page-4", value=f"`Shows characters from Ertugrul`", inline= False)
         embed1.add_field(name="Page-5", value=f"`Shows characters From osman`", inline= False)
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
-        embed1.set_footer(text="React to change page ・1/5") 
+        embed1.set_footer(text="React to change page • 1/5") 
 
         embed2 = discord.Embed(title= "Moderation",color=0x0F6BE2)
         embed2.add_field(name="clear", value=f"`clear's messages`", inline= False)
