@@ -23,7 +23,7 @@ class Help(commands.Cog):
 
         embed2 = discord.Embed(
             title= "Moderation",
-            description = f'`clear :` - `clear messages`\n`kick  :` - `kick members`\n`ban   :` - `ban members`\n`unban :` - `unban members`\n`lock :` - `lock channel`\n`unlock :` - `unlock channel`\n`info :` - `show user info`\n`poll :` - `make a poll`\n`avatar :` - `show user avatar`\n`server :` - `shows the number of server bot is in`' , 
+            description = f'`clear :` - `clear messages`\n`kick  :` - `kick members`\n`ban   :` - `ban members`\n`unban :` - `unban members`\n`lock  :` - `lock channel`\n`unlock :` - `unlock channel`\n`info  :` - `show user info`\n`poll  :` - `make a poll`\n`avatar :` - `show user avatar`\n`server :` - `shows the number of server bot is in`' , 
             color=0x0F6BE2)       
         embed2.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed2.set_footer(text="Page • 2/5")
