@@ -81,7 +81,7 @@ class Help(commands.Cog):
     @commands.command(aliases=['latency'])
     @commands.cooldown(1, 5, commands.BucketType.user) 
     async def ping(self, ctx):
-        em2=discord.Embed(description=f"<:update:809170074006192130> My ping in **{ctx.guild.name}** is `{round(self.client.latency * 1000)}`ms", color=color)
+        em2=discord.Embed(description=f"<:update:809170074006192130> My ping in **{ctx.guild.name}** is `{round(self.client.latency * 1000)}`ms", color=0x0F6BE2)
         em2.set_author(name=f"{ctx.guild.name}", icon_url=ctx.guild.icon_url)
         em1=discord.Embed(description="`Pinging...`", color=0x0F6BE2)
         em1.set_author(name=f"{ctx.guild.name}", icon_url=ctx.guild.icon_url)
