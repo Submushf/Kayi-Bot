@@ -31,7 +31,7 @@ class Help(commands.Cog):
         
         embed3 = discord.Embed(
             title= "others" ,
-            description = f'`8ball:` - `8ball game`\n`say  :` - `says what you say`\n`Dead  :` - `Dead gif`\n`who :` - `who game`\n`gif  :` - `sends a random gif`' ,
+            description = f'`8ball:` - `8ball game`\n`say  :` - `says what you say`\n`Dead  :` - `Dead gif`\n`who :` - `who game`\n`gif  :` - `sends a random gif`\n`hack  :` - `hack` ' ,
             color=0x0F6BE2)
         embed3.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed3.set_footer(text="Page • 3/5")
