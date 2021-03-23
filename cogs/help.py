@@ -30,6 +30,8 @@ class Help(commands.Cog):
         embed2.add_field(name="kick", value=f"`kick members`", inline= False)
         embed2.add_field(name="ban", value=f"`ban members`", inline= False)
         embed2.add_field(name="unban", value=f"`unban members`", inline= False)
+        embed2.add_field(name="lock", value=f"`locks the server`", inline= False)
+        embed2.add_field(name="unlock", value=f"`unlocks the server`", inline= False)
         embed2.add_field(name="info", value=f"`shows user info`", inline= False)
         embed2.add_field(name="poll", value=f"`make a poll`", inline= False)
         embed2.add_field(name="avatar", value=f"`gives user avatar`", inline= False)

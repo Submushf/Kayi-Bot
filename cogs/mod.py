@@ -73,5 +73,41 @@ class Moderation(commands.Cog):
         embed.set_thumbnail(url=f"{member.avatar_url}")
         await ctx.send(embed=embed)
 
+    @commands.command(aliases=['l', 'close'])
+    @commands.guild_only()
+    @commands.cooldown(1, 5, commands.BucketType.user) 
+    @commands.has_permissions(manage_channels=True)
+    async def lock(self, ctx, role : discord.Role=None, channel : discord.TextChannel=None):
+        if not channel:
+            channel = ctx.channel
+        role = role or ctx.guild.default_role
+        overwrite = channel.overwrites_for(role)
+        overwrite.send_messages = False
+        await channel.set_permissions(role, overwrite=overwrite)
+        await ctx.message.delete()
+        embed=discord.Embed(title='🔒 Channel Lock', description=f'Locked down **{channel}** for **{role}**', color=0x0F6BE2)
+        embed.set_footer(text=f'Used by {ctx.author}')
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=['u', 'ul', 'open'])
+    @commands.guild_only()
+    @commands.cooldown(1, 5, commands.BucketType.user) 
+    @commands.has_permissions(manage_channels=True)
+    async def unlock(self, ctx, role : discord.Role=None, channel : discord.TextChannel=None):
+        if not channel:
+            channel = ctx.channel
+        role = role or ctx.guild.default_role
+        overwrite = channel.overwrites_for(role)
+        if role is ctx.guild.default_role:
+            overwrite.send_messages = None
+        if role is not ctx.guild.default_role:
+            overwrite.send_messages = True
+        await channel.set_permissions(role, overwrite=overwrite)
+        await ctx.message.delete()
+        embed=discord.Embed(title='🔓 Channel Unlock', description=f'Unlocked **{channel}** for **{role}**', color=0x0F6BE2)
+        embed.set_footer(text=f'Used by {ctx.author}')
+        await ctx.send(embed=embed)
+
+
 def setup(client):
     client.add_cog(Moderation(client))
