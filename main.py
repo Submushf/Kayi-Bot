@@ -26,14 +26,13 @@ async def server(ctx):
 @client.event
 async def on_command_error(ctx, error):  
     if isinstance(error, commands.MissingPermissions):
-        await ctx.send("😣 `You can't do that`")
-        await ctx.message.delete()
+        await ctx.send("><:deny:823812620577538059> You can't do that\n ```Missing Permission```")
 
     elif isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("<:red:819856148043137045> `Missing Required Argument`")
+        await ctx.send("><:deny:823812620577538059> Missing Required Argument")
 
     elif isinstance(error, commands.CommandNotFound):
-        await ctx.send("<:error:819978871037624352> Unknown command. Try k!help for a list of commands")
+        await ctx.send("><:deny:823812620577538059> Unknown command. Try k!help for a list of commands")
 
 #------------------------------------------------------------------------------------------------------
 @client.command()
