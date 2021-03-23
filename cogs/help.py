@@ -14,7 +14,8 @@ class Help(commands.Cog):
     async def help(self, ctx):
        
         embed1 = discord.Embed(
-            title= "Help Menu", 
+            title= "Help Menu",
+            description = f'`Prefix :` - `k.`\n`Page 1 :` - `Menu`\n`Page 2 :` - `Moderation`\n`Page 3 :` - `Other`\n`Page 4 :` - `Ertugrul Ch`\n`Page 5 :` - `Osman Ch`' , 
             color = 0x0F6BE2
             )
         embed1.add_field(name="Page-1", value=f"`This message`", inline=False)
