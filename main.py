@@ -70,7 +70,7 @@ async def meme(ctx):
         client.nextMeme = getMeme()
 
     name, url = client.nextMeme
-    embed = discord.Embed(title = name)
+    embed = discord.Embed(title = name, color=0x0F6BE2)
     embed.set_image(url=url)
     await ctx.send(embed=embed)
 
@@ -96,7 +96,7 @@ async def cat(ctx):
         client.nextCat = getCat()
 
     name, url = client.nextCat
-    embed = discord.Embed(title = name)
+    embed = discord.Embed(title = name, color=0x0F6BE2)
     embed.set_image(url=url)
     await ctx.send(embed=embed)
 
