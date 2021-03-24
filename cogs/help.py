@@ -33,9 +33,11 @@ class Help(commands.Cog):
         embed3.add_field(name='Others', value='`say`, `dead`, `memes`,`gif`, `cats`', inline=False) 
         embed3.set_footer(text="Page • 3/4")
 
+        """ this is the place where you add more characters to the embed feild""" #also use `` these when you add a new name
+
         embed4= discord.Embed(color = 0x0F6BE2)
         embed4.add_field(name='Dirilis Ertugrul', value='`ertugrul`, `halime`, `gondogdu`, `turgut`, `tugtekin`, `hafsa`, `Ibn_arabi`, `gokce`, `aslihan`, `dogan`, `noyan`', inline=False) 
-        embed4.add_field(name='kurulus osman', value='`osman`, `bala`, `bamsi`, `savci`, `selcan`, `bayhoca`', inline=False) 
+        embed4.add_field(name='kurulus osman', value='`osman`, `bala`, `bamsi`, `savci`, `selcan`, `bayhoca`, `gunduz`', inline=False) 
         embed4.set_footer(text="Page • 4/4")
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
