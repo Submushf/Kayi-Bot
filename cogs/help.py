@@ -37,7 +37,7 @@ class Help(commands.Cog):
 
         embed4= discord.Embed(color = 0x0F6BE2)
         embed4.add_field(name='Dirilis Ertugrul', value='`ertugrul`, `halime`, `gondogdu`, `turgut`, `tugtekin`, `hafsa`, `Ibn_arabi`, `gokce`, `aslihan`, `dogan`, `noyan`', inline=False) 
-        embed4.add_field(name='kurulus osman', value='`osman`, `bala`, `bamsi`, `savci`, `selcan`, `bayhoca`, `gunduz`', inline=False) 
+        embed4.add_field(name='kurulus osman', value='`osman`, `bala`, `bamsi`, `savci`, `selcan`, `bayhoca`, `gunduz`, `malhun`', inline=False) 
         embed4.set_footer(text="Page • 4/4")
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
