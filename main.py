@@ -89,6 +89,32 @@ def getMeme():
     url = random_sub.url
     return name, url
 
+@client.command(aliases=['cats'])
+async def cat(ctx):
+    
+    if not hasattr(client, 'nextMeme'):
+        client.nextMeme = getMeme()
+
+    name, url = client.nextMeme
+    embed = discord.Embed(title = name)
+    embed.set_image(url=url)
+    await ctx.send(embed=embed)
+
+    client.nextMeme = getMeme()
+
+def getCat():
+    all_subs = []
+    subreddit = reddit.subreddit("Cats")   
+    top = subreddit.top(limit=95)
+
+    for submission in top:
+        all_subs.append(submission)
+
+    random_sub = random.choice(all_subs)
+    name = random_sub.title
+    url = random_sub.url
+    return name, url
+
 #--------------------------------------------------------------------------------------------------------
 
 client.run("ODE4MzcyNDk5NDMxNDg5NTU2.YEXGyA.hkRJRrCQpkxIYQM91sTqO8t2WCk") 

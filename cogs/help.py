@@ -29,10 +29,8 @@ class Help(commands.Cog):
         embed2.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed2.set_footer(text="Page • 2/5")
         
-        embed3 = discord.Embed(
-            title= "others" ,
-            description = f'`say  :` - `says what you say`\n`Dead :` - `Dead gif`\n`who  :` - `who game`\n`gif  :` - `sends a random gif`\n`meme :` - `sends a Ertugrul meme`' ,
-            color=0x0F6BE2)
+        embed3 = discord.Embed(color=0x0F6BE2)
+        embed3.add_field(name='Others', value='`say`, `dead`, `memes`, `imagine`, `who`, `gif`, `cats`', inline=False)
         embed3.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
         embed3.set_footer(text="Page • 3/5")
 
