@@ -15,7 +15,7 @@ class Help(commands.Cog):
        
         embed1 = discord.Embed(
             title= "Help Menu",
-            description = f'`Prefix :` - `k.`\n`Page 1 :` - `Menu`\n`Page 2 :` - `Moderation`\n`Page 3 :` - `Other`\n`Page 4 :` - `Ertugrul Ch`\n`Page 5 :` - `Osman Ch`' , 
+            description = f'`Prefix :` - `k.`\n`Page 1 :` - `Menu`\n`Page 2 :` - `Moderation`\n`Page 3 :` - `Other`\n`Page 4 :` - `Dirilis/Kurulus`' , 
             color = 0x0F6BE2
             )
         embed1.add_field(name="Links", value="[Our Server](https://discord.gg/Nu4Sxk5w5B)", inline=False)
