@@ -70,7 +70,7 @@ async def meme(ctx):
         client.nextMeme = getMeme()
 
     name, url = client.nextMeme
-    embed = discord.Embed(title = name)
+    embed = discord.Embed(title = name, color=0x0F6BE2)
     embed.set_image(url=url)
     await ctx.send(embed=embed)
 
@@ -79,7 +79,33 @@ async def meme(ctx):
 def getMeme():
     all_subs = []
     subreddit = reddit.subreddit("Ertugrulmemes")   
-    top = subreddit.top(limit=95)
+    top = subreddit.top(limit=150)
+
+    for submission in top:
+        all_subs.append(submission)
+
+    random_sub = random.choice(all_subs)
+    name = random_sub.title
+    url = random_sub.url
+    return name, url
+
+@client.command(aliases=['cats'])
+async def cat(ctx):
+
+    if not hasattr(client, 'nextCat'):
+        client.nextCat = getCat()
+
+    name, url = client.nextCat
+    embed = discord.Embed(title = 'Cat', color=0x0F6BE2)
+    embed.set_image(url=url)
+    await ctx.send(embed=embed)
+
+    client.nextCat = getCat()
+
+def getCat():
+    all_subs = []
+    subreddit = reddit.subreddit("Cats")   
+    top = subreddit.top(limit=100)
 
     for submission in top:
         all_subs.append(submission)
