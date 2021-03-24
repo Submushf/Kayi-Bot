@@ -38,7 +38,7 @@ class Help(commands.Cog):
         embed4.set_footer(text="Page • 4/5")
 
         embed5= discord.Embed(color = 0x0F6BE2)
-        embed3.add_field(name='osman character', value='`osman`, `bala`, `bamsi`, `savci`, `selcan`, `bayhoca`', inline=False) 
+        embed5.add_field(name='osman character', value='`osman`, `bala`, `bamsi`, `savci`, `selcan`, `bayhoca`', inline=False) 
         embed5.set_footer(text="Page • 5/5")
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
