@@ -164,7 +164,20 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of gunduz.") 
+    async def gunduz(self,ctx):
+        gun =  random.choice(gunduz) 
+
+        embed = discord.Embed(title=f"<:ottoman:819796515798253579> gunduz",color=0x0F6BE2)
+        embed.set_image(url= gun) 
+ 
+        await ctx.send(embed = embed )
+
 #----------------------------------------------------------------------------------------------------------------------------
+
+gunduz = [
+    "the link" #paste your image link here 
+]
 
 savci = [
     "https://cdn.discordapp.com/attachments/822161478017875989/822162140843999242/91aded80-26e4-486f-b899-a2971179c9d7.jpg",
