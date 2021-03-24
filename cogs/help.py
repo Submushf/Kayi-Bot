@@ -20,32 +20,29 @@ class Help(commands.Cog):
             )
         embed1.add_field(name="Links", value="[Our Server](https://discord.gg/Nu4Sxk5w5B)", inline=False)
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
-        embed1.set_footer(text="React to change page • 1/5") 
+        embed1.set_footer(text="React to change page • 1/4") 
 
         embed2 = discord.Embed(
             title= "Moderation",
             description = f'`clear :` - `clear messages`\n`kick  :` - `kick members`\n`ban   :` - `ban members`\n`unban :` - `unban members`\n`lock  :` - `lock channel`\n`unlock:` - `unlock channel`\n`info  :` - `show user info`\n`poll  :` - `make a poll`\n`avatar:` - `show user avatar`' , 
             color=0x0F6BE2)       
         embed2.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
-        embed2.set_footer(text="Page • 2/5")
+        embed2.set_footer(text="Page • 2/4")
         
         embed3 = discord.Embed(color=0x0F6BE2)
         embed3.add_field(name='Others', value='`say`, `dead`, `memes`, `who`, `gif`, `cats`', inline=False) 
-        embed3.set_footer(text="Page • 3/5")
+        embed3.set_footer(text="Page • 3/4")
 
         embed4= discord.Embed(color = 0x0F6BE2)
-        embed4.add_field(name='Ertugrul Characters', value='`ertugrul`, `halime`, `gondogdu`, `turgut`, `tugtekin`, `hafsa`, `Ibn_arabi`, `gokce`, `aslihan`, `dogan`, `noyan', inline=False) 
-        embed4.set_footer(text="Page • 4/5")
-
-        embed5= discord.Embed(color = 0x0F6BE2)
-        embed5.add_field(name='osman character', value='`osman`, `bala`, `bamsi`, `savci`, `selcan`, `bayhoca`', inline=False) 
-        embed5.set_footer(text="Page • 5/5")
+        embed4.add_field(name='Dirilis Ertugrul', value='`ertugrul`, `halime`, `gondogdu`, `turgut`, `tugtekin`, `hafsa`, `Ibn_arabi`, `gokce`, `aslihan`, `dogan`, `noyan', inline=False) 
+        embed4.add_field(name='kurulus osman', value='`osman`, `bala`, `bamsi`, `savci`, `selcan`, `bayhoca`', inline=False) 
+        embed4.set_footer(text="Page • 4/4")
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
         paginator.add_reaction('<:back1:823818044249341962>', "back")
         paginator.add_reaction('⛔', "lock")
         paginator.add_reaction('<:forward1:823818044052733992>', "next")
-        embeds = [embed1, embed2, embed3, embed4, embed5]
+        embeds = [embed1, embed2, embed3, embed4]
         await paginator.run(embeds)
 
     @commands.command(aliases=['latency'])
