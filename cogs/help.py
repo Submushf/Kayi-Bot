@@ -30,8 +30,7 @@ class Help(commands.Cog):
         embed2.set_footer(text="Page • 2/5")
         
         embed3 = discord.Embed(color=0x0F6BE2)
-        embed3.add_field(name='Others', value='`say`, `dead`, `memes`, `imagine`, `who`, `gif`, `cats`', inline=False)
-        embed3.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png") 
+        embed3.add_field(name='Others', value='`say`, `dead`, `memes`, `imagine`, `who`, `gif`, `cats`', inline=False) 
         embed3.set_footer(text="Page • 3/5")
 
         embed4= discord.Embed(title= "Ertugrul Character's" , color = 0x0F6BE2)

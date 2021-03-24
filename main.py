@@ -91,21 +91,21 @@ def getMeme():
 
 @client.command(aliases=['cats'])
 async def cat(ctx):
-    
-    if not hasattr(client, 'nextMeme'):
-        client.nextMeme = getMeme()
 
-    name, url = client.nextMeme
+    if not hasattr(client, 'nextCat'):
+        client.nextCat = getCat()
+
+    name, url = client.nextCat
     embed = discord.Embed(title = name)
     embed.set_image(url=url)
     await ctx.send(embed=embed)
 
-    client.nextMeme = getMeme()
+    client.nextCat = getCat()
 
 def getCat():
     all_subs = []
     subreddit = reddit.subreddit("Cats")   
-    top = subreddit.top(limit=95)
+    top = subreddit.top(limit=100)
 
     for submission in top:
         all_subs.append(submission)
