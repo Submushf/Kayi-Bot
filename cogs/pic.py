@@ -186,7 +186,7 @@ class other(commands.Cog):
     async def aykiz(self,ctx):
         ayk =  random.choice(aykiz) 
 
-        embed = discord.Embed(title=f"<:ottoman:819796515798253579> aykiz",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> aykiz",color=0x0F6BE2)
         embed.set_image(url= ayk) 
  
         await ctx.send(embed = embed )
