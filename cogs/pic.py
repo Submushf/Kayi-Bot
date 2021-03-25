@@ -177,7 +177,7 @@ class other(commands.Cog):
     async def malhun(self,ctx):
         mal =  random.choice(malhun) 
 
-        embed = discord.Embed(title=f"<:ottoman:819796515798253579> malhun",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> malhun",color=0x0F6BE2)
         embed.set_image(url= mal) 
  
         await ctx.send(embed = embed )
