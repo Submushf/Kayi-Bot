@@ -14,7 +14,7 @@ class other(commands.Cog):
     async def osman(self,ctx):
         osma =  random.choice(osm)
 
-        embed = discord.Embed(title=f"<:ottoman:819796515798253579> Osman",color= 0x0F6BE2)
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> Osman",color= 0x0F6BE2)
         embed.set_image(url=osma)
 
         await ctx.send(embed=embed)
@@ -24,7 +24,7 @@ class other(commands.Cog):
     async def bamsi(self,ctx):
         bam =  random.choice(bams)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Bamsi",color= 0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Bamsi",color= 0x0F6BE2)
         embed.set_image(url=bam)
 
         await ctx.send(embed=embed)
@@ -33,7 +33,7 @@ class other(commands.Cog):
     async def ertugrul(self,ctx):
         ertug =  random.choice(ertugrul)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Ertugrul",color= 0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Ertugrul",color= 0x0F6BE2)
         embed.set_image(url=ertug)
 
         await ctx.send(embed=embed)
@@ -42,7 +42,7 @@ class other(commands.Cog):
     async def ibn_arabi(self,ctx):
         ibn =  random.choice(arabi)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Ibn Arabi",color= 0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Ibn Arabi",color= 0x0F6BE2)
         embed.set_image(url=ibn)
 
         await ctx.send(embed=embed)
@@ -51,7 +51,7 @@ class other(commands.Cog):
     async def bala(self,ctx):
         bal =  random.choice(bala)
 
-        embed = discord.Embed(title= f"<:ottoman:819796515798253579> Bala" ,color= 0x0F6BE2)
+        embed = discord.Embed(title= f"<:osmanli:824498523194130492> Bala" ,color= 0x0F6BE2)
         embed.set_image(url=bal)
 
         await ctx.send(embed=embed)
@@ -60,7 +60,7 @@ class other(commands.Cog):
     async def turgut(self,ctx):
         tur =  random.choice(turgut)
         
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Turgut",color = 0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Turgut",color = 0x0F6BE2)
         embed.set_image(url=tur)
 
         await ctx.send(embed=embed) 
@@ -69,7 +69,7 @@ class other(commands.Cog):
     async def selcan(self,ctx):
         sel =  random.choice(selcan)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Selcan",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Selcan",color=0x0F6BE2)
         embed.set_image(url= sel) 
  
         await ctx.send(embed = embed )
@@ -78,7 +78,7 @@ class other(commands.Cog):
     async def gokce(self,ctx):
         gok =  random.choice(gokce)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Gokce",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Gokce",color=0x0F6BE2)
         embed.set_image(url= gok) 
  
         await ctx.send(embed = embed )
@@ -87,7 +87,7 @@ class other(commands.Cog):
     async def halime(self,ctx):
         hal =  random.choice(halime)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Halime",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Halime",color=0x0F6BE2)
         embed.set_image(url= hal) 
  
         await ctx.send(embed = embed )
@@ -96,7 +96,7 @@ class other(commands.Cog):
     async def tugtekin(self,ctx):
         tug =  random.choice(tugtekin)
 
-        embed = discord.Embed(title=f"<:dodurgo:819801316410785813> Tugtekin",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:dodurgo:824499889911234560> Tugtekin",color=0x0F6BE2)
         embed.set_image(url= tug) 
  
         await ctx.send(embed = embed )
@@ -105,7 +105,7 @@ class other(commands.Cog):
     async def aslihan(self,ctx):
         asl =  random.choice(aslihan)
 
-        embed = discord.Embed(title=f"<:cavdar:819801315537846272> Aslihan",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:cavdar:824499889756438599> Aslihan",color=0x0F6BE2)
         embed.set_image(url= asl) 
  
         await ctx.send(embed = embed )
@@ -114,7 +114,7 @@ class other(commands.Cog):
     async def bayhoca(self,ctx):
         bay =  random.choice(bayhoca)
 
-        embed = discord.Embed(title=f"<:ottoman:819796515798253579> bayhoca",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> bayhoca",color=0x0F6BE2)
         embed.set_image(url= bay) 
  
         await ctx.send(embed = embed )
@@ -123,7 +123,7 @@ class other(commands.Cog):
     async def dogan(self,ctx):
         do =  random.choice(dogan)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Dogan",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Dogan",color=0x0F6BE2)
         embed.set_image(url= do) 
  
         await ctx.send(embed = embed )
@@ -141,7 +141,7 @@ class other(commands.Cog):
     async def gondogdu(self,ctx):
         gon =  random.choice(gondog)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> gondogdu",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> gondogdu",color=0x0F6BE2)
         embed.set_image(url= gon) 
  
         await ctx.send(embed = embed )
@@ -150,7 +150,7 @@ class other(commands.Cog):
     async def hafsa(self,ctx):
         haf =  random.choice(hafsa)
 
-        embed = discord.Embed(title=f"<:kayi:819796457942155285> Hafsa",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Hafsa",color=0x0F6BE2)
         embed.set_image(url= haf) 
  
         await ctx.send(embed = embed )
@@ -159,7 +159,7 @@ class other(commands.Cog):
     async def savci(self,ctx):
         sav =  random.choice(savci)
 
-        embed = discord.Embed(title=f"<:ottoman:819796515798253579> Savci",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> Savci",color=0x0F6BE2)
         embed.set_image(url= sav) 
  
         await ctx.send(embed = embed )
@@ -168,7 +168,7 @@ class other(commands.Cog):
     async def gunduz(self,ctx):
         gun =  random.choice(gunduz) 
 
-        embed = discord.Embed(title=f"<:ottoman:819796515798253579> gunduz",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> gunduz",color=0x0F6BE2)
         embed.set_image(url= gun) 
  
         await ctx.send(embed = embed )
