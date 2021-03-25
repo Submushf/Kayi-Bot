@@ -182,8 +182,26 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of aykiz.") 
+    async def aykiz(self,ctx):
+        ayk =  random.choice(aykiz) 
+
+        embed = discord.Embed(title=f"<:ottoman:819796515798253579> aykiz",color=0x0F6BE2)
+        embed.set_image(url= ayk) 
+ 
+        await ctx.send(embed = embed )
+
 
 #----------------------------------------------------------------------------------------------------------------------------
+
+aykiz = [
+    "https://cdn.discordapp.com/attachments/824585610370482196/824585662698618900/images_23.jpeg",
+    "https://cdn.discordapp.com/attachments/824585610370482196/824585662899421235/images_22.jpeg",
+    "https://cdn.discordapp.com/attachments/824585610370482196/824585663096946708/images_21.jpeg",
+    "https://cdn.discordapp.com/attachments/824585610370482196/824585663324225536/5d5e6ad8c16291ef9dabc3dc655ee346.jpg",
+    "https://cdn.discordapp.com/attachments/824585610370482196/824585663500124190/images_18.jpeg",
+    "https://cdn.discordapp.com/attachments/824585610370482196/824585663700533308/images_19.jpeg"
+]
 
 malhun = [
     "https://cdn.discordapp.com/attachments/823854208516096030/824040949637840927/cd72171efdf91baa452156791fd45958.jpg",
