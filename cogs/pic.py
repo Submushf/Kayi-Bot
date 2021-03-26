@@ -195,7 +195,7 @@ class other(commands.Cog):
     async def ares(self,ctx):
         ar =  random.choice(ares) 
 
-        embed = discord.Embed(title=f"<:kayi:824498522610860052> ares",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:byzantine:824815410477269062> ares",color=0x0F6BE2)
         embed.set_image(url= ar) 
  
         await ctx.send(embed = embed )
