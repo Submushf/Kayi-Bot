@@ -209,7 +209,7 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
-        @commands.command(aliases=['ss'], description = "gives a pic of suleyman_shah.") 
+    @commands.command(aliases=['ss'], description = "gives a pic of suleyman_shah.") 
     async def suleyman_shah(self,ctx):
         shah =  random.choice(suleyman) 
 
