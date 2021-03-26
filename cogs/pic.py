@@ -195,7 +195,7 @@ class other(commands.Cog):
     async def ares(self,ctx):
         ar =  random.choice(ares) 
 
-        embed = discord.Embed(title=f"<:kayi:824498522610860052> ares",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:byzantine:824815410477269062> ares",color=0x0F6BE2)
         embed.set_image(url= ar) 
  
         await ctx.send(embed = embed )
@@ -213,13 +213,60 @@ class other(commands.Cog):
     async def suleyman_shah(self,ctx):
         shah =  random.choice(suleyman) 
 
-        embed = discord.Embed(title=f"<:kayi:824498522610860052> Suleyman SHah",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Suleyman Shah",color=0x0F6BE2)
         embed.set_image(url= shah) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of ilibilge.") 
+    async def ilibilge(self,ctx):
+        ili =  random.choice(ilibilge) 
+
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Ilibilge",color=0x0F6BE2)
+        embed.set_image(url= ili) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of boran.") 
+    async def boran(self,ctx):
+        bor =  random.choice(boran) 
+
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> boran",color=0x0F6BE2)
+        embed.set_image(url= bor) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of goktug.") 
+    async def goktug(self,ctx):
+        go =  random.choice(goktug) 
+
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> goktug",color=0x0F6BE2)
+        embed.set_image(url= go) 
  
         await ctx.send(embed = embed )
 
 
 #----------------------------------------------------------------------------------------------------------------------------
+
+goktug = [
+    "https://cdn.discordapp.com/attachments/822166224280485969/822166245796347944/876bbbde339f616a71ed2f23ad55d46e.jpg",
+    "https://cdn.discordapp.com/attachments/822166224280485969/822166246048923688/b8ed0b542b2ddaf2f266b04ddca76aed.jpg"
+]
+
+boran = [
+    "https://cdn.discordapp.com/attachments/822166157217103902/822166188917522482/ae68437ad144092609fa2b4bcedc966b.jpg",
+    "https://cdn.discordapp.com/attachments/822166157217103902/822166189202866206/078b1cadabaef49a63e868853a9447b7.jpg"
+]
+
+ilibilge = [
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878251188813864/5d3897aa723c623a7c7182962b9287db.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878251469438976/a87aa7d436a92d3db0eaabdb5edb74c2.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878251951390771/e327a809e07e394570728ee4b8741145.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878252216549386/953dcb70bbba55ab338400cb4ced63df.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878252576997396/57111bafd3233f93de5fac019f2a1a9a.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878252781993994/3b18cb50ee0b1846f1f0b11f29a36827.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878253047152660/51a2bda037fcc6b8f7cf290629bf74d6.jpg"
+]
 
 suleyman = [
     "https://cdn.discordapp.com/attachments/824800034004533308/824800538620461066/16167181560564445091260065414869.jpg",
