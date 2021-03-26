@@ -245,8 +245,46 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(aliases=["st"], description = "gives a pic of sungurtekin.") 
+    async def sungurtekin(self,ctx):
+        sun =  random.choice(sungurtekin) 
+
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> sungurtekin",color=0x0F6BE2)
+        embed.set_image(url= sun) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of gonca.") 
+    async def gonca(self,ctx):
+        gh =  random.choice(gonca) 
+
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> gonca",color=0x0F6BE2)
+        embed.set_image(url= gh) 
+ 
+        await ctx.send(embed = embed )
+
 
 #----------------------------------------------------------------------------------------------------------------------------
+
+gonca = [
+    "https://cdn.discordapp.com/attachments/824912924442099722/824913069095387176/16167449988814574316799943545838.jpg",
+    "https://cdn.discordapp.com/attachments/824912924442099722/824913114125434880/16167450095066099327844413016416.jpg",
+    "https://cdn.discordapp.com/attachments/824912924442099722/824913160758755358/16167450207875637896817841810382.jpg",
+    "https://cdn.discordapp.com/attachments/824912924442099722/824913384884666398/16167450742081828541476582670602.jpg",
+    "https://cdn.discordapp.com/attachments/824912924442099722/824913439603556362/16167450861722929726741252960029.jpg",
+]
+
+sungurtekin = [
+    "https://cdn.discordapp.com/attachments/824910530224717874/824910711918034964/16167444348108316837913322834985.jpg",
+    "https://cdn.discordapp.com/attachments/824910530224717874/824910786806808596/16167444548132114591666129720513.jpg",
+    "https://cdn.discordapp.com/attachments/824910530224717874/824911038884610048/16167445147022027653126598403985.jpg",
+    "https://cdn.discordapp.com/attachments/824910530224717874/824911084586663946/16167445253811593745255648752140.jpg",
+    "https://cdn.discordapp.com/attachments/824910530224717874/824911147617746954/16167445406879084813331372909523.jpg",
+    "https://cdn.discordapp.com/attachments/824910530224717874/824911235967352842/1616744561607379671478146965380.jpg",
+    "https://cdn.discordapp.com/attachments/824910530224717874/824911306137272320/1616744578117123077140821335218.jpg",
+    "https://cdn.discordapp.com/attachments/824910530224717874/824911439198027826/16167446102015905379031159754356.jpg",
+    "https://cdn.discordapp.com/attachments/824910530224717874/824911930795491338/16167447272305287037570581583369.jpg"
+]
 
 goktug = [
     "https://cdn.discordapp.com/attachments/822166224280485969/822166245796347944/876bbbde339f616a71ed2f23ad55d46e.jpg",
