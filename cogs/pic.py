@@ -213,13 +213,32 @@ class other(commands.Cog):
     async def suleyman_shah(self,ctx):
         shah =  random.choice(suleyman) 
 
-        embed = discord.Embed(title=f"<:kayi:824498522610860052> Suleyman SHah",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Suleyman Shah",color=0x0F6BE2)
         embed.set_image(url= shah) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of ilibilge.") 
+    async def ilibilge(self,ctx):
+        ili =  random.choice(ilibilge) 
+
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Ilibilge",color=0x0F6BE2)
+        embed.set_image(url= ili) 
  
         await ctx.send(embed = embed )
 
 
 #----------------------------------------------------------------------------------------------------------------------------
+
+ilibilge = [
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878251188813864/5d3897aa723c623a7c7182962b9287db.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878251469438976/a87aa7d436a92d3db0eaabdb5edb74c2.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878251951390771/e327a809e07e394570728ee4b8741145.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878252216549386/953dcb70bbba55ab338400cb4ced63df.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878252576997396/57111bafd3233f93de5fac019f2a1a9a.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878252781993994/3b18cb50ee0b1846f1f0b11f29a36827.jpg",
+    "https://cdn.discordapp.com/attachments/824876210827689984/824878253047152660/51a2bda037fcc6b8f7cf290629bf74d6.jpg"
+]
 
 suleyman = [
     "https://cdn.discordapp.com/attachments/824800034004533308/824800538620461066/16167181560564445091260065414869.jpg",
