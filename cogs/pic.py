@@ -227,8 +227,36 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of boran.") 
+    async def boran(self,ctx):
+        bor =  random.choice(boran) 
+
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> boran",color=0x0F6BE2)
+        embed.set_image(url= bor) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of goktug.") 
+    async def goktug(self,ctx):
+        go =  random.choice(goktug) 
+
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> goktug",color=0x0F6BE2)
+        embed.set_image(url= go) 
+ 
+        await ctx.send(embed = embed )
+
 
 #----------------------------------------------------------------------------------------------------------------------------
+
+goktug = [
+    "https://cdn.discordapp.com/attachments/822166224280485969/822166245796347944/876bbbde339f616a71ed2f23ad55d46e.jpg",
+    "https://cdn.discordapp.com/attachments/822166224280485969/822166246048923688/b8ed0b542b2ddaf2f266b04ddca76aed.jpg"
+]
+
+boran = [
+    "https://cdn.discordapp.com/attachments/822166157217103902/822166188917522482/ae68437ad144092609fa2b4bcedc966b.jpg",
+    "https://cdn.discordapp.com/attachments/822166157217103902/822166189202866206/078b1cadabaef49a63e868853a9447b7.jpg"
+]
 
 ilibilge = [
     "https://cdn.discordapp.com/attachments/824876210827689984/824878251188813864/5d3897aa723c623a7c7182962b9287db.jpg",
