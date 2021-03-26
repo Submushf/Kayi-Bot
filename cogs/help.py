@@ -30,7 +30,7 @@ class Help(commands.Cog):
         embed2.set_footer(text="Page • 2/4")
         
         embed3 = discord.Embed(color=0x0F6BE2)
-        embed3.add_field(name='Others', value='`say`, `dead`, `memes`,`gif`, `cats`', inline=False) 
+        embed3.add_field(name='Others', value='`say`, `dead`,`kill`, `memes`,`gif`, `cats`', inline=False) 
         embed3.set_footer(text="Page • 3/4")
 
 

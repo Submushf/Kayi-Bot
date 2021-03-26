@@ -27,6 +27,10 @@ class Fun(commands.Cog):
         await ctx.send(f"**RIP** {member}")
         await ctx.send(giffy)
 
+    @commands.command()
+    async def kill(self, ctx, member : discord.Member = None):
+        await ctx.send(f"**Killed {member}**")
+
 
 gifs = ["https://tenor.com/view/casket-grave-meme-dancing-dance-gif-16902018"]
 
