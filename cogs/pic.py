@@ -74,7 +74,7 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
-    @commands.command(description = "gives a pic of selcan.") 
+    @commands.command(description = "gives a pic of gokce.") 
     async def gokce(self,ctx):
         gok =  random.choice(gokce)
 
@@ -191,8 +191,66 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of ares.") 
+    async def ares(self,ctx):
+        ar =  random.choice(ares) 
+
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> ares",color=0x0F6BE2)
+        embed.set_image(url= ar) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of hayme.") 
+    async def hayme(self,ctx):
+        hay =  random.choice(hayme) 
+
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> hayme",color=0x0F6BE2)
+        embed.set_image(url= hay) 
+ 
+        await ctx.send(embed = embed )
+
+        @commands.command(aliases=['ss'], description = "gives a pic of suleyman_shah.") 
+    async def suleyman_shah(self,ctx):
+        shah =  random.choice(suleyman) 
+
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Suleyman SHah",color=0x0F6BE2)
+        embed.set_image(url= shah) 
+ 
+        await ctx.send(embed = embed )
+
 
 #----------------------------------------------------------------------------------------------------------------------------
+
+suleyman = [
+    "https://cdn.discordapp.com/attachments/824800034004533308/824800538620461066/16167181560564445091260065414869.jpg",
+    "https://cdn.discordapp.com/attachments/824800034004533308/824800814253735946/16167182346776869794977559420782.jpg",
+    "https://cdn.discordapp.com/attachments/824800034004533308/824800871744274512/16167182476276103864490054057804.jpg",
+    "https://cdn.discordapp.com/attachments/824800034004533308/824800932167548928/16167182620301912627050943667489.jpg",
+    "https://cdn.discordapp.com/attachments/824800034004533308/824801013037924352/16167182821331243424449256581508.jpg",
+    "https://cdn.discordapp.com/attachments/824800034004533308/824801092109336636/16167183012663547674961163124340.jpg",
+    "https://cdn.discordapp.com/attachments/824800034004533308/824801273215057920/16167183436096154877503793446620.jpg",
+    "https://cdn.discordapp.com/attachments/824800034004533308/824801564086108251/16167184132402357600508033825163.jpg"
+]
+
+hayme = [
+    "https://cdn.discordapp.com/attachments/823854149430411285/823854548685684756/f19eb9be0a87cfcbf9e3e1111ee42d6a.jpg",
+    "https://cdn.discordapp.com/attachments/823854149430411285/823893252511629332/cb42ed26784ad5418329815abdef5674.jpg",
+    "https://cdn.discordapp.com/attachments/823854149430411285/824801718017064979/16167184505037484090689681661711.jpg",
+    "https://cdn.discordapp.com/attachments/823854149430411285/824801774123614268/16167184634703388304105186220937.jpg",
+    "https://cdn.discordapp.com/attachments/823854149430411285/824801979742027796/16167185126318043985218980619804.jpg",
+    "https://cdn.discordapp.com/attachments/823854149430411285/824802246168281138/16167185765133288468053061160749.jpg",
+    "https://cdn.discordapp.com/attachments/823854149430411285/824802320964911104/16167185944932889374011044823341.jpg",
+    "https://cdn.discordapp.com/attachments/823854149430411285/824802446639497258/1616718623485723245139797761232.jpg",
+    "https://cdn.discordapp.com/attachments/823854149430411285/824802581623603221/16167186553852306707002544585011.jpg"
+]
+
+ares = [
+    "https://cdn.discordapp.com/attachments/823854237314187304/824798925336084480/16167177840452420908154485728178.jpg",
+    "https://cdn.discordapp.com/attachments/823854237314187304/824798996102905876/16167178012693480174587199195411.jpg",
+    "https://cdn.discordapp.com/attachments/823854237314187304/824799294661197874/16167178728048793046199273358089.jpg",
+    "https://cdn.discordapp.com/attachments/823854237314187304/824799695100182544/16167179680194471707556422640346.jpg",
+    "https://cdn.discordapp.com/attachments/823854237314187304/824800114534907954/16167180674269118531324382619702.jpg"
+]
 
 aykiz = [
     "https://cdn.discordapp.com/attachments/824585610370482196/824585662698618900/images_23.jpeg",
