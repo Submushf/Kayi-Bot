@@ -8,7 +8,7 @@ import praw
 import asyncio
 import json
 
-client = commands.Bot(command_prefix=('k!', 'k.'), case_insensitive=True, intents = discord.Intents.all()) 
+client = commands.Bot(command_prefix=('k!', 'k.', 'K.', 'K!', 'k?', 'K?'), case_insensitive=True, intents = discord.Intents.all()) 
 client.remove_command("help")
 
 # do under prefix thing
