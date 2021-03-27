@@ -33,7 +33,7 @@ reddit = praw.Reddit(client_id = "p0m92UTJwk6ccg",
 
 @client.event
 async def on_ready():
-    await client.change_presence(status = discord.Status.idle, activity= discord.Activity(
+    await client.change_presence(status = discord.Status.online, activity= discord.Activity(
         type= discord.ActivityType.listening, name= "to k.help" 
     )) 
     print(f"-----------\nOnline\n----------") 
@@ -109,7 +109,7 @@ async def cat(ctx):
         client.nextCat = getCat()
 
     name, url = client.nextCat
-    embed = discord.Embed(title = 'Cat', color=0x0F6BE2)
+    embed = discord.Embed(title = name, color=0x0F6BE2)
     embed.set_image(url=url)
     await ctx.send(embed=embed)
 
