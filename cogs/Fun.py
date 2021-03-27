@@ -35,7 +35,8 @@ class Fun(commands.Cog):
 
 kgif = [
     "https://c.tenor.com/Zi1l60KaBGMAAAAM/among-us-kill.gif",
-    "https://c.tenor.com/zopcO8RpVpUAAAAM/kill-yourself-killing-me-smalls.gif"
+    "https://c.tenor.com/zopcO8RpVpUAAAAM/kill-yourself-killing-me-smalls.gif",
+    "https://cdn.discordapp.com/attachments/820565111663755274/825255936435814410/16168267362585722570335909280318.gif"
 ]
 
 gifs = [
