@@ -32,7 +32,10 @@ class Fun(commands.Cog):
         await ctx.send(f"**Killed {member}**")
 
 
-gifs = ["https://tenor.com/view/casket-grave-meme-dancing-dance-gif-16902018"]
+gifs = [
+    "https://tenor.com/view/casket-grave-meme-dancing-dance-gif-16902018",
+    "https://c.tenor.com/Zi1l60KaBGMAAAAM/among-us-kill.gif"
+]
 
 def setup(bot):
     bot.add_cog(Fun(bot))
