@@ -24,7 +24,7 @@ class Fun(commands.Cog):
     @commands.command(description="dun dead comand")
     async def dead(self,ctx,  member : discord.Member = None):
         giffy = random.choice(gifs)
-        await ctx.send(f"**RIP** {member}")
+        await ctx.send(f"**RIP DEAR** {member}, **YOU DIED**")
         await ctx.send(giffy)
 
     @commands.command()
