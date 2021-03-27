@@ -34,7 +34,7 @@ reddit = praw.Reddit(client_id = "p0m92UTJwk6ccg",
 @client.event
 async def on_ready():
     await client.change_presence(status = discord.Status.online, activity= discord.Activity(
-        type= discord.ActivityType.listening, name= "to k.help" 
+        type= discord.ActivityType.playing, name= "k.help" 
     )) 
     print(f"-----------\nOnline\n----------") 
 
