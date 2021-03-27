@@ -1,5 +1,6 @@
 import discord 
 from discord.ext import commands
+#from prsaw import RandomStuff
 import random
 import datetime
 import os
@@ -10,6 +11,8 @@ import json
 client = commands.Bot(command_prefix=('k!', 'k.'), case_insensitive=True, intents = discord.Intents.all()) 
 client.remove_command("help")
 
+# do under prefix thing
+#rs = RandomStuff(async_mode = True)
 
 reddit = praw.Reddit(client_id = "p0m92UTJwk6ccg",
                      client_secret = "af1vaLhlP99UE5zEeHxTuPbtLyIZDw",
@@ -17,6 +20,16 @@ reddit = praw.Reddit(client_id = "p0m92UTJwk6ccg",
                      password = "Devesh@123",
                      user_agent = "pythonpraw")
 
+#@client.event
+#async def on_message(msg):
+
+#    if client.user == msg.author:
+#        return
+#    if msg.channel.id == 824618122363273286:
+#        response = await rs.get_ai_response(msg.content)
+#        await msg.reply(response)
+        
+#    await client.process_commands(msg)
 
 @client.event
 async def on_ready():
