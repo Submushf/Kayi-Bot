@@ -24,17 +24,23 @@ class Fun(commands.Cog):
     @commands.command(description="dun dead comand")
     async def dead(self,ctx,  member : discord.Member = None):
         giffy = random.choice(gifs)
-        await ctx.send(f"**RIP DEAR** {member}, **YOU DIED**")
+        await ctx.send(f"{member}, **YOU DIED**")
         await ctx.send(giffy)
 
     @commands.command()
     async def kill(self, ctx, member : discord.Member = None):
-        await ctx.send(f"**Killed {member}**")
+        kgiffy = random.choice(kgif)
+        await ctx.send(f"{member} **WAS KILLED**")
+        await ctx.send(kgiffy)
 
+kgif = [
+    "https://c.tenor.com/Zi1l60KaBGMAAAAM/among-us-kill.gif"
+    "https://c.tenor.com/zopcO8RpVpUAAAAM/kill-yourself-killing-me-smalls.gif"
+]
 
 gifs = [
     "https://tenor.com/view/casket-grave-meme-dancing-dance-gif-16902018",
-    "https://c.tenor.com/Zi1l60KaBGMAAAAM/among-us-kill.gif"
+    "https://c.tenor.com/B-x2kXqxJp8AAAAM/dies-over.gif"
 ]
 
 def setup(bot):
