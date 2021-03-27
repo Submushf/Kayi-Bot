@@ -109,7 +109,7 @@ async def cat(ctx):
         client.nextCat = getCat()
 
     name, url = client.nextCat
-    embed = discord.Embed(title = 'Cat', color=0x0F6BE2)
+    embed = discord.Embed(title = name, color=0x0F6BE2)
     embed.set_image(url=url)
     await ctx.send(embed=embed)
 
