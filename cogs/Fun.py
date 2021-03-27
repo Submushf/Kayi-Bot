@@ -34,7 +34,7 @@ class Fun(commands.Cog):
         await ctx.send(kgiffy)
 
 kgif = [
-    "https://c.tenor.com/Zi1l60KaBGMAAAAM/among-us-kill.gif"
+    "https://c.tenor.com/Zi1l60KaBGMAAAAM/among-us-kill.gif",
     "https://c.tenor.com/zopcO8RpVpUAAAAM/kill-yourself-killing-me-smalls.gif"
 ]
 
