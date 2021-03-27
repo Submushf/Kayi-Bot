@@ -15,7 +15,7 @@ class Help(commands.Cog):
        
         embed1 = discord.Embed(
             title= "Help Menu",
-            description = f'`Prefix :` - `k.`\n`Page 1 :` - `Menu`\n`Page 2 :` - `Moderation`\n`Page 3 :` - `Other`\n`Page 4 :` - `Dirilis/Kurulus`' , 
+            description = f'`Prefix :` - `k./k!`\n`Page 1 :` - `Menu`\n`Page 2 :` - `Moderation`\n`Page 3 :` - `Other`\n`Page 4 :` - `Dirilis_Ertugrul/Kurulus_Osman`' , 
             color = 0x0F6BE2
             )
         embed1.add_field(name="Links", value="[Our Server](https://discord.gg/2zr5ZFKaCn)", "A server based on Pakistan", inline=False)
@@ -36,7 +36,7 @@ class Help(commands.Cog):
 
         embed4= discord.Embed(color = 0x0F6BE2)
         embed4.add_field(name='Dirilis Ertugrul', value='`ertugrul`, `halime`, `hayme`, `suleyman_shah`, `ilibilge`, `sungurtekin`, `kurtoglu`, `omer`, `deli_demir`, `aykiz`, `gondogdu`, `turgut`, `tugtekin`, `hafsa`, `emir_alaziz`, `leyla`, `ibn_arabi`, `gokce`, `aslihan`, `dogan`, `titus`, `petruccio`, `ares`, `noyan`', inline=False) 
-        embed4.add_field(name='kurulus osman', value='`osman`, `bala`, `gonca`, `bamsi`, `savci`, `selcan`, `bayhoca`, `boran`, `goktug`, `gunduz`, `malhun`', inline=False) 
+        embed4.add_field(name='Kurulus Osman', value='`osman`, `bala`, `gonca`, `bamsi`, `savci`, `selcan`, `bayhoca`, `boran`, `goktug`, `gunduz`, `malhun`', inline=False) 
         embed4.set_footer(text="Page • 4/4")
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
