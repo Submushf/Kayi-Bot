@@ -24,13 +24,13 @@ class Fun(commands.Cog):
     @commands.command(description="dun dead comand")
     async def dead(self,ctx,  member : discord.Member = None):
         giffy = random.choice(gifs)
-        await ctx.send(f"{member}, **YOU DIED**")
+        await ctx.send(f"**{member}, YOU DIED**")
         await ctx.send(giffy)
 
     @commands.command()
     async def kill(self, ctx, member : discord.Member = None):
         kgiffy = random.choice(kgif)
-        await ctx.send(f"{member} **WAS KILLED**")
+        await ctx.send(f"**{member} WAS KILLED**")
         await ctx.send(kgiffy)
 
 kgif = [
