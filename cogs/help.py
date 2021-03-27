@@ -18,7 +18,7 @@ class Help(commands.Cog):
             description = f'`Prefix :` - `k.`\n`Page 1 :` - `Menu`\n`Page 2 :` - `Moderation`\n`Page 3 :` - `Other`\n`Page 4 :` - `Dirilis/Kurulus`' , 
             color = 0x0F6BE2
             )
-        embed1.add_field(name="Links", value="[Our Server](https://discord.gg/Nu4Sxk5w5B)", inline=False)
+        embed1.add_field(name="Links", value="[Made By](https://discord.gg/2zr5ZFKaCn)", inline=False)
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
         embed1.set_footer(text="React to change page • 1/4") 
 
@@ -30,7 +30,7 @@ class Help(commands.Cog):
         embed2.set_footer(text="Page • 2/4")
         
         embed3 = discord.Embed(color=0x0F6BE2)
-        embed3.add_field(name='Others', value='`say`, `dead`,`kill`, `memes`,`gif`, `cats`', inline=False) 
+        embed3.add_field(name='Others', value='`say`, `dead`, `kill`, `memes`, `gif`, `cats`', inline=False) 
         embed3.set_footer(text="Page • 3/4")
 
 
