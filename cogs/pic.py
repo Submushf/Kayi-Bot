@@ -14,7 +14,7 @@ class other(commands.Cog):
     async def osman(self,ctx):
         osma =  random.choice(osm)
 
-        embed = discord.Embed(title=f"<:osmanli:824498523194130492> Osman",color= 0x0F6BE2)
+        embed = discord.Embed(title=f"<:osmanli:824498523194130492> Osman Bey",color= 0x0F6BE2)
         embed.set_image(url=osma)
 
         await ctx.send(embed=embed)
@@ -33,7 +33,7 @@ class other(commands.Cog):
     async def ertugrul(self,ctx):
         ertug =  random.choice(ertugrul)
 
-        embed = discord.Embed(title=f"<:kayi:824498522610860052> Ertugrul",color= 0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Ertugrul Bey",color= 0x0F6BE2)
         embed.set_image(url=ertug)
 
         await ctx.send(embed=embed)
@@ -44,6 +44,24 @@ class other(commands.Cog):
 
         embed = discord.Embed(title=f"<:kayi:824498522610860052> Ibn Arabi",color= 0x0F6BE2)
         embed.set_image(url=ibn)
+
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=['aziz'], description = "gives pic of emir_alaziz.") 
+    async def emir_alaziz(self,ctx):
+        aa =  random.choice(alaziz)
+
+        embed = discord.Embed(title=f"<:seljuk:825240360010776646> Emir Al Aziz",color= 0x0F6BE2)
+        embed.set_image(url=aa)
+
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=['layla'], description = "gives pic of leyla.") 
+    async def leyla(self,ctx):
+        le =  random.choice(leyla)
+
+        embed = discord.Embed(title=f"<:seljuk:825240360010776646> Leyla Sultan",color= 0x0F6BE2)
+        embed.set_image(url=le)
 
         await ctx.send(embed=embed)
 
@@ -87,7 +105,7 @@ class other(commands.Cog):
     async def halime(self,ctx):
         hal =  random.choice(halime)
 
-        embed = discord.Embed(title=f"<:kayi:824498522610860052> Halime",color=0x0F6BE2)
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Halime Sultan",color=0x0F6BE2)
         embed.set_image(url= hal) 
  
         await ctx.send(embed = embed )
@@ -200,6 +218,24 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of titus.") 
+    async def titus(self,ctx):
+        tit =  random.choice(titus) 
+
+        embed = discord.Embed(title=f"<:byzantine:824815410477269062> titus",color=0x0F6BE2)
+        embed.set_image(url= tit) 
+ 
+        await ctx.send(embed = embed )
+
+    @commands.command(description = "gives a pic of petruccio.") 
+    async def petruccio(self,ctx):
+        pe =  random.choice(petruccio) 
+
+        embed = discord.Embed(title=f"<:byzantine:824815410477269062> Petruccio",color=0x0F6BE2)
+        embed.set_image(url= pe) 
+ 
+        await ctx.send(embed = embed )
+
     @commands.command(description = "gives a pic of hayme.") 
     async def hayme(self,ctx):
         hay =  random.choice(hayme) 
@@ -263,8 +299,116 @@ class other(commands.Cog):
  
         await ctx.send(embed = embed )
 
+    @commands.command(description = "gives a pic of kurtoglu.") 
+    async def kurtoglu(self,ctx):
+        kur =  random.choice(kurtoglu)
+
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Kurtoglu",color= 0x0F6BE2)
+        embed.set_image(url=kur)
+
+        await ctx.send(embed=embed)
+
+    @commands.command(description = "gives a pic of omer.") 
+    async def omer(self,ctx):
+        om =  random.choice(omer)
+
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> omer",color= 0x0F6BE2)
+        embed.set_image(url=om)
+
+        await ctx.send(embed=embed)
+
+    @commands.command(aliases=["dd"], description = "gives a pic of deli_demir.") 
+    async def deli_demir(self,ctx):
+        deli =  random.choice(demir)
+
+        embed = discord.Embed(title=f"<:kayi:824498522610860052> Deli Demir",color= 0x0F6BE2)
+        embed.set_image(url=deli)
+
+        await ctx.send(embed=embed)
+
 
 #----------------------------------------------------------------------------------------------------------------------------
+
+leyla = [
+    "https://cdn.discordapp.com/attachments/825216923629256795/825230550612443146/16168206921536159831079604942295.jpg",
+    "https://cdn.discordapp.com/attachments/825216923629256795/825230599824343080/16168207030642288485530999289242.jpg",
+    "https://cdn.discordapp.com/attachments/825216923629256795/825230702731198514/16168207289142921010566718489636.jpg",
+    "https://cdn.discordapp.com/attachments/825216923629256795/825230647475437578/1616820715429386979390669126732.jpg",
+    "https://cdn.discordapp.com/attachments/825216923629256795/825230773308882964/1616820745391342294943150679540.jpg",
+    "https://cdn.discordapp.com/attachments/825216923629256795/825233449891790890/Screenshot_20210327-095538_1.png",
+    "https://cdn.discordapp.com/attachments/825216923629256795/825233450327605288/Screenshot_20210327-095410_1.png",
+    "https://cdn.discordapp.com/attachments/825216923629256795/825233450515693588/Screenshot_20210327-095925_1.png"
+]
+
+demir = [
+    "https://cdn.discordapp.com/attachments/825216723342327828/825223330868494396/16168189708435280429139093105807.jpg",
+    "https://cdn.discordapp.com/attachments/825216723342327828/825223390394581002/16168189839944573038575825672797.jpg",
+    "https://cdn.discordapp.com/attachments/825216723342327828/825223448166268978/16168189990333659760006204166732.jpg",
+    "https://cdn.discordapp.com/attachments/825216723342327828/825223499596431430/16168190110475024308039188135492.jpg",
+    "https://cdn.discordapp.com/attachments/825216723342327828/825223590530121738/16168190324206462153995543259420.jpg",
+    "https://cdn.discordapp.com/attachments/825216723342327828/825223650886156318/16168190473264405377379120107575.jpg",
+    "https://cdn.discordapp.com/attachments/825216723342327828/825223772885876776/16168190765177688869069261834558.jpg",
+    "https://cdn.discordapp.com/attachments/825216723342327828/825223880218116186/16168191009156365069265084093241.jpg",
+    "https://cdn.discordapp.com/attachments/825216723342327828/825224060618670080/16168191349526225528599413603875.jpg",
+    "https://cdn.discordapp.com/attachments/825216723342327828/825224371991478282/16168192188208092198007160264286.jpg",
+    "https://cdn.discordapp.com/attachments/825216723342327828/825224891010908240/16168193424758344442583734606859.jpg"
+]
+
+alaziz = [
+    "https://cdn.discordapp.com/attachments/825216752258383904/825221849117360148/16168186114459018881980046366754.jpg",
+    "https://cdn.discordapp.com/attachments/825216752258383904/825225136810491924/16168194011609133791569713026182.jpg",
+    "https://cdn.discordapp.com/attachments/825216752258383904/825225511646003240/16168194840424059510066235649308.jpg",
+    "https://cdn.discordapp.com/attachments/825216752258383904/825226338872721428/16168196879678596534665517481439.jpg",
+    "https://cdn.discordapp.com/attachments/825216752258383904/825226338872721428/16168196879678596534665517481439.jpg",
+    "https://cdn.discordapp.com/attachments/825216752258383904/825226446053834812/16168197104064356501886649519103.jpg",
+    "https://cdn.discordapp.com/attachments/825216752258383904/825233505444954122/Screenshot_20210327-095911_1.png"
+]
+
+petruccio = [
+    "https://cdn.discordapp.com/attachments/825216641625096233/825222493685809152/16168187681516527562163384343709.jpg",
+    "https://cdn.discordapp.com/attachments/825216641625096233/825222640880058378/16168188016886969365420518311582.jpg",
+    "https://cdn.discordapp.com/attachments/825216641625096233/825222844912631819/16168188485103578857893425765826.jpg",
+    "https://cdn.discordapp.com/attachments/825216641625096233/825222898452529162/1616818867575785521576097302040.jpg",
+    "https://cdn.discordapp.com/attachments/825216641625096233/825222970682245120/16168188852385188240916176236740.jpg",
+    "https://cdn.discordapp.com/attachments/825216641625096233/825223034641186836/16168189002933953678102994669275.jpg"
+]
+
+titus = [
+    "https://cdn.discordapp.com/attachments/825216473323536435/825219569009426522/16168180649598565413477487716314.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825220721893572648/16168183491992600337553302539748.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825220774554107934/16168183603764170375077409973173.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825220829252026398/16168183736944030822982941935922.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825220879973744650/16168183862935550360880595940254.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825220948671987742/16168184031875164595267935082176.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825221143837278238/16168184494071213651725269324665.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825221225088811018/16168184689753233476757164383512.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825221386439753778/16168185071742615901828257748320.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825221446006734868/16168185212444739899765893559299.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825221543667826688/16168185449051230456482717393568.jpg",
+    "https://cdn.discordapp.com/attachments/825216473323536435/825221677285769216/16168185750161087817759298498711.jpg"
+]
+
+omer = [
+    "https://cdn.discordapp.com/attachments/825216383469355039/825219761134632960/16168181198694929011060830491180.jpg",
+    "https://cdn.discordapp.com/attachments/825216383469355039/825219818491084880/16168181336715377549013674722204.jpg",
+    "https://cdn.discordapp.com/attachments/825216383469355039/825219929955106816/16168181604587847021784123738025.jpg",
+    "https://cdn.discordapp.com/attachments/825216383469355039/825220345048596480/16168182586627770907349435451447.jpg",
+    "https://cdn.discordapp.com/attachments/825216383469355039/825220423057932308/16168182777272780477609510177226.jpg",
+    "https://cdn.discordapp.com/attachments/825216383469355039/825220556050923560/16168183088267670129542954540268.jpg",
+    "https://cdn.discordapp.com/attachments/825216383469355039/825220619384782898/16168183247178680124938364557005.jpg"
+]
+
+kurtoglu = [
+    "https://cdn.discordapp.com/attachments/825216163373252639/825218196038352907/16168177469188950538430863711837.jpg",
+    "https://cdn.discordapp.com/attachments/825216163373252639/825218245576884254/16168177581136690060249253847377.jpg",
+    "https://cdn.discordapp.com/attachments/825216163373252639/825218300992290836/16168177717157876534584853971734.jpg",
+    "https://cdn.discordapp.com/attachments/825216163373252639/825218354440044544/1616817784565364432449683752372.jpg",
+    "https://cdn.discordapp.com/attachments/825216163373252639/825218409251733574/16168177974158046902007954715510.jpg",
+    "https://cdn.discordapp.com/attachments/825216163373252639/825218510920613888/16168178220292353508538739532518.jpg",
+    "https://cdn.discordapp.com/attachments/825216163373252639/825218674096078879/16168178606641786113111340112908.jpg",
+    "https://cdn.discordapp.com/attachments/825216163373252639/825218883048439828/16168179103591599630745657080528.jpg",
+    "https://cdn.discordapp.com/attachments/825216163373252639/825219033750175754/16168179463035597496918589209776.jpg"
+]
 
 gonca = [
     "https://cdn.discordapp.com/attachments/824912924442099722/824913069095387176/16167449988814574316799943545838.jpg",

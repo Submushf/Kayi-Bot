@@ -35,7 +35,7 @@ class Help(commands.Cog):
 
 
         embed4= discord.Embed(color = 0x0F6BE2)
-        embed4.add_field(name='Dirilis Ertugrul', value='`ertugrul`, `halime`, `hayme`, `suleyman_shah`, `ilibilge`, `sungurtekin`, `aykiz`, `gondogdu`, `turgut`, `tugtekin`, `hafsa`, `Ibn_arabi`, `gokce`, `aslihan`, `dogan`, `ares`, `noyan`', inline=False) 
+        embed4.add_field(name='Dirilis Ertugrul', value='`ertugrul`, `halime`, `hayme`, `suleyman_shah`, `ilibilge`, `sungurtekin`, `kurtoglu`, `omer`, `deli_demir`, `aykiz`, `gondogdu`, `turgut`, `tugtekin`, `hafsa`, `emir_alaziz`, `leyla`, `ibn_arabi`, `gokce`, `aslihan`, `dogan`, `titus`, `petruccio`, `ares`, `noyan`', inline=False) 
         embed4.add_field(name='kurulus osman', value='`osman`, `bala`, `gonca`, `bamsi`, `savci`, `selcan`, `bayhoca`, `boran`, `goktug`, `gunduz`, `malhun`', inline=False) 
         embed4.set_footer(text="Page • 4/4")
 
