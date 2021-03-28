@@ -2,4 +2,4 @@ discord
 DiscordUtils
 praw
 PyNaCl 
-youtube
+youtube-dl
