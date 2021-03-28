@@ -40,7 +40,7 @@ class Help(commands.Cog):
         embed4.set_footer(text="Page • 4/5")
 
         embed5 = discord.Embed() 
-        embed5.add_field(name='Help', value='`join`, `Leave`, `play`, `pause`, `resume`, `stop`, `loop`, `queue`, `np`, `skip`, `volume`, `remove`', inline=False)
+        embed5.add_field(name='Music', value='`join`, `Leave`, `play`, `pause`, `resume`, `stop`, `loop`, `queue`, `np`, `skip`, `volume`, `remove`', inline=False)
         embed4.set_footer(text="Page • 4/5")
 
         paginator = DiscordUtils.Pagination.CustomEmbedPaginator(ctx, remove_reactions=True)
