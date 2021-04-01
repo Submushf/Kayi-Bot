@@ -1,5 +1,2 @@
 discord
 DiscordUtils
-praw
-PyNaCl 
-youtube-dl
