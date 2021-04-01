@@ -2,4 +2,4 @@ discord
 DiscordUtils
 praw
 prsaw 
-dataclass
+dataclasses
