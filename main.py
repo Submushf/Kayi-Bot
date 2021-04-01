@@ -2,17 +2,30 @@ import discord
 from discord.ext import commands
 import random
 import os
+from prsaw import RandomStuff
 
 client = commands.Bot(command_prefix=('k!', 'k.', 'K.', 'K!', 'k?', 'K?'), case_insensitive=True, intents = discord.Intents.all()) 
 client.remove_command("help")
 
+rs = RandomStuff(async_mode = True)
+
+@client.event
+async def on_message(msg):
+
+    if client.user == msg.author:
+        return
+    if msg.channel.id == 827222228512538694:
+        response = await rs.get_ai_response(msg.content)
+        await msg.reply(response)
+        
+    await client.process_commands(msg)
 
 @client.event
 async def on_ready():
     await client.change_presence(status = discord.Status.online, activity= discord.Activity(
         type= discord.ActivityType.listening, name= "k.help" 
     )) 
-    print(f"-----------\nOnline\n----------") 
+    print(f"-----------\nOnline\n----------")
 
 @client.command()
 async def server(ctx):
