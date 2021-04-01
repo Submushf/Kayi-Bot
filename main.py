@@ -4,7 +4,7 @@ import random
 import os
 from prsaw import RandomStuff
 
-client = commands.Bot(command_prefix=('k!', 'k.', 'K.', 'K!', 'k?', 'K?'), case_insensitive=True, intents = discord.Intents.all()) 
+client = commands.Bot(command_prefix=('k!', 'k.', 'K.', 'K!'), case_insensitive=True, intents = discord.Intents.all()) 
 client.remove_command("help")
 
 rs = RandomStuff(async_mode = True)
