@@ -15,10 +15,10 @@ class Help(commands.Cog):
        
         embed1 = discord.Embed(
             title= "Help Menu",
-            description = f'`Prefix :` - `k./k!`\n`Page 1 :` - `Menu`\n`Page 2 :` - `Other`\n`Page 3 :` - `Dirilis_Ertugrul/Kurulus_Osman`\n`Page 5 :` - `music`' , 
+            description = f'`Prefix :` - `k./k!`\n`Page 1 :` - `Menu`\n`Page 2 :` - `Other`\n`Page 3 :` - `Dirilis_Ertugrul/Kurulus_Osman`' , 
             color = 0x0F6BE2
             )
-        embed1.add_field(name="Links", value="[Our Server](https://discord.gg/2zr5ZFKaCn)\n[Invite Bot](https://discord.com/oauth2/authorize?client_id=818372499431489556&scope=bot&permissions=8)", inline=False)
+        embed1.add_field(name="Links", value="[Our Server](https://discord.gg/bv6UZafJzG)", inline=False)
         embed1.set_thumbnail(url= "https://cdn.discordapp.com/attachments/818374423685627907/818378561189969930/kayi_bot.png")
         embed1.set_footer(text="React to change page • 1/3") 
 
