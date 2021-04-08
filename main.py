@@ -2,23 +2,23 @@ import discord
 from discord.ext import commands
 import random
 import os
-from prsaw import RandomStuff
+#from prsaw import RandomStuff
 
 client = commands.Bot(command_prefix=('k!', 'k.', 'K.', 'K!'), case_insensitive=True, intents = discord.Intents.all()) 
 client.remove_command("help")
 
-rs = RandomStuff(async_mode = True)
+#rs = RandomStuff(async_mode = True)
 
-@client.event
-async def on_message(msg):
+#@client.event
+#async def on_message(msg):
 
-    if client.user == msg.author:
-        return
-    if msg.channel.id == 827222228512538694:
-        response = await rs.get_ai_response(msg.content)
-        await msg.reply(response)
+#    if client.user == msg.author:
+#        return
+#    if msg.channel.id == 827222228512538694:
+#        response = await rs.get_ai_response(msg.content)
+#        await msg.reply(response)
         
-    await client.process_commands(msg)
+#    await client.process_commands(msg)
 
 @client.event
 async def on_ready():
