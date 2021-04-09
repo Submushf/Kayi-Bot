@@ -4,6 +4,8 @@ import random
 from random import choice 
 from aiohttp import ClientSession
 import asyncio
+import urllib.request
+import re
 
 class Fun(commands.Cog):
     def __init__(self, bot):
@@ -32,6 +34,16 @@ class Fun(commands.Cog):
         kgiffy = random.choice(kgif)
         await ctx.send(f"**{member} WAS KILLED**")
         await ctx.send(kgiffy)
+
+
+    @commands.command(aliases=['yts'])
+    async def ytsearch(self,ctx,*, search):
+        s = search.replace(' ', '_')
+        search_keyword=s
+        html = urllib.request.urlopen("https://www.youtube.com/results?search_query=" + search_keyword)
+        video_ids = re.findall(r"watch\?v=(\S{11})", html.read().decode())
+        await ctx.send("https://www.youtube.com/watch?v=" + video_ids[0])
+
 
 kgif = [
     "https://c.tenor.com/Zi1l60KaBGMAAAAM/among-us-kill.gif",
