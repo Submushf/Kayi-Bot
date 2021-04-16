@@ -1,5 +1,3 @@
 discord
 DiscordUtils
 praw
-prsaw
-dataclasses
