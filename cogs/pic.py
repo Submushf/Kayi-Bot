@@ -794,7 +794,8 @@ ertugrul = [
     "https://cdn.discordapp.com/attachments/819129208927420477/823893377451294770/dca9fd0a22a46c06bf356c0831b33785.jpg",
     "https://cdn.discordapp.com/attachments/819129208927420477/823893377941504020/70d9eb955da570ff251ccb496fcb9ef3.jpg",
     "https://cdn.discordapp.com/attachments/819129208927420477/823893378156462140/8a95e1eaba3059b44b3e56520f516d5d.png",
-    "https://cdn.discordapp.com/attachments/822161478017875989/824040791403397120/202f1ca0caa4baf8a0eb37f84e39cdf5.jpg"
+    "https://cdn.discordapp.com/attachments/822161478017875989/824040791403397120/202f1ca0caa4baf8a0eb37f84e39cdf5.jpg",
+    "https://cdn.discordapp.com/attachments/819129208927420477/832556865229291530/31f86c0d5efe5cc7c3aa4b135ccfdb76.jpg"
 ]
 
 bams = [
