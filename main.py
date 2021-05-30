@@ -7,6 +7,11 @@ import os
 client = commands.Bot(command_prefix=('k!', 'k.', 'K.', 'K!'), case_insensitive=True, intents = discord.Intents.all()) 
 client.remove_command("help")
 
+@client.command(name='spam', help='Spams the input message for x number of times')
+async def annoy(ctx, amount:int, *, message):
+    for i in range(amount): # Do the next thing amount times
+        await ctx.send(message) # Sends message where command was called
+
 #rs = RandomStuff(async_mode = True)
 
 #@client.event
